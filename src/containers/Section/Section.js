@@ -3,7 +3,10 @@ import classes from './Section.scss';
 
 const section = props => {
   return (
-    <div className={classes.Section}>
+    <div className={
+      classes.Section, 
+      props.BackgroundColour
+    }>
       Section
     </div>
   );

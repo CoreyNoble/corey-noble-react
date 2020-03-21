@@ -1,3 +1,111 @@
 .Button {
-  
+  /* ~~~ Was Global */
+  background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
+  background: -ms-linear-gradient(to top, #5fa6a6, #7fc7c7);
+  background: -webkit-gradient(linear, to left top, to left bottom, from(#5fa6a6), to(#7fc7c7));
+  background: #468ccf;
+  background: linear-gradient(to top, #5fa6a6, #7fc7c7);
+  border: 2px solid #000;
+  border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+  color: #000;
+  display: block;
+  margin: 0 auto;
+  padding: 1em 2em;
+  text-decoration: none;
+  transition: all .15s ease;
+
+  @include breakpoint(medium) {
+    top: 11em;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+    border-color: $white;
+    background: #63b8ee;
+    background: linear-gradient(to top, #7fc7c7, #5fa6a6);
+    background: -ms-linear-gradient(to top, #7fc7c7, #5fa6a6);
+    background: -webkit-gradient(
+      linear,
+      to left top,
+      tp left bottom,
+      from(#7fc7c7),
+      to(#5fa6a6)
+    );
+    background: -moz-linear-gradient(to top, #7fc7c7, #5fa6a6);
+    text-decoration: underline;
+  }
+}
+
+/* ~~~ Was _button.scss */
+a#resume {
+  background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
+  background: -ms-linear-gradient(to top, #5fa6a6, #7fc7c7);
+  background: -webkit-gradient(linear, to left top, to left bottom, from(#5fa6a6), to(#7fc7c7));
+  background: #468ccf;
+  background: linear-gradient(to top, #5fa6a6, #7fc7c7);
+  border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+  border: 2px solid #000;
+  color: #000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em 2em;
+  text-decoration: none;
+  transition: all .15s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+    border-color: $white;
+    background: #63b8ee;
+    background: linear-gradient(to top, #7fc7c7, #5fa6a6);
+    background: -ms-linear-gradient(to top, #7fc7c7, #5fa6a6);
+    background: -webkit-gradient(linear, to left top, tp left bottom, from(#7fc7c7), to(#5fa6a6));
+    background: -moz-linear-gradient(to top, #7fc7c7, #5fa6a6);
+    text-decoration: underline;
+  }
+}
+
+.resume-cta {
+  display: flex;
+  margin: 0 auto;
+
+  a {
+    margin-top: 1em;
+  }
+
+  &.redirect-resume-cta {
+    margin-top: 1.75em;
+  }
+
+  &.resume-cta-left {
+    float: left;
+    margin-top: 1.75em;
+  }
+}
+
+a.cta {
+  border-radius: 5px;
+  border: .15em solid $background;
+  color: $black;
+  display: inline-block;
+  padding: .5em .75em;
+  text-decoration: none;
+
+  &:hover {
+    border-color: $white;
+    color: #000;
+    text-decoration: underline;
+  }
+
+  &.project-cta {
+    margin-right: .25em;
+  }
 }

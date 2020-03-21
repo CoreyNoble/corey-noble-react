@@ -1,3 +1,273 @@
 .Footer {
   
 }
+
+/* ~~~ Was Global */
+#socials {
+  display: inline;
+  float: left;
+  margin-top: .5rem;
+  margin-bottom: 2em;
+  border-bottom: none;
+
+  a {
+    min-width: unset;
+    width: unset;
+    border-bottom: none;
+    display: inline-block;
+    float: left;
+    margin-right: 1.25em;
+
+    &:hover,
+    &:visited,
+    &:focus {
+      background-color: inherit;
+    }
+
+    @media screen and (max-width: 940px) {
+      min-width: unset;
+    }
+
+    img {
+      margin: 0;
+      padding: 0;
+      max-width: 2.75em;
+
+      -webkit-filter: grayscale(100%);
+      -webkit-transition: .25s ease-in-out;
+      -moz-filter: grayscale(100%);
+      -moz-transition: .25s ease-in-out;
+      -o-filter: grayscale(100%);
+      -o-transition: .25s ease-in-out;
+
+      &:hover,
+      &:focus {
+        -webkit-filter: grayscale(0%);
+        -webkit-transition: .25s ease-in-out;
+        -moz-filter: grayscale(0%);
+        -moz-transition: .25s ease-in-out;
+        -o-filter: grayscale(0%);
+        -o-transition: .25s ease-in-out;
+      }
+    }
+  }
+}
+
+/* Was _footer.scss */
+footer {
+  background: $background;
+  border-top: 1px solid $white;
+  box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, .75);
+    -moz-box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, .75);
+  padding: 1em 0;
+
+  @media screen and (max-width: 40em) {
+    border-top: 1px solid $white;
+  }
+
+  .footnote {
+    display: table;
+
+    .footnote-profile {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+
+  .section {
+    padding: 1.5em 1em;
+  }
+
+  h4,
+  .h4,
+  span {
+    color: $grey;
+    display: block;
+    float: left;
+    font-size: 1em;
+    padding: 0;
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    padding: 0;
+  }
+
+  .profession {
+    border-right: 3px solid $grey;
+  }
+
+  .footnote-position {
+    margin-top: .5em;
+
+    @media screen and (max-width: 40em) {
+      margin-top: 0;
+    }
+
+    .name,
+    .title,
+    .footnote-contact {
+      display: block;
+      float: left;
+      width: 100%;
+    }
+
+    .name {
+      margin: 0;
+      padding: 0;
+
+      @media screen and (max-width: 40em) {
+        margin-top: .25em;
+      }
+    }
+  }
+
+  .footnote-ctas-desktop {
+    display: block;
+
+    @media screen and (max-width: 40em) {
+      display: none;
+    }
+  }
+
+  .footnote-ctas-tablet {
+    display: none;
+
+    @media screen and (max-width: 40em) {
+      display: block;
+    }
+  }
+
+  .footnote-contact {
+    margin-top: 1em;
+
+    @media screen and (max-width: 40em) {
+      margin-top: .75em;
+    }
+  }
+
+  .footnote-contact,
+  .social-media,
+  .footnote-ctas {
+    h4,
+    .h4,
+    p {
+      a {
+        color: $white;
+        transition: color .25s ease;
+
+        &:hover,
+        &:focus {
+          color: $blue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .social-media {
+    display: block;
+    margin-top: 1.3em;
+
+    @media screen and (max-width: 40em) {
+      margin-top: 3em;
+    }
+
+    img {
+      max-width: 35px;
+    }
+
+    .linkedin {
+      display: block;
+      float: right;
+      margin-top: -10px;
+      width: 100%;
+    }
+
+    .github {
+      display: block;
+      float: right;
+      margin-top: 1.5em;
+      width: 100%;
+
+      @media screen and (max-width: 40em) {
+        display: block;
+        margin-top: 2em;
+      }
+    }
+
+    .social-icon {
+      a {
+        img {
+          -moz-filter: grayscale(100%);
+          -moz-transition: .25s ease-in-out;
+          -o-filter: grayscale(100%);
+          -o-transition: .25s ease-in-out;
+          -webkit-filter: grayscale(100%);
+          -webkit-transition: .25s ease-in-out;
+
+          &:hover,
+          &:focus {
+            -moz-filter: grayscale(0%);
+            -moz-transition: .25s ease-in-out;
+            -o-filter: grayscale(0%);
+            -o-transition: .25s ease-in-out;
+            -webkit-filter: grayscale(0%);
+            -webkit-transition: .25s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .social-text {
+      h4,
+      .h4 {
+        float: right;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1;
+        padding-top: .55em;
+
+        a {
+          font-size: .9em;
+          font-weight: bold;
+        }
+      }
+
+      p {
+        font-size: .75em;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .footnote-ctas {
+    float: right;
+    margin-right: 7vw;
+
+    @media screen and (max-width: 40em) {
+      float: left;
+      margin-bottom: 0;
+      margin-right: 0;
+      padding-bottom: 0;
+    }
+
+    h4,
+    .h4 {
+      a {
+        color: $white;
+        float: right;
+      }
+
+      @media screen and (max-width: 40em) {
+        padding: 0 .5em;
+      }
+    }
+  }
+}

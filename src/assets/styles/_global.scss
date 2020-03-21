@@ -1,0 +1,25 @@
+body {
+  background: $background;
+}
+
+hr {
+  color: $grey;
+  height: 2px;
+}
+
+.frame {
+  height: 66vh;
+  overflow: hidden;
+  padding: .5em;
+  width: 100%;
+
+  iframe {
+    border: none;
+    display: block;
+    float: left;
+    height: 64vh;
+    margin: 0 auto;
+    overflow: auto;
+    width: 100%;
+  }
+}
