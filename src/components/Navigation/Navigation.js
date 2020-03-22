@@ -5,6 +5,18 @@ import GitHubLogo from '../../assets/img/github-icon.png';
 import LinkedInLogo from '../../assets/img/linkedin-icon.png';
 
 const navigation = props => {
+  let action = 1;
+
+  function viewSomething() {
+    if (action === 1) {
+      document.getElementById('pull').innerHTML = '&nbsp;';
+      action = 2;
+    } else {
+      document.getElementById('pull').innerHTML = '<strong><span>&lsaquo;</span> corey-noble /<span>&rsaquo;</span></strong>';
+      action = 1;
+    }
+  }
+
   return (
     <nav className="clearfix">
       <a href="#main" className="skip-main">Skip to main content</a>
@@ -37,23 +49,9 @@ const navigation = props => {
           </a>
         </li>
       </ul>
-      <a href="#" id="pull" onClick="viewSomething()" title="Toggle the navigation menu" aria-label="Navigation Menu">
+      <a href="#" id="pull" onClick={() => {viewSomething()}} title="Toggle the navigation menu" aria-label="Navigation Menu">
         <strong><span>&lsaquo;</span> corey-noble /<span>&rsaquo;</span></strong>
       </a>
-      
-      {/* ~~~ <script>
-        var action = 1;
-
-        function viewSomething() {
-          if (action == 1) {
-            document.getElementById('pull').innerHTML = '&nbsp;';
-            action = 2;
-          } else {
-            document.getElementById('pull').innerHTML = '<strong><span>&lsaquo;</span> corey-noble /<span>&rsaquo;</span></strong>';
-            action = 1;
-          }
-        }
-      </script> */}
     </nav>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './SkillCard.scss';
+import './SkillCard.scss';
 
 const skillCard = props => {
   return (

@@ -1,17 +1,17 @@
 import React from 'react';
-import classes from './Accordion.scss';
+import './Accordion.scss';
 
 const accordion = props => {
   return (
-    <ul class="accordion" data-accordion data-allow-all-closed="true">
-        <li class="accordion-item" data-accordion-item="">
+    <ul className="accordion" data-accordion data-allow-all-closed="true">
+        <li className="accordion-item" data-accordion-item="">
           {/* Title */}
-          <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+          <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
             aria-selected="false">
-            <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+            <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
           </a>
           {/* Content */}
-          <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+          <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
             aria-hidden="true" id="project-synopsis" style="display: none;">
             <p>In this lesson I create an analog clock displays the users'&nbsp;time.</p>
             <p>To start the clock I run a function setDate() every second (setInterval(setDate, 1000)).</p>
@@ -23,7 +23,7 @@ const accordion = props => {
               (secondHand.style.transform = `rotate(${secondsDegrees}deg)`).</p>
 
             {/* CodePen */}
-            <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+            <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
               data-slug-hash="ewKxmJ"
               style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
               data-pen-title="JavaScript30 - 2 - Clock">
