@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .Navigation {
   
 }
@@ -275,7 +277,7 @@ nav {
     &:after {
       @media screen and (max-width: 940px) {
         content: '';
-        background: url('../img/nav-icon.png') no-repeat;
+        background: url('../../assets/img/nav-icon.png') no-repeat;
         width: 20px;
         height: 20px;
         display: inline-block;

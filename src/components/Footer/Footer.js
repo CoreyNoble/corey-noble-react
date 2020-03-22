@@ -1,5 +1,10 @@
 import React from 'react';
-import classes from './Footer.scss';
+import './Footer.scss';
+
+import CoreyNobleFootnoteProfileImage from '../../assets/img/Corey-Noble-Footnote-Profile.png';
+import CoreyNobleResumePDF from '../../assets/pdf/CoreyNoble-Resume.pdf';
+import GitHubLogo from '../../assets/img/github-icon.png';
+import LinkedInLogo from '../../assets/img/linkedin-icon.png';
 
 const footer = props => {
   return (
@@ -8,7 +13,7 @@ const footer = props => {
         {/* Profession Showcase */}
         <div class="small-12 medium-8 large-7 columns">
           <div class="small-4 medium-4 large-3 columns">
-            <img src="{{root}}assets/img/Corey-Noble-Footnote-Profile.png" alt="" role="presentation" />
+            <img src={CoreyNobleFootnoteProfileImage} alt="" role="presentation" />
           </div>
           <div class="small-8 medium-8 large-9 columns end">
             <div class="footnote-position">
@@ -16,12 +21,12 @@ const footer = props => {
               <h3 class="h4 title">Web&nbsp;Developer</h3>
               <div class="footnote-contact">
                 <h4>
-                  <a href="{{root}}assets/pdf/CoreyNoble-Resume.pdf" title="Read my resume" target="_blank"
+                  <a href={CoreyNobleResumePDF} title="Read my resume" target="_blank"
                     rel="noopener noreferrer">My Resume</a>
                 </h4>
                 <span aria-hidden="true">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                 <h4>
-                  <a href="{{root}}site-index.html" title="View the site index">Site Index</a>
+                  <a href={`${process.env.PUBLIC_URL}/site-index`} title="View the site index">Site Index</a>
                 </h4>
               </div>
             </div>
@@ -41,7 +46,7 @@ const footer = props => {
               <div class="social-icon small-2 medium-3 large-2 columns">
                 <a href="https://ca.linkedin.com/in/corey-noble" target="_blank" rel="noopener noreferrer" tabindex="-1"
                   aria-hidden="true">
-                  <img src="{{root}}assets/img/linkedin-icon.png" alt="" role="presentation" />
+                  <img src={LinkedInLogo} alt="" role="presentation" />
                 </a>
               </div>
             </div>
@@ -56,7 +61,7 @@ const footer = props => {
               <div class="social-icon small-2 medium-3 large-2 columns">
                 <a href="https://github.com/CoreyNoble" target="_blank" rel="noopener noreferrer" tabindex="-1"
                   aria-hidden="true">
-                  <img src="{{root}}assets/img/github-icon.png" alt="" role="presentation" />
+                  <img src={GitHubLogo} alt="" role="presentation" />
                 </a>
               </div>
             </div>

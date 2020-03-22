@@ -1,5 +1,11 @@
+@import '../../assets/styles/variables.scss';
+
 .Button {
-  /* ~~~ Was Global */
+
+}
+
+button {
+/* ~~~ Was Global */
   background: -moz-linear-gradient(to top, #5fa6a6, #7fc7c7);
   background: -ms-linear-gradient(to top, #5fa6a6, #7fc7c7);
   background: -webkit-gradient(linear, to left top, to left bottom, from(#5fa6a6), to(#7fc7c7));
@@ -16,9 +22,10 @@
   text-decoration: none;
   transition: all .15s ease;
 
-  @include breakpoint(medium) {
-    top: 11em;
-  }
+  // ~~~ //
+  // @include breakpoint(medium) {
+  //   top: 11em;
+  // }
 
   &:hover,
   &:active,

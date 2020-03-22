@@ -9,9 +9,10 @@
 .no-bottom-space-desktop {
   margin-bottom: 0;
 
-  @media screen and (max-width: 64em) {
-    margin-bottom: 3em;
-  }
+  // ~~~ //
+  // @media screen and (max-width: 64em) {
+  //   margin-bottom: 3em;
+  // }
 }
 
 .margin-top {
@@ -33,15 +34,17 @@
 .margin-bottom-6 {
   margin-bottom: 3.5em;
 
-  @include breakpoint(large) {
-    margin-bottom: 6em;
-  }
+  // ~~~ //
+  // @include breakpoint(large) {
+  //   margin-bottom: 6em;
+  // }
 }
 
 .margin-top-0-mobile-margin-top-2 {
   margin-top: 2em;
 
-  @include breakpoint(large) {
-    margin-top: 0;
-  }
+  // ~~~ //
+  // @include breakpoint(large) {
+  //   margin-top: 0;
+  // }
 }

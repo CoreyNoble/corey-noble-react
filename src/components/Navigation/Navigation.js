@@ -1,36 +1,39 @@
 import React from 'react';
-import classes from './Navigation.scss';
+import './Navigation.scss';
+
+import GitHubLogo from '../../assets/img/github-icon.png';
+import LinkedInLogo from '../../assets/img/linkedin-icon.png';
 
 const navigation = props => {
   return (
-    <a href="#main" className="skip-main">Skip to main content</a>
-
     <nav className="clearfix">
+      <a href="#main" className="skip-main">Skip to main content</a>
+
       <ul className="clearfix">
         <li id="nav-index">
-          <a id="nav-home-link" href="{{root}}index.html" title="Visit the home page"><strong>&lsaquo; corey-noble
+          <a id="nav-home-link" href={`${process.env.PUBLIC_URL}/`} title="Visit the home page"><strong>&lsaquo; corey-noble
               /&rsaquo;</strong></a>
         </li>
         <li>
-          <a href="{{root}}portfolio.html" title="View my portfolio">Portfolio</a>
+          <a href={`${process.env.PUBLIC_URL}/portfolio`} title="View my portfolio">Portfolio</a>
         </li>
         <li>
-          <a href="{{root}}about.html" title="Learn more about me">About</a>
+          <a href={`${process.env.PUBLIC_URL}/about`} title="Learn more about me">About</a>
         </li>
         <li>
-          <a href="{{root}}blog.html" title="Read my blog">Blog</a>
+          <a href={`${process.env.PUBLIC_URL}/blog`} title="Read my blog">Blog</a>
         </li>
         <li>
-          <a href="{{root}}contact.html" title="View my contact page">Contact</a>
+          <a href={`${process.env.PUBLIC_URL}/contact`} title="View my contact page">Contact</a>
         </li>
         <li id="nav-socials">
           <a id="nav-github-link" href="https://github.com/CoreyNoble" target="_blank" rel="noopener noreferrer"
             title="View my GitHub">
-            <img src="{{root}}assets/img/github-icon.png" alt="GitHub" />
+            <img src={GitHubLogo} alt="GitHub" />
           </a>
           <a id="nav-linkedin-link" href="https://ca.linkedin.com/in/corey-noble" target="_blank" rel="noopener noreferrer"
             title="View my LinkedIn">
-            <img src="{{root}}assets/img/linkedin-icon.png" alt="LinkedIn" />
+            <img src={LinkedInLogo} alt="LinkedIn" />
           </a>
         </li>
       </ul>

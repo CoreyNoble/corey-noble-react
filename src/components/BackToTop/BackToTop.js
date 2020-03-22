@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './BackToTop.scss';
+import './BackToTop.scss';
 
 const backToTop = props => {
   return (
