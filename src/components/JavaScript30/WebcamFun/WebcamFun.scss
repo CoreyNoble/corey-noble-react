@@ -41,7 +41,7 @@
       width: 9.25em;
       border: .25em solid $black;
 
-      @include breakpoint(medium) {
+      @media screen and (min-width: 40em) {
         top: 4em;
       }
     }
@@ -58,7 +58,7 @@
       box-shadow: 0 .75em .75em -.75em #000,
         0 -.75em .75em -.75em #000;
 
-      @include breakpoint(large) {
+      @media screen and (min-width: 64em) {
         margin-top: 0;
       }
 
@@ -104,7 +104,7 @@
         text-decoration: none;
         transition: all .15s ease;
 
-        @include breakpoint(medium) {
+        @media screen and (min-width: 40em) {
           top: 11em;
         }
 

@@ -2,14 +2,13 @@
 .header-no-parallax {
   padding-top: .75em;
 
-  // ~~~ //
-  // @media screen and (max-width: 940px) {
-  //   padding-top: 0;
-  // }
+  @media screen and (max-width: 940px) {
+    padding-top: 0;
+  }
 
-  // @media screen and (max-width: 40em) {
-  //   padding-top: .75em;
-  // }
+  @media screen and (max-width: 40em) {
+    padding-top: .75em;
+  }
 }
 
 /* ~~~ Was _fonts.scss */
@@ -52,10 +51,9 @@ h1,
   line-height: 1.2;
   margin-top: .75em;
 
-  // ~~~ //
-  // @include breakpoint(medium) {
-  //   font-size: rem-calc(48);
-  // }
+  @media screen and (min-width: 40em) {
+    font-size: rem-calc(48);
+  }
 }
 
 h2,
@@ -63,10 +61,9 @@ h2,
   font-size: rem-calc(28);
   line-height: 1.2;
   
-  // ~~~ //
-  // @include breakpoint(medium) {
-  //   font-size: rem-calc(40);
-  // }
+  @media screen and (min-width: 40em) {
+    font-size: rem-calc(40);
+  }
 }
 
 h3,
@@ -74,40 +71,36 @@ h3,
   font-size: rem-calc(24);
   line-height: 1.2;
 
-  // ~~~ //
-  // @include breakpoint(medium) {
-    // font-size: rem-calc(31);
-  // }
+  @media screen and (min-width: 40em) {
+    font-size: rem-calc(31);
+  }
 }
 
 h4,
 .h4 {
   font-size: rem-calc(20);
 
-  // ~~~ //
-  // @include breakpoint(medium) {
-  //   font-size: rem-calc(25);
-  // }
+  @media screen and (min-width: 40em) {
+    font-size: rem-calc(25);
+  }
 }
 
 h5,
 .h5 {
   font-size: rem-calc(18);
 
-  // ~~~ //
-  // @include breakpoint(medium) {
-  //   font-size: rem-calc(20);
-  // }
+  @media screen and (min-width: 40em) {
+    font-size: rem-calc(20);
+  }
 }
 
 h6,
 .h6 {
   font-size: rem-calc(16);
 
-  // ~~~ //
-  // @include breakpoint(medium) {
-  //   font-size: rem-calc(16);
-  // }
+  @media screen and (min-width: 40em) {
+    font-size: rem-calc(16);
+  }
 }
 
 p,

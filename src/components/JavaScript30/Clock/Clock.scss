@@ -16,13 +16,13 @@
     background-repeat: no-repeat;
     background-position-x: center;
 
-    @include breakpoint(medium) {
+    @media screen and (min-width: 40em) {
       width: 22em;
       height: 22em;
       border: .75em solid $black;
     }
 
-    @include breakpoint(large) {
+    @media screen and (min-width: 64em) {
       width: 30em;
       height: 30em;
       border: 1em solid $black;
@@ -53,11 +53,11 @@
       1
     ); // custom timing to create realistic tick effect
 
-    @include breakpoint(medium) {
+    @media screen and (min-width: 40em) {
       height: .275em;
     }
 
-    @include breakpoint(large) {
+    @media screen and (min-width: 64em) {
       height: .33em;
     }
 
@@ -67,11 +67,11 @@
       top: 49.33%;
       left: 14.66%;
 
-      @include breakpoint(medium) {
+      @media screen and (min-width: 40em) {
         height: .5em;
       }
 
-      @include breakpoint(large) {
+      @media screen and (min-width: 64em) {
         height: .6em;
       }
     }
@@ -82,11 +82,11 @@
       top: 49.5%;
       left: 7.5%;
 
-      @include breakpoint(medium) {
+      @media screen and (min-width: 40em) {
         height: .4em;
       }
 
-      @include breakpoint(large) {
+      @media screen and (min-width: 64em) {
         height: .6em;
       }
     }

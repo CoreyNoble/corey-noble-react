@@ -11,7 +11,7 @@
   .three {
     padding: 1.5em;
 
-    @include breakpoint(medium) {
+    @media screen and (min-width: 40em) {
       padding: 3em;
     }
   }

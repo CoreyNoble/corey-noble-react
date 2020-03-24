@@ -51,7 +51,7 @@
   margin-top: 2.5rem;
   padding-left: 0;
 
-  @include breakpoint(large) {
+  @media screen and (min-width: 64em) {
     margin-top: 0;
     padding-left: 2.5rem;
   }

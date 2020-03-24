@@ -33,7 +33,7 @@
     text-decoration: none;
     transition: all .15s ease;
 
-    @include breakpoint(medium) {
+    @media screen and (min-width: 40em) {
       top: 11em;
     }
 
@@ -79,16 +79,16 @@
     overflow: hidden;
     position: relative;
 
-    @include breakpoint(small) {
+    @media screen and (max-width: 39.9375em) {
       height: 10em;
     }
 
-    @include breakpoint(medium) {
+    @media screen and (min-width: 40em) {
       flex: 1 0 160px;
       height: 12em;
     }
 
-    @include breakpoint(large) {
+    @media screen and (min-width: 64em) {
       flex: 1 0 200px;
     }
   }
@@ -106,7 +106,7 @@
     z-index: 2;
     bottom: -24px;
 
-    @include breakpoint(large) {
+    @media screen and (min-width: 64em) {
       bottom: -26px;
     }
   }
@@ -121,10 +121,10 @@
     height: 100%;
     transition: all .4s;
 
-    @include breakpoint(medium) {
+    @media screen and (min-width: 40em) {
       background-size: 50%;
     }
-    @include breakpoint(large) {
+    @media screen and (min-width: 64em) {
       background-size: 60%;
     }
   }

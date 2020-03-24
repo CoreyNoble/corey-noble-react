@@ -43,9 +43,8 @@
     margin-top: -2em;
     position: relative;
 
-    // ~~~ //
-    // @include breakpoint(large) {
-    //   bottom: 2em;
-    // }
+    @media screen and (min-width: 64em) {
+      bottom: 2em;
+    }
   }
 }

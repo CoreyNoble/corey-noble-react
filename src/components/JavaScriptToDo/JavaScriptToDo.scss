@@ -48,11 +48,11 @@
       p {
         width: 87%;
 
-        @include breakpoint(medium) {
+        @media screen and (min-width: 40em) {
           width: 94%;
         }
 
-        @include breakpoint(large) {
+        @media screen and (min-width: 64em) {
           width: 97%;
         }
       }
@@ -156,11 +156,11 @@
           color: $white;
           width: 72%;
 
-          @include breakpoint(medium) {
+          @media screen and (min-width: 40em) {
             width: 86%;
           }
 
-          @include breakpoint(large) {
+          @media screen and (min-width: 64em) {
             width: 92.5%;
           }
         }

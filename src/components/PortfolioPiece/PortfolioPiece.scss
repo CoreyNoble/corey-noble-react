@@ -3,7 +3,7 @@
   .showcase-head {
     margin-bottom: 2em;
 
-    @include breakpoint(large) {
+    @media screen and (min-width: 64em) {
       margin-bottom: 3em;
     }
   }
@@ -80,7 +80,7 @@
       &.margin-top-0-mobile-margin-top-2 {
         margin-top: 2em;
 
-        @include breakpoint(large) {
+        @media screen and (min-width: 64em) {
           margin-top: 0;
         }
       }

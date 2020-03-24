@@ -22,10 +22,9 @@ button {
   text-decoration: none;
   transition: all .15s ease;
 
-  // ~~~ //
-  // @include breakpoint(medium) {
-  //   top: 11em;
-  // }
+  @media screen and (min-width: 40em) {
+    top: 11em;
+  }
 
   &:hover,
   &:active,

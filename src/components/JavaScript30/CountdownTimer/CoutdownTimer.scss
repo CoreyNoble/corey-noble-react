@@ -12,11 +12,11 @@
     color: white;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, .05);
 
-    @include breakpoint(medium) {
+    @media screen and (min-width: 40em) {
       font-size: 12em;
     }
 
-    @include breakpoint(large) {
+    @media screen and (min-width: 64em) {
       font-size: 14em;
     }
   }
@@ -50,7 +50,7 @@
     padding: .25em;
     font-family: 'Inconsolata', monospace;
 
-    @include breakpoint(medium) {
+    @media screen and (min-width: 40em) {
       font-size: 2em;
     }
   }
@@ -68,11 +68,11 @@
     font-size: 1.75em;
     color: white;
 
-    @include breakpoint(medium) {
+    @media screen and (min-width: 40em) {
       font-size: 2.5em;
     }
 
-    @include breakpoint(large) {
+    @media screen and (min-width: 64em) {
       font-size: 3em;
     }
   }
@@ -90,7 +90,7 @@
       input {
         margin: 1em auto;
 
-        @include breakpoint(large) {
+        @media screen and (min-width: 64em) {
           margin: 1.6em auto;
         }
       }
