@@ -13,9 +13,8 @@ class IndexBanner extends Component {
     particle,
     material,
     particleCount,
-    points,
-    texture;
-
+    points;
+    
     var xSpeed, ySpeed;
     xSpeed = 0.0005;
     ySpeed = 0.0005;

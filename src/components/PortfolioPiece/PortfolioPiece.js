@@ -17,7 +17,7 @@ const portfolioPiece = props => {
         <a href="https://www.pcfinancial.ca/en/campaign/new-digital-experience" target="_blank" rel="noopener noreferrer"
           title="PC Financial, New Digital Experience. View the project.">
           <div className="showcase-example margin-top-0-mobile-margin-top-2">
-            <img src="{{root}}assets/img/showcase/PC-Financial-New-Digital-Experience.jpg" alt="" role="presentation" />
+            <img src="%PUBLIC_URL%/assets/img/showcase/PC-Financial-New-Digital-Experience.jpg" alt="" role="presentation" />
           </div>
         </a>
       </div>
