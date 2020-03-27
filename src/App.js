@@ -170,13 +170,25 @@ function App() {
       <React.Fragment>
         <ul>
           <li>
+            <Link 
+              to="https://burger-builder.corey-noble.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >JavaScript30</Link>
+          </li>
+          <li>
             <Link to={`${match.url}/javascript30`}>JavaScript30</Link>
           </li>
           <li>
             <Link to={`${match.url}/javascript-tetris`}>JavaScript Tetris</Link>
           </li>
+          <li>
+            <Link to={`${match.url}/cms-skillset`}>CMS Skillset</Link>
+          </li>
+          <li>
+            <Link to={`${match.url}/responsive-email-template`}>Responsive Email Template</Link>
+          </li>
         </ul>
-
 
         <Switch>
           <Route path={`${match.path}/javascript30`}>
@@ -184,6 +196,12 @@ function App() {
           </Route>
           <Route path={`${match.path}/javascript-tetris`}>
             <h3>JavaScript Tetris</h3>
+          </Route>
+          <Route path={`${match.path}/cms-skillset`}>
+            <h3>CMS Skillset</h3>
+          </Route>
+          <Route path={`${match.path}/responsive-email-template`}>
+            <h3>Responsive Email Template</h3>
           </Route>
           <Route path={match.path}>
             <h3>Portfolio</h3>
@@ -571,8 +589,48 @@ function App() {
   }
 
   function Blog() {
+    let match = useRouteMatch();
+
     return (
       <React.Fragment>
+        <ul>
+          <li>
+            <Link to={`${match.url}/search-engine-optimisation`}>Search Engine Optimisation (SEO)</Link>
+          </li>
+          <li>
+            <Link to={`${match.url}/web-content-accessibility-guidelines`}>Web Content Accessibility Guidelines (WCAG)</Link>
+          </li>
+          <li>
+            <Link to={`${match.url}/aspirations`}>My Aspirations</Link>
+          </li>
+          <li>
+            <Link to={`${match.url}/web-production-specialist`}>My Previous Role as a Web Production Specialist at Thrillworks Inc.</Link>
+          </li>
+          <li>
+            <Link to={`${match.url}/blog-introduction`}>Blog Introduction</Link>
+          </li>
+        </ul>
+
+        <Switch>
+          <Route path={`${match.path}/search-engine-optimisation`}>
+            <h3>Search Engine Optimisation (SEO)</h3>
+          </Route>
+          <Route path={`${match.path}/web-content-accessibility-guidelines`}>
+            <h3>Web Content Accessibility Guidelines (WCAG)</h3>
+          </Route>
+          <Route path={`${match.path}/aspirations`}>
+            <h3>My Aspirations</h3>
+          </Route>
+          <Route path={`${match.path}/web-production-specialist`}>
+            <h3>My Previous Role as a Web Production Specialist at Thrillworks Inc.</h3>
+          </Route>
+          <Route path={`${match.path}/blog-introduction`}>
+            <h3>Blog Introduction</h3>
+          </Route>
+          <Route path={match.path}>
+            <h3>Portfolio</h3>
+          </Route>
+        </Switch>
       </React.Fragment>
     );
   }
