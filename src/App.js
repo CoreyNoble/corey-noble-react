@@ -663,12 +663,6 @@ function App() {
         <Navigation />
         <BackToTop />
 
-        <Section background="blue">
-          <h1>TEST</h1>
-          <h2>TESTING</h2>
-          <h3>TEST TEST TEST</h3>
-        </Section>
-
         <Switch>
           <Route path="/404">
             <NotFound />
@@ -695,7 +689,7 @@ function App() {
           </Route>
 
           <Route path="/">
-            <Index />
+            {/* <Index /> */}
           </Route>
         </Switch>
 

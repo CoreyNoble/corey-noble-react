@@ -1,11 +1,6 @@
 @import '../../assets/styles/variables.scss';
 
-.Footer {
-  
-}
-
-/* ~~~ Was Global */
-#socials {
+.Socials {
   display: inline;
   float: left;
   margin-top: .5rem;
@@ -56,7 +51,7 @@
 }
 
 /* Was _footer.scss */
-footer {
+.Footer {
   background: $background;
   border-top: 1px solid $white;
   box-shadow: 0 -10px 17px -8px rgba(0, 0, 0, .75);
@@ -66,20 +61,6 @@ footer {
 
   @media screen and (max-width: 40em) {
     border-top: 1px solid $white;
-  }
-
-  .footnote {
-    display: table;
-
-    .footnote-profile {
-      display: table-cell;
-      text-align: center;
-      vertical-align: middle;
-    }
-  }
-
-  .section {
-    padding: 1.5em 1em;
   }
 
   h4,
@@ -101,26 +82,40 @@ footer {
     padding: 0;
   }
 
-  .profession {
+  .Footnote {
+    display: table;
+
+    .FootnoteProfile {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+
+  .section {
+    padding: 1.5em 1em;
+  }
+
+  .Profession {
     border-right: 3px solid $grey;
   }
 
-  .footnote-position {
+  .FootnotePosition {
     margin-top: .5em;
 
     @media screen and (max-width: 40em) {
       margin-top: 0;
     }
 
-    .name,
-    .title,
-    .footnote-contact {
+    .Name,
+    .Title,
+    .FootnoteContact {
       display: block;
       float: left;
       width: 100%;
     }
 
-    .name {
+    .Name {
       margin: 0;
       padding: 0;
 
@@ -128,9 +123,17 @@ footer {
         margin-top: .25em;
       }
     }
+
+    .Title {
+      color: $grey;
+      display: block;
+      float: left;
+      font-size: 1em;
+      padding: 0;
+    }
   }
 
-  .footnote-ctas-desktop {
+  .FootnoteCTAsDesktop {
     display: block;
 
     @media screen and (max-width: 40em) {
@@ -138,7 +141,7 @@ footer {
     }
   }
 
-  .footnote-ctas-tablet {
+  .FootnoteCTAsTablet {
     display: none;
 
     @media screen and (max-width: 40em) {
@@ -146,7 +149,7 @@ footer {
     }
   }
 
-  .footnote-contact {
+  .FootnoteContact {
     margin-top: 1em;
 
     @media screen and (max-width: 40em) {
@@ -154,9 +157,9 @@ footer {
     }
   }
 
-  .footnote-contact,
-  .social-media,
-  .footnote-ctas {
+  .FootnoteContact,
+  .SocialMedia,
+  .FootnoteCTAs {
     h4,
     .h4,
     p {
@@ -173,7 +176,7 @@ footer {
     }
   }
 
-  .social-media {
+  .SocialMedia {
     display: block;
     margin-top: 1.3em;
 
@@ -185,14 +188,14 @@ footer {
       max-width: 35px;
     }
 
-    .linkedin {
+    .LinkedIn {
       display: block;
       float: right;
       margin-top: -10px;
       width: 100%;
     }
 
-    .github {
+    .Github {
       display: block;
       float: right;
       margin-top: 1.5em;
@@ -204,7 +207,7 @@ footer {
       }
     }
 
-    .social-icon {
+    .SocialIcon {
       a {
         img {
           -moz-filter: grayscale(100%);
@@ -227,7 +230,7 @@ footer {
       }
     }
 
-    .social-text {
+    .SocialText {
       h4,
       .h4 {
         float: right;
@@ -249,7 +252,7 @@ footer {
     }
   }
 
-  .footnote-ctas {
+  .FootnoteCTAs {
     float: right;
     margin-right: 7vw;
 

@@ -8,7 +8,7 @@ import LinkedInLogo from '../../assets/img/linkedin-icon.png';
 
 const footer = props => {
   return (
-    <footer id="footer">
+    <footer className={classes.Footer}>
       <div className="row">
         {/* Profession Showcase */}
         <div className="small-12 medium-8 large-7 columns">
@@ -16,10 +16,10 @@ const footer = props => {
             <img src={CoreyNobleFootnoteProfileImage} alt="" role="presentation" />
           </div>
           <div className="small-8 medium-8 large-9 columns end">
-            <div className="footnote-position">
-              <h2 className="h3 blue-text name">Corey Noble</h2>
-              <h3 className="h4 title">Web&nbsp;Developer</h3>
-              <div className="footnote-contact">
+            <div className={classes.FootnotePosition}>
+              <h2 className={`h3 blue-text ${classes.Name}`}>Corey Noble</h2>
+              <h3 className={`${classes.Title}`}>Web&nbsp;Developer</h3>
+              <div className={classes.FootnoteContact}>
                 <h4>
                   <a href={CoreyNobleResumePDF} title="Read my resume" target="_blank"
                     rel="noopener noreferrer">My Resume</a>
@@ -35,15 +35,14 @@ const footer = props => {
 
         {/* Social Media */}
         <div className="show-for-large small-12 medium-5 large-5 columns end">
-          <div className="social-media">
-            <div className="linkedin">
-              <div className="social-text small-10 medium-9 large-10 columns end">
-                <h4>View my
-                  <a href="https://ca.linkedin.com/in/corey-noble" target="_blank" rel="noopener noreferrer"
+          <div className={classes.SocialMedia}>
+            <div className={classes.LinkedIn}>
+              <div className={`${classes.SocialText} small-10 medium-9 large-10 columns end`}>
+                <h4>View my <a href="https://ca.linkedin.com/in/corey-noble" target="_blank" rel="noopener noreferrer"
                     title="View my LinkedIn">LinkedIn</a>&nbsp;profile</h4>
                 <br />
               </div>
-              <div className="social-icon small-2 medium-3 large-2 columns">
+              <div className={`${classes.SocialIcon} small-2 medium-3 large-2 columns`}>
                 <a href="https://ca.linkedin.com/in/corey-noble" target="_blank" rel="noopener noreferrer" tabIndex="-1"
                   aria-hidden="true">
                   <img src={LinkedInLogo} alt="" role="presentation" />
@@ -51,14 +50,13 @@ const footer = props => {
               </div>
             </div>
 
-            <div className="github">
-              <div className="social-text show-for-medium-up small-10 medium-9 large-10 columns end">
-                <h4>View my
-                  <a href="https://github.com/CoreyNoble" target="_blank" rel="noopener noreferrer"
+            <div className={classes.Github}>
+              <div className={`${classes.SocialText} show-for-medium-up small-10 medium-9 large-10 columns end`}>
+                <h4>View my <a href="https://github.com/CoreyNoble" target="_blank" rel="noopener noreferrer"
                     title="View my GitHub">GitHub</a>&nbsp;projects</h4>
                 <br />
               </div>
-              <div className="social-icon small-2 medium-3 large-2 columns">
+              <div className={`${classes.SocialIcon} small-2 medium-3 large-2 columns`}>
                 <a href="https://github.com/CoreyNoble" target="_blank" rel="noopener noreferrer" tabIndex="-1"
                   aria-hidden="true">
                   <img src={GitHubLogo} alt="" role="presentation" />
