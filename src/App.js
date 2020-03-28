@@ -56,7 +56,7 @@ function App() {
         <IndexBanner />
         <IndexIntro />
 
-        <Section background="blue">
+        {/* <Section background="blue">
           <h2>Skill Overview</h2>
           <h3 className="h4 index-header">A brief overview of what I bring to the&nbsp;table.</h3>
 
@@ -158,7 +158,7 @@ function App() {
           </div>
         </Section>
 
-        <Button />
+        <Button /> */}
       </React.Fragment>
     );
   }
@@ -689,7 +689,7 @@ function App() {
           </Route>
 
           <Route path="/">
-            {/* <Index /> */}
+            <Index />
           </Route>
         </Switch>
 

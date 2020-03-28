@@ -109,14 +109,14 @@ class IndexBanner extends Component {
 
   render() {
     return (
-      <div id="mainCanvas">
-        <div id="index-title">
+      <div id="mainCanvas" className={classes.MainCanvas}>
+        <div className={classes.IndexTitle}>
           <div class="small-12 column">
             <h1 data-aos="fade-down" data-aos-delay="600">Corey&nbsp;Noble</h1>
             <h2 data-aos="fade-up" data-aos-delay="1200"><em>Web&nbsp;Application&nbsp;Developer</em></h2>
           </div>
         </div>
-        <div id="canvas"></div>
+        <div id="canvas" className={classes.Canvas}></div>
       </div>
     );
   }
