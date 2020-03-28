@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './CodePen.scss';
+import classes from './CodePen.module.scss';
 
 const codePen = props => {
   return (

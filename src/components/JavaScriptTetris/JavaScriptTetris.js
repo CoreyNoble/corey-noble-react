@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './JavaScriptTetris.scss';
+import classes from './JavaScriptTetris.module.scss';
 
 const javaScriptTetris = props => {
   return (

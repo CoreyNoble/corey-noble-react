@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Clock.scss';
+import classes from './Clock.module.scss';
 
 const clock = props => {
   return (

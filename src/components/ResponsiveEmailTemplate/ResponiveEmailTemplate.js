@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './ResponsiveEmailTemplate.scss';
+import classes from './ResponsiveEmailTemplate.module.scss';
 
 const responsiveEmailTemplate = props => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.scss';
+import classes from './Button.module.scss';
 
 import CoreyNobleResume from '../../assets/pdf/CoreyNoble-Resume.pdf';
 

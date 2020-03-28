@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './SpeechSynthesis.scss';
+import classes from './SpeechSynthesis.module.scss';
 
 const speechSynthesis = props => {
   return (

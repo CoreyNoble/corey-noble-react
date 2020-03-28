@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import './Navigation.scss';
+import classes from './Navigation.module.scss';
 
 import GitHubLogo from '../../assets/img/github-icon.png';
 import LinkedInLogo from '../../assets/img/linkedin-icon.png';

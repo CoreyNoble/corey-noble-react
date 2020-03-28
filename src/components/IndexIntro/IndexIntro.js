@@ -1,5 +1,5 @@
 import React from 'react';
-import './IndexIntro.scss';
+import classes from './IndexIntro.module.scss';
 
 import CoreyNobleIndexPortrait from '../../assets/img/Corey-Noble-Index-Portrait.png'
 import GitHubLogo from '../../assets/img/github-icon.png';

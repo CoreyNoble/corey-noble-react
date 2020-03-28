@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './KeySequenceDetection.scss';
+import classes from './KeySequenceDetection.module.scss';
 
 const keySequenceDetection = props => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './EventCapturePropogationBubblingAndOnce.scss';
+import classes from './EventCapturePropogationBubblingAndOnce.module.scss';
 
 const eventCapturePropogationBubblingAndOnce = props => {
   return (

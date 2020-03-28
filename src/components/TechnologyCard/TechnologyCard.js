@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './TechnologyCard.scss';
+import classes from './TechnologyCard.module.scss';
 
 const technologyCard = props => {
   return (

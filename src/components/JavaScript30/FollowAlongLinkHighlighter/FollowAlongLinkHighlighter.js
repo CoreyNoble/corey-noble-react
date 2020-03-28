@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './FollowAlongLinkHighlighter.scss';
+import classes from './FollowAlongLinkHighlighter.module.scss';
 
 const followAlongLinkHighlighter = props => {
   return (

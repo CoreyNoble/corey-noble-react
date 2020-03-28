@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './SpeechDetection.scss';
+import classes from './SpeechDetection.module.scss';
 
 const speechDetection = props => {
   return (

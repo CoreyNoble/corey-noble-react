@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './CoutdownTimer.scss';
+import classes from './CoutdownTimer.module.scss';
 
 const coutdownTimer = props => {
   return (

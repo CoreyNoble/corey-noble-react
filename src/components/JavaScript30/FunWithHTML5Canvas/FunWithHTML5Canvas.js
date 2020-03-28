@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './FunWithHTML5Canvas.scss';
+import classes from './FunWithHTML5Canvas.module.scss';
 
 const funWithHTML5Canvas = props => {
   return (

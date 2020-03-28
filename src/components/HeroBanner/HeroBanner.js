@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './HeroBanner.scss';
+import classes from './HeroBanner.module.scss';
 
 const heroBanner = props => {
   return (

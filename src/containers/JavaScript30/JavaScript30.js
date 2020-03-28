@@ -1,5 +1,5 @@
 import React from 'react';
-import './JavaScript30.scss';
+import classes from './JavaScript30.module.scss';
 
 import DrumKit from '../../assets/img/showcase/javascript30/1-drum-kit.jpg';
 import Clock from '../../assets/img/showcase/javascript30/2-clock.jpg';

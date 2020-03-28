@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import './IndexBanner.scss';
+import classes from './IndexBanner.module.scss';
 
 import * as THREE from "three";
 

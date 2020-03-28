@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './WebcamFun.scss';
+import classes from './WebcamFun.module.scss';
 
 const webcamFun = props => {
   return (

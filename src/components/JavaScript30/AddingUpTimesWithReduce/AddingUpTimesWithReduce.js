@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './AddingUpTimesWithReduce.scss';
+import classes from './AddingUpTimesWithReduce.module.scss';
 
 const addingUpTimesWithReduce = props => {
   return (

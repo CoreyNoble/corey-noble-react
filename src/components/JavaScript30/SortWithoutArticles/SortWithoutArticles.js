@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './SortWithoutArticles.scss';
+import classes from './SortWithoutArticles.module.scss';
 
 const sortWithoutArticles = props => {
   return (

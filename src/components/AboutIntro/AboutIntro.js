@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutIntro.scss';
+import classes from './AboutIntro.module.scss';
 
 import CoreyNobleAboutPortrait from '../../assets/img/Corey-Noble-About-Portrait.png';
 

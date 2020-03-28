@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './TypeAhead.scss';
+import classes from './TypeAhead.module.scss';
 
 const typeAhead = props => {
   return (

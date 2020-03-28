@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './VideoSpeedController.scss';
+import classes from './VideoSpeedController.module.scss';
 
 const videoSpeedController = props => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './ArrayCardioDay2.scss';
+import classes from './ArrayCardioDay2.module.scss';
 
 const arrayCardioDay2 = props => {
   return (

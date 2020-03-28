@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './JavaScript30.scss';
+import classes from './JavaScript30.module.scss';
 
 const javaScript30 = props => {
   return (

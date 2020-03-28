@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './BlogEntry.scss';
+import classes from './BlogEntry.module.scss';
 
 const blogEntry = props => {
   return (

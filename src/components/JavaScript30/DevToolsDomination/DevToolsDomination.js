@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './DevToolsDomination.scss';
+import classes from './DevToolsDomination.module.scss';
 
 const devToolsDomination = props => {
   return (

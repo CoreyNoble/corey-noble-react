@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './ProjectSynopsis.scss';
+import classes from './ProjectSynopsis.module.scss';
 
 const projectSynopsis = props => {
   return (

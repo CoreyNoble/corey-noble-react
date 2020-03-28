@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './ExperienceArticle.scss';
+import classes from './ExperienceArticle.module.scss';
 
 const experienceArticle = props => {
   return (

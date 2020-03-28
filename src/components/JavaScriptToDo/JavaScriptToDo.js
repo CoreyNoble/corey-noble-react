@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './JavaScriptToDo.scss';
+import classes from './JavaScriptToDo.module.scss';
 
 const javaScriptToDo = props => {
   return (

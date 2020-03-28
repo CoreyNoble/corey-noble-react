@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './MouseMoveShadow.scss';
+import classes from './MouseMoveShadow.module.scss';
 
 const mouseMoveShadow = props => {
   return (

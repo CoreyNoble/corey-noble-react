@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './ShowcaseWindow.scss';
+import classes from './ShowcaseWindow.module.scss';
 
 const showcaseWindow = props => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './CustomVideoPlayer.scss';
+import classes from './CustomVideoPlayer.module.scss';
 
 const customVideoPlayer = props => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './JavaScriptReferencesVsCopying.scss';
+import classes from './JavaScriptReferencesVsCopying.module.scss';
 
 const javaScriptReferencesVsCopying = props => {
   return (

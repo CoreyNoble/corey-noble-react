@@ -1,5 +1,5 @@
 import React from 'react';
-import './ScrollableSection.scss';
+import classes from './ScrollableSection.module.scss';
 
 import ReactLogo from '../../assets/img/icons/react.png';
 import JavaScriptLogo from '../../assets/img/icons/javascript.png';

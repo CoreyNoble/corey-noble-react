@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './StickyNav.scss';
+import classes from './StickyNav.module.scss';
 
 const stickyNav = props => {
   return (

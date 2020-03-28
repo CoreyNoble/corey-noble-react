@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.scss';
+import classes from './Footer.module.scss';
 
 import CoreyNobleFootnoteProfileImage from '../../assets/img/Corey-Noble-Footnote-Profile.png';
 import CoreyNobleResumePDF from '../../assets/pdf/CoreyNoble-Resume.pdf';

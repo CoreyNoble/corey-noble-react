@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './FlexPanelGallery.scss';
+import classes from './FlexPanelGallery.module.scss';
 
 const flexPanelGallery = props => {
   return (

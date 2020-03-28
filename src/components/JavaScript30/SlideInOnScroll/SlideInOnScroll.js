@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './SlideInOnScroll.scss';
+import classes from './SlideInOnScroll.module.scss';
 
 const slideInOnScroll = props => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './HoldShiftAndCheckCheckboxes.scss';
+import classes from './HoldShiftAndCheckCheckboxes.module.scss';
 
 const holdShiftAndCheckCheckboxes = props => {
   return (

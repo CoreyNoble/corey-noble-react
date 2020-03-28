@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './StripeFollowAlongNav.scss';
+import classes from './StripeFollowAlongNav.module.scss';
 
 const stripeFollowAlongNav = props => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './UpdateCSSVariables.scss';
+import classes from './UpdateCSSVariables.module.scss';
 
 const updateCSSVariables = props => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './WhackAMole.scss';
+import classes from './WhackAMole.module.scss';
 
 const whackAMole = props => {
   return (
