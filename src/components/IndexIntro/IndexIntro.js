@@ -14,15 +14,15 @@ const indexIntro = props => {
         <div className="small-12 medium-12 large-7 columns">
           <h3>Hi! My name is <strong>Corey&nbsp;Noble</strong>,</h3>
           <br />
-          <p className="h5">I am a <strong>Web&nbsp;Application&nbsp;Developer</strong> currently employed by <a
+          <p className={`${classes.h5} h5`}>I am a <strong>Web&nbsp;Application&nbsp;Developer</strong> currently employed by <a
               className="evertz-text" href="https://evertz.com/" title="Visit the Evertz Microsystems Website" target="_blank"
               rel="noopener noreferrer"><strong>Evertz&nbsp;Microsystems&nbsp;Ltd.</strong></a>, A global leader in
             broadcast solutions with headquarters based in the beautiful city of
             Burlington,&nbsp;ON&nbsp;&#8209;&nbsp;Canada.</p>
-          <p className="h5">Welcome to my website! A portfolio that showcases some of my work, as well as the skills and
+          <p className={`${classes.h5} h5`}>Welcome to my website! A portfolio that showcases some of my work, as well as the skills and
             experience that I bring to the&nbsp;table. If you like what you see and would like to reach out, please <a
               href="%PUBLIC_URL%/contact" title="Contact Me">contact&nbsp;me</a>.</p>
-          <span id="socials">
+          <span className={classes.Socials}>
             <a className={classes.GithubLink} href="https://github.com/CoreyNoble" target="_blank" rel="noopener noreferrer"
               title="View my GitHub">
               <img src={GitHubLogo} alt="GitHub" />

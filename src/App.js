@@ -56,7 +56,7 @@ function App() {
         <IndexBanner />
         <IndexIntro />
 
-        {/* <Section background="blue">
+        <Section background="blue">
           <h2>Skill Overview</h2>
           <h3 className="h4 index-header">A brief overview of what I bring to the&nbsp;table.</h3>
 
@@ -137,7 +137,7 @@ function App() {
           </div>
         </Section>
 
-        <Section background="white">
+        {/* <Section background="white">
           <div class="row">
             <div class="small-12 column" data-aos="fade-right" data-aos-delay="100">
               <h2>My Work</h2>
@@ -156,9 +156,9 @@ function App() {
               </div>
             </div>
           </div>
-        </Section>
+        </Section> */}
 
-        <Button /> */}
+        {/* <Button /> */}
       </React.Fragment>
     );
   }
@@ -661,7 +661,7 @@ function App() {
     <Router>
       <div className="App">
         <Navigation />
-        <BackToTop />
+        {/* <BackToTop /> */}
 
         <Switch>
           <Route path="/404">
