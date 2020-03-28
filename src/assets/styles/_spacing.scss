@@ -45,3 +45,15 @@
     margin-top: 0;
   }
 }
+
+.header-no-parallax {
+  padding-top: .75em;
+
+  @media screen and (max-width: 940px) {
+    padding-top: 0;
+  }
+
+  @media screen and (max-width: 40em) {
+    padding-top: .75em;
+  }
+}

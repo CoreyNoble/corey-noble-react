@@ -1,11 +1,7 @@
 @import '../../assets/styles/variables.scss';
 
-.Navigation {
-  
-}
-
 /* Skip Navigation */
-a.skip-main {
+.SkipMain {
   left: -999px;
   position: absolute;
   top: auto;
@@ -14,8 +10,8 @@ a.skip-main {
   overflow: hidden;
   z-index: -999;
 }
-a.skip-main:focus,
-a.skip-main:active {
+.SkipMain:focus,
+.SkipMain:active {
   color: $white;
   background-color: $black;
   position: absolute;
@@ -35,13 +31,13 @@ a.skip-main:active {
 }
 
 /* Navigation */
-nav {
+.Nav {
   top: 0;
   z-index: 100;
   position: fixed;
   width: 100%;
   background: $background;
-  font-size: rem-calc(18);
+  font-size: 1.125rem;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .66);
@@ -59,6 +55,7 @@ nav {
 
   ul {
     margin-left: 0;
+    margin-bottom: 0;
     list-style: none;
     padding: 0;
 
@@ -81,11 +78,11 @@ nav {
         float: left;
         margin-left: 1em;
         font-weight: bold;
-        font-size: rem-calc(22);
+        font-size: 1.375rem;
 
         @media screen and (max-width: 940px) {
           margin-left: 0;
-          font-size: rem-calc(22);
+          font-size: 1.375rem;
           font-weight: bold;
         }
       }
@@ -124,7 +121,7 @@ nav {
       }
     }
 
-    #nav-index {
+    .NavIndex {
       @media screen and (max-width: 940px) {
         background: $background;
       }
@@ -146,7 +143,7 @@ nav {
           }
         }
 
-        &#nav-home-link {
+        &.NavHomeLink {
           &:focus {
             background-color: darken($background, 7%);
             color: $white;
@@ -155,7 +152,7 @@ nav {
       }
     }
 
-    #nav-socials {
+    .NavSocials {
       display: inline;
       float: right;
       margin-top: -3px;
@@ -187,7 +184,7 @@ nav {
           min-width: unset;
         }
 
-        &#nav-github-link {
+        &.NavGithubLink {
           margin-right: .75em;
 
           @media screen and (max-width: 940px) {
@@ -246,7 +243,7 @@ nav {
     }
   }
 
-  a#pull {
+  .Pull {
     display: none;
     text-decoration: none;
 

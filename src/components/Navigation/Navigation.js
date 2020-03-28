@@ -20,17 +20,17 @@ const navigation = props => {
   }
 
   return (
-    <nav className="clearfix">
-      <a href="#main" className="skip-main">Skip to main content</a>
+    <nav className={classes.Nav}>
+      <a href="#main" className={classes.SkipMain}>Skip to main content</a>
 
-      <ul className="clearfix">
-        <li id="nav-index">
+      <ul>
+        <li className={classes.NavIndex}>
           <Link 
-            id="nav-home-link"
+            className={classes.NavHomeLink}
             to={`${process.env.PUBLIC_URL}/`}
             title="Visit the home page"
           >
-            <strong>&lsaquo; corey-noble/&rsaquo;</strong>
+            <strong>&lsaquo; corey-noble /&rsaquo;</strong>
           </Link>
         </li>
         <li>
@@ -65,9 +65,9 @@ const navigation = props => {
             Contact
           </Link>
         </li>
-        <li id="nav-socials">
+        <li className={classes.NavSocials}>
           <Link 
-            id="nav-github-link"
+            className={classes.NavGithubLink}
             to="https://github.com/CoreyNoble"
             target="_blank"
             rel="noopener noreferrer"
@@ -76,7 +76,7 @@ const navigation = props => {
             <img src={GitHubLogo} alt="GitHub" />
           </Link>
           <Link 
-            id="nav-linkedin-link"
+            className={classes.NavLinkedInLink}
             to="https://ca.linkedin.com/in/corey-noble"
             target="_blank"
             rel="noopener noreferrer"
@@ -86,7 +86,7 @@ const navigation = props => {
           </Link>
         </li>
       </ul>
-      <a href="#" id="pull" onClick={() => {viewSomething()}} title="Toggle the navigation menu" aria-label="Navigation Menu">
+      <a href="#" class={classes.Pull} onClick={() => {viewSomething()}} title="Toggle the navigation menu" aria-label="Navigation Menu">
         <strong><span>&lsaquo;</span> corey-noble /<span>&rsaquo;</span></strong>
       </a>
     </nav>
