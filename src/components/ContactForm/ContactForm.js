@@ -1,20 +1,22 @@
 import React from 'react';
 import classes from './ContactForm.module.scss';
 
+import Section from '../../containers/Section/Section';
+
 const contactForm = props => {
   return (
-    <div id="no-captcha" className="section black">
-      <div className="row">
-        <div id="contact-intro" className="small-12 column">
+    <Section background="black">
+      <div className={`${classes.NoCaptcha} row`}>
+        <div className={`${classes.ContactIntro} small-12 column`}>
           <h2>I look forward to hearing from&nbsp;you!</h2>
-          <p className="h5">Please fill out the form below so we can begin a&nbsp;conversation.</p>
-          <p id="captcha-none" className="captcha-error h5 hide" aria-hidden="true"><em>Please validate your submission with
+          <p className={`${classes.h5} h5`}>Please fill out the form below so we can begin a&nbsp;conversation.</p>
+          <p className={`${classes.CaptchaNone} ${classes.CaptchaError} h5 hide`} aria-hidden="true"><em>Please validate your submission with
               Google ReCaptcha.</em></p>
-          <p id="captcha-failed" className="captcha-error h5 hide" aria-hidden="true"><em>You have failed Google ReCaptcha
+          <p className={`${classes.CaptchaFailed} ${classes.CaptchaError} h5 hide`} aria-hidden="true"><em>You have failed Google ReCaptcha
               validation. Please try&nbsp;again.</em></p>
         </div>
 
-        <div className="contact-form small-12 column" data-aos="fade-up" data-aos-delay="100">
+        <div className={`${classes.ContactForm} small-12 column`} data-aos="fade-up" data-aos-delay="100">
           <form action="{{root}}mailsend.php" method="post">
             <div className="row">
               <label for="firstName" className="h5">First Name</label>
@@ -30,21 +32,20 @@ const contactForm = props => {
               <input name="company" type="text" maxlength="80" required />
 
               <label for="inquiry" className="h5">Inquiry</label>
-              <textarea className="last" name="inquiry" rows="5" cols="35" maxlength="3000" required></textarea>
+              <textarea className={classes.Last} name="inquiry" rows="5" cols="35" maxlength="3000" required></textarea>
 
-              <div className="contact-ctas no-padding small-12 medium-8 columns">
+              <div className={`${classes.ContactCTAs} no-padding small-12 medium-8 columns`}>
                 <div className="g-recaptcha" data-sitekey="6Lcj8wYUAAAAAG9fl2DtDnsqTjfyNFwhL38TwGao"></div>
               </div>
 
-              <div className="contact-ctas no-padding small-12 medium-4 columns">
-                <input type="submit" className="button submit-cta" value="Submit" />
+              <div className={`${classes.ContactCTAs} no-padding small-12 medium-4 columns`}>
+                <input type="submit" className={`${classes.Button} ${classes.SubmitCTA}`} value="Submit" />
               </div>
             </div>
           </form>
         </div>
-
       </div>
-    </div>
+    </Section>
   );
 };
 

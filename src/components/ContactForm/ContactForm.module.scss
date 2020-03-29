@@ -1,12 +1,8 @@
 @import '../../assets/styles/variables.scss';
 
-.ContactForm {
-
-}
-
 // ~~~ // Entirety of _contact.scss
 /* Contact Page */
-#contact-intro {
+.ContactIntro {
   padding-bottom: 2em;
 
   h5,
@@ -14,7 +10,7 @@
     margin-top: 1em;
   }
 
-  .captcha-error {
+  .CaptchaError {
     color: $error;
     font-weight: bold;
     margin-top: 1.5em;
@@ -23,7 +19,7 @@
   }
 }
 
-.contact-form {
+.ContactForm {
   background: linear-gradient(rgba(0, 0, 0, .33), rgba(0, 0, 0, .33)),
     url(../../assets/img/aesthetic-geometry.svg) no-repeat;
   background-repeat: no-repeat;
@@ -110,7 +106,7 @@
       }
     }
 
-    .contact-ctas {
+    .ContactCTAs {
       margin-top: 1.5em;
 
       @media screen and (max-width: 40em) {
@@ -133,7 +129,7 @@
     }
   }
 
-  &.confirmation {
+  &.Confirmation {
     padding-bottom: 17em;
 
     h2,

@@ -146,7 +146,7 @@ const portfolioProjects = props => {
           <div className="small-12 medium-6 columns" data-aos="fade-up" data-aos-delay="100">
             <a href="{{root}}portfolio/cms/skillset.html"
               title="A list and description of the content management systems I have development experience with.">
-              <div className={classes.ShowcaseExample}>
+              <div className={`${classes.ShowcaseExample} no-bottom-space-desktop`}>
                 <h3 className="h4 black">Content Management</h3>
                 <img src={CMSShowcase}
                   alt="My Content Management Skills. Sitefinity. Kentico. Adobe Experience Manager. WordPress. RedDot. SiteCore." />

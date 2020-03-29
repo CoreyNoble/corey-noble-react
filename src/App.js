@@ -26,6 +26,7 @@ import PortfolioProjects from './components/PortfolioProjects/PortfolioProjects'
 
 import AboutIntro from './components/AboutIntro/AboutIntro';
 
+import ContactBanner from './components/ContactBanner/ContactBanner';
 import ContactForm from './components/ContactForm/ContactForm';
 
 import JavaScript30 from './containers/JavaScript30/JavaScript30';
@@ -515,6 +516,7 @@ function App() {
   function Contact() {
     return (
       <React.Fragment>
+        <ContactBanner />
         <ContactForm />
       </React.Fragment>
     );
@@ -566,7 +568,7 @@ function App() {
           </Route>
 
           <Route path="/">
-            <Portfolio />
+            <Contact />
             {/* <Index /> */}
           </Route>
         </Switch>
