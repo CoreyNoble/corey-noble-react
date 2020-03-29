@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import classes from './SiteIndex.module.scss';
+import classes from './SiteIndexComponent.module.scss';
 
 import Section from '../../containers/Section/Section';
 
@@ -48,8 +48,8 @@ const siteIndex = props => {
               <li className="h4"><Link to={`${process.env.PUBLIC_URL}/contact`} title="View my contact page">Contact</Link></li>
             </ul>
 
-            <div className="resume-cta resume-cta-left">
-              <Link id="resume" className="h5" to={`${process.env.PUBLIC_URL}/assets/pdf/CoreyNoble-Resume.pdf`} target="_blank"
+            <div className={`${classes.ResumeCTA} ${classes.ResumeCTALeft}`}>
+              <Link className={`${classes.Resume} h5`} to={`${process.env.PUBLIC_URL}/assets/pdf/CoreyNoble-Resume.pdf`} target="_blank"
                 rel="noopener noreferrer">View My CV / Resume</Link>
             </div>
           </div>

@@ -31,8 +31,8 @@ import ContactForm from './components/ContactForm/ContactForm';
 
 import JavaScript30 from './containers/JavaScript30/JavaScript30';
 
-import SiteIndex from './components/SiteIndex/SiteIndex';
-import NotFound from './components/NotFound/NotFound';
+import SiteIndexComponent from './components/SiteIndexComponent/SiteIndexComponent';
+import NotFoundComponent from './components/NotFoundComponent/NotFoundComponent';
 
 /* About - Experience - Logos */
 import EvertzLogo from './assets/img/logos/evertz.png';
@@ -527,13 +527,13 @@ function App() {
 
   function NotFound() {
     return (
-      <NotFound />
+      <NotFoundComponent />
     );
   }
 
   function SiteIndex() {
     return (
-      <SiteIndex />
+      <SiteIndexComponent />
     );
   }
 
