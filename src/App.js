@@ -94,15 +94,15 @@ function App() {
         <AboutIntro />
 
         <Section background="white">
-          <div class="row">
-            <div id="about-intro" class="small-12 column" data-aos="fade-up" data-aos-delay="100">
+          <div className="row">
+            <div id="about-intro" className="small-12 column" data-aos="fade-up" data-aos-delay="100">
 
               <h2>My Story</h2>
               <div>
                 <div>
-                  <div class="js-excerpt excerpt-hidden large-excerpt collapsible">
+                  <div className="js-excerpt excerpt-hidden large-excerpt collapsible">
                     <p>My name is <strong>Corey&nbsp;Noble</strong>. I am a <strong>Web&nbsp;Application&nbsp;Developer</strong>
-                      currently employed by <a class="evertz-text" href="https://evertz.com/"
+                      currently employed by <a className="evertz-text" href="https://evertz.com/"
                         title="Visit the Evertz Microsystems Website" target="_blank"
                         rel="noopener noreferrer"><strong>Evertz&nbsp;Microsystems&nbsp;Ltd.</strong></a>, A global leader in
                       broadcast solutions with headquarters based in the beautiful city of
@@ -129,7 +129,7 @@ function App() {
                     <p>First I started a freelance web development company called Right&nbsp;Choice Websites with a college
                       friend, which gave me some of the skills and confidence I needed to pursue a career in the&nbsp;industry.
                     </p>
-                    <p>Next I landed a job at <a class="thrillworks-text" href="https://thrillworks.com"
+                    <p>Next I landed a job at <a className="thrillworks-text" href="https://thrillworks.com"
                         title="Visit the Thrillworks Website" target="_blank"
                         rel="noopener noreferrer"><strong>Thrillworks&nbsp;Inc.</strong></a> as a
                       <strong>Web&nbsp;Production&nbsp;Specialist</strong>. At Thrillworks I was able to rapidly expand my
@@ -145,25 +145,25 @@ function App() {
                   </div>
                 </div>
 
-                <a role="button" class="js-show-more">Show more +</a>
+                <a role="button" className="js-show-more">Show more +</a>
               </div>
 
             </div>
 
-            <div id="experience" class="small-12 column">
+            <div id="experience" className="small-12 column">
               <h2 data-aos="fade-right" data-aos-delay="100">Job Experience</h2>
               <hr data-aos="fade-up" data-aos-delay="100" />
             </div>
 
-            <div class="about-experience small-12 medium-3 large-2 columns">
-              <img class="company-logo" src={EvertzLogo} alt="Evertz Microsystems Limited"
+            <div className="about-experience small-12 medium-3 large-2 columns">
+              <img className="company-logo" src={EvertzLogo} alt="Evertz Microsystems Limited"
                 data-aos="rotate-in-ltr" data-aos-delay="100" />
             </div>
 
-            <div class="about-experience small-12 medium-9 large-10 columns">
-              <h3 class="job-title" data-aos="fade-up" data-aos-delay="100">Developer</h3>
-              <h4 class="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100">December&nbsp;2019 -&nbsp;Present</h4>
-              <h5 class="company-name" data-aos="fade-up" data-aos-delay="100"><em>Evertz Microsystems Ltd.</em></h5>
+            <div className="about-experience small-12 medium-9 large-10 columns">
+              <h3 className="job-title" data-aos="fade-up" data-aos-delay="100">Developer</h3>
+              <h4 className="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100">December&nbsp;2019 -&nbsp;Present</h4>
+              <h5 className="company-name" data-aos="fade-up" data-aos-delay="100"><em>Evertz Microsystems Ltd.</em></h5>
 
               <div data-aos="fade-up" data-aos-delay="100">
                 <p data-aos="fade-up">As a Developer at Evertz I continually seek to improve in all aspects of my career. I am
@@ -174,20 +174,20 @@ function App() {
 
             <hr data-aos="fade-up" data-aos-delay="100" />
 
-            <div class="about-experience small-12 medium-3 large-2 columns">
-              <img class="company-logo" src={ThrillworksLogo} alt="Thrillworks Inc."
+            <div className="about-experience small-12 medium-3 large-2 columns">
+              <img className="company-logo" src={ThrillworksLogo} alt="Thrillworks Inc."
                 data-aos="rotate-in-ltr" data-aos-delay="100" />
             </div>
 
-            <div class="about-experience small-12 medium-9 large-10 columns">
-              <h3 class="job-title" data-aos="fade-up" data-aos-delay="100">Developer</h3>
-              <h4 class="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100"><strong>2&nbsp;years, 4&nbsp;months</strong>
+            <div className="about-experience small-12 medium-9 large-10 columns">
+              <h3 className="job-title" data-aos="fade-up" data-aos-delay="100">Developer</h3>
+              <h4 className="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100"><strong>2&nbsp;years, 4&nbsp;months</strong>
                 &nbsp;|&nbsp; August&nbsp;2017 -&nbsp;December&nbsp;2019</h4>
-              <h5 class="company-name" data-aos="fade-up" data-aos-delay="100"><em>Thrillworks&nbsp;Inc.</em></h5>
+              <h5 className="company-name" data-aos="fade-up" data-aos-delay="100"><em>Thrillworks&nbsp;Inc.</em></h5>
 
               <div data-aos="fade-up" data-aos-delay="100">
                 <div>
-                  <div class="js-excerpt excerpt-hidden collapsible">
+                  <div className="js-excerpt excerpt-hidden collapsible">
                     <p data-aos="fade-up">As a Developer at Thrillworks I worked on large scale web projects for a wide variety
                       of enterprise clients. These clients included but were not limited to: President’s&nbsp;Choice
                       <em>(PC&nbsp;Financial, PC&nbsp;Insiders, The&nbsp;Mobile&nbsp;Shop, PC&nbsp;Gas&nbsp;Bar)</em>,
@@ -213,26 +213,26 @@ function App() {
                     </ul>
                   </div>
                 </div>
-                <a role="button" class="js-show-more">Show more +</a>
+                <a role="button" className="js-show-more">Show more +</a>
               </div>
             </div>
 
             <hr data-aos="fade-up" data-aos-delay="100" />
 
-            <div class="about-experience small-12 medium-3 large-2 columns">
-              <img class="company-logo" src={ThrillworksLogo} alt="Thrillworks Inc."
+            <div className="about-experience small-12 medium-3 large-2 columns">
+              <img className="company-logo" src={ThrillworksLogo} alt="Thrillworks Inc."
                 data-aos="rotate-in-ltr" data-aos-delay="100" />
             </div>
 
-            <div class="about-experience small-12 medium-9 large-10 columns">
-              <h3 class="job-title" data-aos="fade-up" data-aos-delay="100">Web Production Specialist</h3>
-              <h4 class="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100"><strong>3&nbsp;years, 3&nbsp;months</strong>
+            <div className="about-experience small-12 medium-9 large-10 columns">
+              <h3 className="job-title" data-aos="fade-up" data-aos-delay="100">Web Production Specialist</h3>
+              <h4 className="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100"><strong>3&nbsp;years, 3&nbsp;months</strong>
                 &nbsp;|&nbsp; May&nbsp;2014 -&nbsp;July&nbsp;2017</h4>
-              <h5 class="company-name" data-aos="fade-up" data-aos-delay="100"><em>Thrillworks Inc.</em></h5>
+              <h5 className="company-name" data-aos="fade-up" data-aos-delay="100"><em>Thrillworks Inc.</em></h5>
 
               <div data-aos="fade-up" data-aos-delay="100">
                 <div>
-                  <div class="js-excerpt excerpt-hidden">
+                  <div className="js-excerpt excerpt-hidden">
                     <p>As a Web Production Specialist I was able to work with a wide variety of web technologies. My Web
                       Production Specialist
                       position at Thrillworks has given me&nbsp;experience with:</p>
@@ -286,27 +286,27 @@ function App() {
                     </ul>
                   </div>
                 </div>
-                <a role="button" class="js-show-more">Show more +</a>
+                <a role="button" className="js-show-more">Show more +</a>
               </div>
             </div>
 
             <hr data-aos="fade-up" data-aos-delay="100" />
 
-            <div class="about-experience small-12 medium-3 large-2 columns">
-              <img class="company-logo" src={RightChoiceLogo} alt="Right Choice Web Development"
+            <div className="about-experience small-12 medium-3 large-2 columns">
+              <img className="company-logo" src={RightChoiceLogo} alt="Right Choice Web Development"
                 data-aos="rotate-in-ltr" data-aos-delay="100" />
             </div>
 
-            <div class="about-experience small-12 medium-9 large-10 columns">
-              <h3 class="job-title" data-aos="fade-up" data-aos-delay="100">Co-Owner, Website Developer and Graphic&nbsp;Artist
+            <div className="about-experience small-12 medium-9 large-10 columns">
+              <h3 className="job-title" data-aos="fade-up" data-aos-delay="100">Co-Owner, Website Developer and Graphic&nbsp;Artist
               </h3>
-              <h4 class="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100"><strong>9&nbsp;months</strong> &nbsp;|&nbsp;
+              <h4 className="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100"><strong>9&nbsp;months</strong> &nbsp;|&nbsp;
                 September&nbsp;2013 -&nbsp;May&nbsp;2014</h4>
-              <h5 class="company-name" data-aos="fade-up" data-aos-delay="100"><em>Right Choice Websites</em></h5>
+              <h5 className="company-name" data-aos="fade-up" data-aos-delay="100"><em>Right Choice Websites</em></h5>
 
               <div data-aos="fade-up" data-aos-delay="100">
                 <div>
-                  <div class="js-excerpt excerpt-hidden">
+                  <div className="js-excerpt excerpt-hidden">
                     <p>A former colleague and I created a website development company called Right Choice Websites. We built
                       responsive websites using WordPress. My daily activities ranged greatly, Including: Explaining business
                       packages and the development process to clients, managing project work, website development, branding,
@@ -320,31 +320,31 @@ function App() {
                       <li>
                         <strong>Trello</strong> – Breaking down and keeping track of the work that was to be done, in-progress
                         and&nbsp;completed.</li>
-                      <li class="no-bottom-space">
+                      <li className="no-bottom-space">
                         <strong>InDesign</strong> – To create branded documentation.</li>
                     </ul>
                   </div>
                 </div>
-                <a role="button" class="js-show-more">Show more +</a>
+                <a role="button" className="js-show-more">Show more +</a>
               </div>
             </div>
 
             <hr data-aos="fade-up" data-aos-delay="100" />
 
-            <div class="about-experience small-12 medium-3 large-2 columns">
-              <img class="company-logo" src={SlightlySocialLogo} alt="Slightly Social"
+            <div className="about-experience small-12 medium-3 large-2 columns">
+              <img className="company-logo" src={SlightlySocialLogo} alt="Slightly Social"
                 data-aos="rotate-in-ltr" data-aos-delay="100" />
             </div>
 
-            <div class="about-experience small-12 medium-9 large-10 columns">
-              <h3 class="job-title" data-aos="fade-up" data-aos-delay="100">3D Artist and Unity Developer</h3>
-              <h4 class="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100"><strong>4&nbsp;months</strong> &nbsp;|&nbsp;
+            <div className="about-experience small-12 medium-9 large-10 columns">
+              <h3 className="job-title" data-aos="fade-up" data-aos-delay="100">3D Artist and Unity Developer</h3>
+              <h4 className="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100"><strong>4&nbsp;months</strong> &nbsp;|&nbsp;
                 May&nbsp;2013 -&nbsp;August&nbsp;2013</h4>
-              <h5 class="company-name no-padding" data-aos="fade-up" data-aos-delay="100"><em>Slightly Social</em></h5>
+              <h5 className="company-name no-padding" data-aos="fade-up" data-aos-delay="100"><em>Slightly Social</em></h5>
 
               <div data-aos="fade-up" data-aos-delay="100">
                 <div>
-                  <div class="js-excerpt excerpt-hidden">
+                  <div className="js-excerpt excerpt-hidden">
                     <p>I was the lead developer and 3D artist for a few Android and iOS games. I was provided a codebase for
                       each game and was responsible for creating all of the in-game art and implementing it using the Unity game
                       engine. I added features to the codebase, and collaborated with the UI and Sound developers to create a
@@ -355,27 +355,27 @@ function App() {
                       <li><strong>GIT</strong> - Version control.</li>
                       <li><strong>Unity</strong> - Game development.</li>
                       <li><strong>3D Studio Max</strong> - Modelling and&nbsp;animation.</li>
-                      <li class="no-bottom-space"><strong>Photoshop</strong> - Texturing and concept&nbsp;art.</li>
+                      <li className="no-bottom-space"><strong>Photoshop</strong> - Texturing and concept&nbsp;art.</li>
                     </ul>
                   </div>
                 </div>
-                <a role="button" class="js-show-more">Show more +</a>
+                <a role="button" className="js-show-more">Show more +</a>
               </div>
             </div>
 
-            <div id="education" class="small-12 column">
+            <div id="education" className="small-12 column">
               <h2 data-aos="fade-right" data-aos-delay="100">Education</h2>
               <hr data-aos="fade-up" data-aos-delay="100" />
               <img src={FanshaweCollegeLogo} alt="Fanshawe College" data-aos="fade-up"
                 data-aos-delay="100" />
             </div>
 
-            <div class="about-experience small-12 medium-3 large-2 columns">
-              <img class="company-logo" src={GraduationImage} alt="Graduate" data-aos="rotate-in-ltr"
+            <div className="about-experience small-12 medium-3 large-2 columns">
+              <img className="company-logo" src={GraduationImage} alt="Graduate" data-aos="rotate-in-ltr"
                 data-aos-delay="100" />
             </div>
 
-            <div class="about-experience small-12 medium-9 large-10 columns">
+            <div className="about-experience small-12 medium-9 large-10 columns">
               <h3 data-aos="fade-up" data-aos-delay="100">3D Animation and Character&nbsp;Design</h3>
               <p data-aos="fade-up" data-aos-delay="100">
                 <strong>2012&nbsp;-&nbsp;2013 &nbsp;|&nbsp; Certificate</strong>
@@ -383,7 +383,7 @@ function App() {
 
               <div data-aos="fade-up" data-aos-delay="100">
                 <div>
-                  <div class="js-excerpt excerpt-hidden">
+                  <div className="js-excerpt excerpt-hidden">
                     <p>In 3D Animation and Character design I honed the skills that are used in all aspects of Game Development
                       and Computer Graphics. However, I believe the most valuable skills I learned from this program are time
                       management, project management and team collaboration&nbsp;skills.</p>
@@ -408,7 +408,7 @@ function App() {
                         client and if something wasn't up to spec, we had to rectify it. I learned very quickly the importance
                         of listening
                         and adhering to the feedback and criticisms pertaining to my&nbsp;work.</li>
-                      <li class="no-bottom-space">
+                      <li className="no-bottom-space">
                         <strong>Technical Skills</strong> – The Technical skills I honed in this program are:
                         <em>Concept Art, Sculpting, Re-Topology + Mesh-Optimization, Unwrapping + Texturing, Rigging +
                           Animation, Lighting +
@@ -416,18 +416,18 @@ function App() {
                     </ul>
                   </div>
                 </div>
-                <a role="button" class="js-show-more">Show more +</a>
+                <a role="button" className="js-show-more">Show more +</a>
               </div>
             </div>
 
             <hr data-aos="fade-up" data-aos-delay="100" />
 
-            <div class="about-experience small-12 medium-3 large-2 columns">
-              <img class="company-logo" src={GraduationImage} alt="Graduate" data-aos="rotate-in-ltr"
+            <div className="about-experience small-12 medium-3 large-2 columns">
+              <img className="company-logo" src={GraduationImage} alt="Graduate" data-aos="rotate-in-ltr"
                 data-aos-delay="100" />
             </div>
 
-            <div class="about-experience no-bottom-space small-12 medium-9 large-10 columns">
+            <div className="about-experience no-bottom-space small-12 medium-9 large-10 columns">
               <h3 data-aos="fade-up" data-aos-delay="100">Multi Media Design and&nbsp;Production</h3>
               <p data-aos="fade-up" data-aos-delay="100">
                 <strong>2010&nbsp;-&nbsp;2012 &nbsp;|&nbsp; Diploma</strong>
@@ -435,7 +435,7 @@ function App() {
 
               <div data-aos="fade-up" data-aos-delay="100">
                 <div>
-                  <div class="js-excerpt excerpt-hidden">
+                  <div className="js-excerpt excerpt-hidden">
                     <p>In Multi Media Design and Production I gained a broad set of media related skills. Most of the time was
                       spent learning how to utilize the Adobe Master Suite to build various types of media related, mock-client
                       projects. The primary focus of this program was to incorporate new technologies into websites built from
@@ -451,12 +451,12 @@ function App() {
                         <strong>In-Design</strong> – Creating Print-Ready Documentation</li>
                       <li>
                         <strong>ActionScript, Flash, Flash-Builder</strong> – Web App Development</li>
-                      <li class="no-bottom-space">
+                      <li className="no-bottom-space">
                         <strong>After Effects, Media Encoder</strong> – Video Production, VFX, Video&nbsp;Output</li>
                     </ul>
                   </div>
                 </div>
-                <a role="button" class="js-show-more">Show more +</a>
+                <a role="button" className="js-show-more">Show more +</a>
               </div>
             </div>
           </div>

@@ -86,7 +86,7 @@ const navigation = props => {
           </Link>
         </li>
       </ul>
-      <a href="#" class={classes.Pull} onClick={() => {viewSomething()}} title="Toggle the navigation menu" aria-label="Navigation Menu">
+      <a href="#" className={classes.Pull} onClick={() => {viewSomething()}} title="Toggle the navigation menu" aria-label="Navigation Menu">
         <strong><span>&lsaquo;</span> corey-noble /<span>&rsaquo;</span></strong>
       </a>
     </nav>

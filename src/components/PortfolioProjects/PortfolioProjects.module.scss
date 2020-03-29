@@ -1,5 +1,41 @@
 @import '../../assets/styles/variables.scss';
 
+.CTA {
+  border-radius: 5px;
+  border: .15em solid $background;
+  color: $black;
+  display: inline-block;
+  padding: .5em .75em;
+  text-decoration: none;
+
+  &:hover {
+    border-color: $white;
+    color: #000;
+    text-decoration: underline;
+  }
+
+  &.ProjectCTA {
+    background: $blue;
+    border-color: $grey;
+    margin-right: .25em;
+
+    &:hover {
+      background: darken($blue, 10%);
+      border-color: $black;
+    }
+  }
+
+  &.CodeCTA {
+    background: $white;
+    border-color: $grey;
+
+    &:hover {
+      background: darken($white, 10%);
+      border-color: $black;
+    }
+  }
+}
+
 .ShowcaseHead {
   margin-bottom: 2em;
 
