@@ -31,6 +31,9 @@ import ContactForm from './components/ContactForm/ContactForm';
 
 import JavaScript30 from './containers/JavaScript30/JavaScript30';
 
+import SiteIndex from './components/SiteIndex/SiteIndex';
+import NotFound from './components/NotFound/NotFound';
+
 /* About - Experience - Logos */
 import EvertzLogo from './assets/img/logos/evertz.png';
 import ThrillworksLogo from './assets/img/logos/thrillworks.png';
@@ -524,15 +527,13 @@ function App() {
 
   function NotFound() {
     return (
-      <React.Fragment>
-      </React.Fragment>
+      <NotFound />
     );
   }
 
   function SiteIndex() {
     return (
-      <React.Fragment>
-      </React.Fragment>
+      <SiteIndex />
     );
   }
 
@@ -568,7 +569,8 @@ function App() {
           </Route>
 
           <Route path="/">
-            <Contact />
+            <NotFound />
+            {/* <SiteIndex /> */}
             {/* <Index /> */}
           </Route>
         </Switch>
