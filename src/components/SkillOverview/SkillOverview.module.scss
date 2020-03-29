@@ -1,0 +1,35 @@
+.IndexHeader {
+  margin-bottom: 2em;
+}
+
+.ServicesPromotion {
+  margin-bottom: 3em;
+
+  h4,
+  .h4 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    padding: .5em;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .5em;
+  }
+
+  &.NoBottomSpace {
+    margin-bottom: 0;
+  }
+
+  &.NoBottomSpaceDesktop {
+    margin-bottom: 0;
+
+    @media screen and (max-width: 64em) {
+      margin-bottom: 3em;
+    }
+  }
+}
