@@ -21,6 +21,9 @@ import IndexIntro from './components/IndexIntro/IndexIntro';
 import SkillOverview from './components/SkillOverview/SkillOverview';
 import Button from './components/Button/Button';
 
+import PortfolioBanner from './components/PortfolioBanner/PortfolioBanner';
+import PortfolioProjects from './components/PortfolioProjects/PortfolioProjects';
+
 import AboutIntro from './components/AboutIntro/AboutIntro';
 
 import ContactForm from './components/ContactForm/ContactForm';
@@ -63,28 +66,6 @@ function App() {
 
     return (
       <React.Fragment>
-        <ul>
-          <li>
-            <Link 
-              to="https://burger-builder.corey-noble.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >JavaScript30</Link>
-          </li>
-          <li>
-            <Link to={`${match.url}/javascript30`}>JavaScript30</Link>
-          </li>
-          <li>
-            <Link to={`${match.url}/javascript-tetris`}>JavaScript Tetris</Link>
-          </li>
-          <li>
-            <Link to={`${match.url}/cms-skillset`}>CMS Skillset</Link>
-          </li>
-          <li>
-            <Link to={`${match.url}/responsive-email-template`}>Responsive Email Template</Link>
-          </li>
-        </ul>
-
         <Switch>
           <Route path={`${match.path}/javascript30`}>
             <JavaScript30 />
@@ -99,7 +80,8 @@ function App() {
             <h3>Responsive Email Template</h3>
           </Route>
           <Route path={match.path}>
-            <h3>Portfolio</h3>
+            <PortfolioBanner />
+            <PortfolioProjects />
           </Route>
         </Switch>
       </React.Fragment>
@@ -584,7 +566,8 @@ function App() {
           </Route>
 
           <Route path="/">
-            <Index />
+            <Portfolio />
+            {/* <Index /> */}
           </Route>
         </Switch>
 
