@@ -17,7 +17,7 @@ const contactForm = props => {
         </div>
 
         <div className={`${classes.ContactForm} small-12 column`} data-aos="fade-up" data-aos-delay="100">
-          <form action="{{root}}mailsend.php" method="post">
+          <form action="./mailsend.php" method="post">
             <div className="row">
               <label for="firstName" className="h5">First Name</label>
               <input name="firstName" type="text" maxlength="50" required />
