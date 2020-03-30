@@ -104,7 +104,7 @@ class IndexBanner extends Component {
 
   componentWillUnmount() {
     cancelAnimationFrame(this.frameId);
-    this.mount.removeChild(this.renderer.domElement);
+    // this.mount.removeChild(this.renderer.domElement);
   }
 
   render() {

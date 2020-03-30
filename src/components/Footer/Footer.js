@@ -18,7 +18,7 @@ const footer = props => {
           <div className="small-8 medium-8 large-9 columns end">
             <div className={classes.FootnotePosition}>
               <h2 className={`h3 blue-text ${classes.Name}`}>Corey Noble</h2>
-              <h3 className={`${classes.Title}`}>Web&nbsp;Developer</h3>
+              <h3 className={`${classes.Title}`}>Web Application Developer</h3>
               <div className={classes.FootnoteContact}>
                 <h4>
                   <a href={CoreyNobleResumePDF} title="Read my resume" target="_blank"
