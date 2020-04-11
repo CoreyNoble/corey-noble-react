@@ -32,6 +32,8 @@ const AboutBanner = React.lazy(() => import('./components/AboutBanner/AboutBanne
 const AboutIntro = React.lazy(() => import('./components/AboutIntro/AboutIntro'));
 const AboutContent = React.lazy(() => import('./components/AboutContent/AboutContent'));
 
+const BlogEntries = React.lazy(() => import('./components/BlogEntries/BlogEntries'));
+
 const ContactBanner = React.lazy(() => import('./components/ContactBanner/ContactBanner'));
 const ContactForm = React.lazy(() => import('./components/ContactForm/ContactForm'));
 
@@ -135,24 +137,6 @@ function Blog() {
 
   return (
     <React.Fragment>
-      <ul>
-        <li>
-          <Link to={`${match.url}/search-engine-optimisation`}>Search Engine Optimisation (SEO)</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/web-content-accessibility-guidelines`}>Web Content Accessibility Guidelines (WCAG)</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/aspirations`}>My Aspirations</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/web-production-specialist`}>My Previous Role as a Web Production Specialist at Thrillworks Inc.</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/blog-introduction`}>Blog Introduction</Link>
-        </li>
-      </ul>
-
       <Switch>
         <Route 
           path={`${match.path}/search-engine-optimisation`} 
@@ -203,7 +187,7 @@ function Blog() {
           path={match.path} 
           render={() => (
             <Suspense fallback={<div>Loading...</div>}>
-              <h3>My Blog</h3>
+              <BlogEntries />
             </Suspense>
           )} 
         />
