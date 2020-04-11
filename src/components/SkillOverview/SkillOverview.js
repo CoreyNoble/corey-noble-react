@@ -17,28 +17,34 @@ class skillOverview extends Component {
     skillOverview: [
       { title: 'Responsive Development',
         icon: ResponsiveIcon,
-        paragraph: `I can ensure your website adapts to use different sizing and layouts depending on the resolution of the device it is viewed on. This way your website looks great on anything your visitors may be&nbsp;using.`
+        paragraph: `I can ensure your website adapts to use different sizing and layouts depending on the resolution of the device it is viewed on. This way your website looks great on anything your visitors may be&nbsp;using.`,
+        class: ''
       },
       { title: 'Search and Accessibility',
         icon: SEOIcon,
         paragraph: `I have experience in implementing the latest Search Engine Optimisation <a href="/blog/search-engine-optimisation"
-        title="Learn more about Search Engine Optimisation">(SEO)</a> techniques, and ensuring websites meet the Web Content Accessibility Guidelines <a href="/blog/web-content-accessibility-guidelines" title="Learn more about the Web Content Accessibility Guidelines">(WCAG&nbsp;2.0)</a>.`
+        title="Learn more about Search Engine Optimisation">(SEO)</a> techniques, and ensuring websites meet the Web Content Accessibility Guidelines <a href="/blog/web-content-accessibility-guidelines" title="Learn more about the Web Content Accessibility Guidelines">(WCAG&nbsp;2.0)</a>.`,
+        class: ''
       },
       { title: 'Custom Functionality',
         icon: CustomFunctionalityIcon,
-        paragraph: `If you need a custom tool or feature built for your site, let's discuss it. In most cases I should be able to accommodate your&nbsp;needs.`
+        paragraph: `If you need a custom tool or feature built for your site, let's discuss it. In most cases I should be able to accommodate your&nbsp;needs.`,
+        class: ''
       },
       { title: 'Analytics and A/B Testing',
         icon: ABIcon,
-        paragraph: `I have experience tracking user analytics, and creating targeted test campaigns. This enables you to cater to segmented audiences and improve your user retention over time via. A/B&nbsp;testing.`
+        paragraph: `I have experience tracking user analytics, and creating targeted test campaigns. This enables you to cater to segmented audiences and improve your user retention over time via. A/B&nbsp;testing.`,
+        class: ''
       },
       { title: 'Clean and Efficient Code',
         icon: OptimizedCodeIcon,
-        paragraph: `I always optimize the code I write to ensure minimal load times. My code is written in an understandable, programmatic format so it is easy for any web developer to read and&nbsp;manipulate.`
+        paragraph: `I always optimize the code I write to ensure minimal load times. My code is written in an understandable, programmatic format so it is easy for any web developer to read and&nbsp;manipulate.`,
+        class: ''
       },
       { title: 'Content Management Systems',
         icon: CMSIcon,
-        paragraph: `If you want to be your own web master, I can build your website with a content management system. This will empower you to make the changes you want to make, on your own&nbsp;time.`
+        paragraph: `If you want to be your own web master, I can build your website with a content management system. This will empower you to make the changes you want to make, on your own&nbsp;time.`,
+        class: ''
       },
       { title: 'Latest and Greatest',
         icon: CurrentTechnologiesIcon,
