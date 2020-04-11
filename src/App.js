@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -25,20 +25,20 @@ import SkillOverview from './components/SkillOverview/SkillOverview';
 import IndexPortfolioSection from './components/IndexPortfolioSection/IndexPortfolioSection';
 import Button from './components/Button/Button';
 
-import PortfolioBanner from './components/PortfolioBanner/PortfolioBanner';
-import PortfolioProjects from './components/PortfolioProjects/PortfolioProjects';
+const PortfolioBanner = React.lazy(() => import('./components/PortfolioBanner/PortfolioBanner'));
+const PortfolioProjects = React.lazy(() => import('./components/PortfolioProjects/PortfolioProjects'));
 
-import AboutBanner from './components/AboutBanner/AboutBanner';
-import AboutIntro from './components/AboutIntro/AboutIntro';
-import AboutContent from './components/AboutContent/AboutContent';
+const AboutBanner = React.lazy(() => import('./components/AboutBanner/AboutBanner'));
+const AboutIntro = React.lazy(() => import('./components/AboutIntro/AboutIntro'));
+const AboutContent = React.lazy(() => import('./components/AboutContent/AboutContent'));
 
-import ContactBanner from './components/ContactBanner/ContactBanner';
-import ContactForm from './components/ContactForm/ContactForm';
+const ContactBanner = React.lazy(() => import('./components/ContactBanner/ContactBanner'));
+const ContactForm = React.lazy(() => import('./components/ContactForm/ContactForm'));
 
-import JavaScript30 from './containers/JavaScript30/JavaScript30';
+const JavaScript30 = React.lazy(() => import('./containers/JavaScript30/JavaScript30'));
 
-import SiteIndexComponent from './components/SiteIndexComponent/SiteIndexComponent';
-import NotFoundComponent from './components/NotFoundComponent/NotFoundComponent';
+const SiteIndexComponent = React.lazy(() => import('./components/SiteIndexComponent/SiteIndexComponent'));
+const NotFoundComponent = React.lazy(() => import('./components/NotFoundComponent/NotFoundComponent'));
 
 function Index() {
   return (
@@ -67,22 +67,51 @@ function Portfolio() {
   return (
     <React.Fragment>
       <Switch>
-        <Route path={`${match.path}/javascript30`}>
-          <JavaScript30 />
-        </Route>
-        <Route path={`${match.path}/javascript-tetris`}>
-          <h3>JavaScript Tetris</h3>
-        </Route>
-        <Route path={`${match.path}/cms-skillset`}>
-          <h3>CMS Skillset</h3>
-        </Route>
-        <Route path={`${match.path}/responsive-email-template`}>
-          <h3>Responsive Email Template</h3>
-        </Route>
-        <Route path={match.path}>
-          <PortfolioBanner />
-          <PortfolioProjects />
-        </Route>
+        <Route 
+          path={`${match.path}/javascript30`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JavaScript30 />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript-tetris`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <h3>JavaScript Tetris</h3>
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/cms-skillset`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <h3>CMS Skillset</h3>
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/responsive-email-template`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <h3>Responsive Email Template</h3>
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={match.path} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <PortfolioBanner />
+              <PortfolioProjects />
+            </Suspense>
+          )} 
+        />
       </Switch>
     </React.Fragment>
   );
@@ -125,24 +154,59 @@ function Blog() {
       </ul>
 
       <Switch>
-        <Route path={`${match.path}/search-engine-optimisation`}>
-          <h3>Search Engine Optimisation (SEO)</h3>
-        </Route>
-        <Route path={`${match.path}/web-content-accessibility-guidelines`}>
-          <h3>Web Content Accessibility Guidelines (WCAG)</h3>
-        </Route>
-        <Route path={`${match.path}/aspirations`}>
-          <h3>My Aspirations</h3>
-        </Route>
-        <Route path={`${match.path}/web-production-specialist`}>
-          <h3>My Previous Role as a Web Production Specialist at Thrillworks Inc.</h3>
-        </Route>
-        <Route path={`${match.path}/blog-introduction`}>
-          <h3>Blog Introduction</h3>
-        </Route>
-        <Route path={match.path}>
-          <h3>Portfolio</h3>
-        </Route>
+        <Route 
+          path={`${match.path}/search-engine-optimisation`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <h3>Search Engine Optimisation (SEO)</h3>
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/web-content-accessibility-guidelines`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <h3>Web Content Accessibility Guidelines (WCAG)</h3>
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/aspirations`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <h3>My Aspirations</h3>
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/web-production-specialist`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <h3>My Previous Role as a Web Production Specialist at Thrillworks Inc.</h3>
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/blog-introduction`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <h3>Blog Introduction</h3>
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={match.path} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <h3>My Blog</h3>
+            </Suspense>
+          )} 
+        />
       </Switch>
     </React.Fragment>
   );
@@ -184,33 +248,68 @@ class App extends Component {
           {/* <BackToTop /> */}
 
           <Switch>
-            <Route path="/404">
-              <NotFound />
-            </Route>
+            <Route 
+              path="/404" 
+              render={() => (
+                <Suspense fallback={<div>Loading...</div>}>
+                  <NotFound />
+                </Suspense>
+              )} 
+            />
 
-            <Route path="/site-index">
-              <SiteIndex />
-            </Route>
+            <Route 
+              path="/site-index" 
+              render={() => (
+                <Suspense fallback={<div>Loading...</div>}>
+                  <SiteIndex />
+                </Suspense>
+              )} 
+            />
 
-            <Route path="/portfolio">
-              <Portfolio />
-            </Route>
+            <Route 
+              path="/portfolio" 
+              render={() => (
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Portfolio />
+                </Suspense>
+              )} 
+            />
 
-            <Route path="/about">
-              <About />
-            </Route>
+            <Route 
+              path="/about" 
+              render={() => (
+                <Suspense fallback={<div>Loading...</div>}>
+                  <About />
+                </Suspense>
+              )} 
+            />
 
-            <Route path="/blog">
-              <Blog />
-            </Route>
+            <Route 
+              path="/blog" 
+              render={() => (
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Blog />
+                </Suspense>
+              )} 
+            />
 
-            <Route path="/contact">
-              <Contact />
-            </Route>
+            <Route 
+              path="/contact" 
+              render={() => (
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Contact />
+                </Suspense>
+              )} 
+            />
 
-            <Route path="/">
-              <Index />
-            </Route>
+            <Route 
+              path="/" 
+              render={() => (
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Index />
+                </Suspense>
+              )} 
+            />
           </Switch>
 
           <Footer />
