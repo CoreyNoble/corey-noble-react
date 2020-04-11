@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import classes from './JavaScript30.module.scss';
 
 import DrumKit from '../../assets/img/showcase/javascript30/1-drum-kit.jpg';
@@ -32,282 +32,212 @@ import VideoSpeedController from '../../assets/img/showcase/javascript30/28-vide
 import CountdownTimer from '../../assets/img/showcase/javascript30/29-countdown-timer.jpg';
 import WhackAMole from '../../assets/img/showcase/javascript30/30-whack-a-mole.jpg';
 
-const javaScript30 = props => {
-  return (
-    <div id="javascript30" className="section">
-      <div className="row showcase-2" data-equalizer>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/1-drum-kit" title="Drum Kit. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Drum Kit</h3>
-              <img src={DrumKit} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/2-clock" title="Clock. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Clock</h3>
-              <img src={Clock} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/3-update-css-variables"
-            title="Update CSS Variables. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Update CSS Variables</h3>
-              <img src={UpdateCSSVariables} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/4-array-cardio-day-1"
-            title="Array Cardio Day 1. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Array Cardio Day 1</h3>
-              <img src={ArrayCardio1} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/5-flex-panel-gallery"
-            title="Flex Panel Gallery. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Flex Panel Gallery</h3>
-              <img src={FlexPanelGallery} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/6-type-ahead" title="Type Ahead. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Type Ahead</h3>
-              <img src={TypeAhead} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/7-array-cardio-day-2"
-            title="Array Cardio Day 2. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Array Cardio Day 2</h3>
-              <img src={ArrayCardio2} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/8-fun-with-html5-canvas"
-            title="Fun with HTML5 Canvas. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Fun with HTML5 Canvas</h3>
-              <img src={FunWithHTML5Canvas} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/9-dev-tools-domination"
-            title="Dev Tools Domination. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Dev Tools Domination</h3>
-              <img src={DevToolsDomination} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/10-hold-shift-and-check-checkboxes"
-            title="Hold Shift and Check Checkboxes. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Hold Shift and Check Checkboxes</h3>
-              <img src={HoldShiftAndCheckCheckboxes} alt=""
-                role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/11-custom-video-player"
-            title="Custom Video Player. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Custom Video Player</h3>
-              <img src={CustomVideoPlayer} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/12-key-sequence-detection"
-            title="Key Sequence Detection. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Key Sequence Detection</h3>
-              <img src={KeySequenceDetection} alt=""
-                role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/13-slide-in-on-scroll"
-            title="Slide in on Scroll. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Slide in on Scroll</h3>
-              <img src={SlideInOnScroll} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/14-javaScript-references-vs-copying"
-            title="JavaScript References VS Copying. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">JavaScript References vs. Copying</h3>
-              <img src={JavascriptReferencesVsCopying} alt=""
-                role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/15-localstorage" title="LocalStorage. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">LocalStorage</h3>
-              <img src={LocalStorage} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/16-mouse-move-shadow"
-            title="Mouse Move Shadow. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Mouse Move Shadow</h3>
-              <img src={MouseMoveShadow} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/17-sort-without-articles"
-            title="Sort Without Articles. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Sort Without Articles</h3>
-              <img src={SortWithoutArticles} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/18-adding-up-times-with-reduce"
-            title="Adding Up Times with Reduce. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Adding Up Times with Reduce</h3>
-              <img src={AddingUpTimesWithReduce} alt=""
-                role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/19-webcam-fun" title="Webcam Fun. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Webcam Fun</h3>
-              <img src={WebcamFun} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/20-speech-detection"
-            title="Speech Detection. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Speech Detection</h3>
-              <img src={SpeechDetection} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/21-geolocation" title="Geolocation. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Geolocation</h3>
-              <img src={Geolocation} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/22-follow-along-link-highlighter"
-            title="Follow Along Link Highlighter. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Follow Along Link Highlighter</h3>
-              <img src={FollowAlongLinkHighlighter} alt=""
-                role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/23-speech-synthesis"
-            title="Speech Synthesis. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Speech Synthesis</h3>
-              <img src={SpeechSynthesis} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/24-sticky-nav" title="Sticky Nav. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Sticky Nav</h3>
-              <img src={StickyNav} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/25-event-capture-propagation-bubbling-and-once"
-            title="Event Capture, Propagation, Bubbling and Once. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Event Capture, Propagation, Bubbling and Once</h3>
-              <img src={EventCapturePropogationBubblingAndOnce} alt=""
-                role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/26-stripe-follow-along-nav"
-            title="Stripe Follow Along Nav. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Stripe Follow Along Nav</h3>
-              <img src={StripeFollowAlongNav} alt=""
-                role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/27-click-and-drag" title="Click and Drag. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Click and Drag</h3>
-              <img src={ClickAndDrag} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/28-video-speed-controller"
-            title="Video Speed Controller. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Video Speed Controller</h3>
-              <img src={VideoSpeedController} alt=""
-                role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/29-countdown-timer"
-            title="Countdown Timer. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Countdown Timer</h3>
-              <img src={CountdownTimer} alt="" role="presentation" />
-            </div>
-          </a>
-        </div>
-        <div className="small-12 medium-6 large-4 columns end" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch>
-          <a href="%PUBLIC_URL%/portfolio/development/javascript30/30-whack-a-mole" title="Whack A Mole. JavaScript30.">
-            <div className="showcase-example">
-              <h3 className="h5 white">Whack A Mole</h3>
-              <img src={WhackAMole} alt="" role="presentation" />
-            </div>
-          </a>
+class javaScript30 extends Component {
+  state = {
+    javaScript30: [
+      { heading: 'Drum Kit',
+        image: DrumKit,
+        url: '/portfolio/development/javascript30/1-drum-kit',
+        linkTitle: 'Drum Kit. JavaScript30.',
+        class: ''
+      },
+      { title: 'Clock',
+        image: Clock,
+        url: '/portfolio/development/javascript30/2-clock',
+        linkTitle: 'Clock. JavaScript30.',
+        class: ''
+      },
+      { title: 'Update CSS Variables',
+        image: UpdateCSSVariables,
+        url: '/portfolio/development/javascript30/3-update-css-variables',
+        linkTitle: 'Update CSS Variables. JavaScript30.',
+        class: ''
+      },
+      { title: 'Array Cardio Day 1',
+        image: ArrayCardio1,
+        url: '/portfolio/development/javascript30/4-array-cardio-day-1',
+        linkTitle: 'Array Cardio Day 1. JavaScript30.',
+        class: ''
+      },
+      { title: 'Flex Panel Gallery',
+        image: FlexPanelGallery,
+        url: '/portfolio/development/javascript30/5-flex-panel-gallery',
+        linkTitle: 'Flex Panel Gallery. JavaScript30.',
+        class: ''
+      },
+      { title: 'Type Ahead',
+        image: TypeAhead,
+        url: '/portfolio/development/javascript30/6-type-ahead',
+        linkTitle: 'Type Ahead. JavaScript30.',
+        class: ''
+      },
+      { title: 'Array Cardio Day 2',
+        image: ArrayCardio2,
+        url: '/portfolio/development/javascript30/7-array-cardio-day-2',
+        linkTitle: 'Array Cardio Day 2. JavaScript30.',
+        class: ''
+      },
+      { title: 'Fun with HTML5 Canvas',
+        image: FunWithHTML5Canvas,
+        url: '/portfolio/development/javascript30/8-fun-with-html5-canvas',
+        linkTitle: 'Fun with HTML5 Canvas. JavaScript30.',
+        class: ''
+      },
+      { title: 'Dev Tools Domination',
+        image: DevToolsDomination,
+        url: '/portfolio/development/javascript30/9-dev-tools-domination',
+        linkTitle: 'Dev Tools Domination. JavaScript30.',
+        class: ''
+      },
+      { title: 'Hold Shift and Check Checkboxes',
+        image: HoldShiftAndCheckCheckboxes,
+        url: '/portfolio/development/javascript30/10-hold-shift-and-check-checkboxes',
+        linkTitle: 'Hold Shift and Check Checkboxes. JavaScript30.',
+        class: ''
+      },
+      { title: 'Custom Video Player',
+        image: CustomVideoPlayer,
+        url: '/portfolio/development/javascript30/11-custom-video-player',
+        linkTitle: 'Custom Video Player. JavaScript30.',
+        class: ''
+      },
+      { title: 'Key Sequence Detection',
+        image: KeySequenceDetection,
+        url: '/portfolio/development/javascript30/12-key-sequence-detection',
+        linkTitle: 'Key Sequence Detection. JavaScript30.',
+        class: ''
+      },
+      { title: 'Slide in on Scroll',
+        image: SlideInOnScroll,
+        url: '/portfolio/development/javascript30/13-slide-in-on-scroll',
+        linkTitle: 'Slide in on Scroll. JavaScript30.',
+        class: ''
+      },
+      { title: 'JavaScript References vs. Copying',
+        image: JavascriptReferencesVsCopying,
+        url: '/portfolio/development/javascript30/14-javaScript-references-vs-copying',
+        linkTitle: 'JavaScript References vs. Copying. JavaScript30.',
+        class: ''
+      },
+      { title: 'LocalStorage',
+        image: LocalStorage,
+        url: '/portfolio/development/javascript30/15-localstorage',
+        linkTitle: 'LocalStorage. JavaScript30.',
+        class: ''
+      },
+      { title: 'Mouse Move Shadow',
+        image: MouseMoveShadow,
+        url: '/portfolio/development/javascript30/16-mouse-move-shadow',
+        linkTitle: 'Mouse Move Shadow. JavaScript30.',
+        class: ''
+      },
+      { title: 'Sort Without Articles',
+        image: SortWithoutArticles,
+        url: '/portfolio/development/javascript30/17-sort-without-articles',
+        linkTitle: 'Sort Without Articles. JavaScript30.',
+        class: ''
+      },
+      { title: 'Adding Up Times with Reduce',
+        image: AddingUpTimesWithReduce,
+        url: '/portfolio/development/javascript30/18-adding-up-times-with-reduce',
+        linkTitle: 'Adding Up Times with Reduce. JavaScript30.',
+        class: ''
+      },
+      { title: 'Webcam Fun',
+        image: WebcamFun,
+        url: '/portfolio/development/javascript30/19-webcam-fun',
+        linkTitle: 'Webcam Fun. JavaScript30.',
+        class: ''
+      },
+      { title: 'Speech Detection',
+        image: SpeechDetection,
+        url: '/portfolio/development/javascript30/20-speech-detection',
+        linkTitle: 'Speech Detection. JavaScript30.',
+        class: ''
+      },
+      { title: 'Geolocation',
+        image: Geolocation,
+        url: '/portfolio/development/javascript30/21-geolocation',
+        linkTitle: 'Geolocation. JavaScript30.',
+        class: ''
+      },
+      { title: 'Follow Along Link Highlighter',
+        image: FollowAlongLinkHighlighter,
+        url: '/portfolio/development/javascript30/22-follow-along-link-highlighter',
+        linkTitle: 'Follow Along Link Highlighter. JavaScript30.',
+        class: ''
+      },
+      { title: 'Speech Synthesis',
+        image: SpeechSynthesis,
+        url: '/portfolio/development/javascript30/23-speech-synthesis',
+        linkTitle: 'Speech Synthesis. JavaScript30.',
+        class: ''
+      },
+      { title: 'Sticky Nav',
+        image: StickyNav,
+        url: '/portfolio/development/javascript30/24-sticky-nav',
+        linkTitle: 'Sticky Nav. JavaScript30.',
+        class: ''
+      },
+      { title: 'Event Capture, Propagation, Bubbling and Once',
+        image: EventCapturePropogationBubblingAndOnce,
+        url: '/portfolio/development/javascript30/25-event-capture-propagation-bubbling-and-once',
+        linkTitle: 'Event Capture, Propagation, Bubbling and Once. JavaScript30.',
+        class: ''
+      },
+      { title: 'Stripe Follow Along Nav',
+        image: StripeFollowAlongNav,
+        url: '/portfolio/development/javascript30/26-stripe-follow-along-nav',
+        linkTitle: 'Stripe Follow Along Nav. JavaScript30.',
+        class: ''
+      },
+      { title: 'Click and Drag',
+        image: ClickAndDrag,
+        url: '/portfolio/development/javascript30/27-click-and-drag',
+        linkTitle: 'Click and Drag. JavaScript30.',
+        class: ''
+      },
+      { title: 'Video Speed Controller',
+        image: VideoSpeedController,
+        url: '/portfolio/development/javascript30/28-video-speed-controller',
+        linkTitle: 'Video Speed Controller. JavaScript30.',
+        class: ''
+      },
+      { title: 'Countdown Timer',
+        image: CountdownTimer,
+        url: '/portfolio/development/javascript30/29-countdown-timer',
+        linkTitle: 'Countdown Timer. JavaScript30.',
+        class: ''
+      },
+      { title: 'Whack A Mole',
+        image: WhackAMole,
+        url: '/portfolio/development/javascript30/30-whack-a-mole',
+        linkTitle: 'Whack A Mole. JavaScript30.',
+        class: 'end'
+      }
+    ]
+  };
+
+  render() {
+    return (
+      <div id="javascript30" className="section">
+        <div className="row showcase-2" data-equalizer>
+          {this.state.javaScript30.map(project => {
+            return (
+              <div className="small-12 medium-6 large-4 columns end" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch="project">
+                <a href={`%PUBLIC_URL%${project.url}`} title={project.linkTitle}>
+                  <div className="showcase-example">
+                    <h3 className="h5 white">{project.title}</h3>
+                    <img src={project.image} alt="" role="presentation" />
+                  </div>
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 };
 
 export default javaScript30;

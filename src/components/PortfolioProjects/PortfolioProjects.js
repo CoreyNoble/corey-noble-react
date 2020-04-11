@@ -102,11 +102,11 @@ const portfolioProjects = props => {
             <p>30 JavaScript (ES6) projects built and improved upon after following the <Link to="https://javascript30.com/"
                 target="_blank" rel="noopener noreferrer" title="View the JavaSctipt30 course by Wes Bos.">JavaScript30
                 course</Link> created by Wes&nbsp;Bos.</p>
-            <Link className={`${classes.CTA} ${classes.ProjectCTA}`} to={`${process.env.PUBLIC_URL}/portfolio/development/javascript30.html`}
+            <Link className={`${classes.CTA} ${classes.ProjectCTA}`} to={`${process.env.PUBLIC_URL}/portfolio/javascript30`}
               title="JavaScript 30. View the projects and the code.">View the projects and code</Link>
           </div>
           <div className="small-12 large-7 large-pull-5 columns end aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-            <Link to={`${process.env.PUBLIC_URL}/portfolio/development/javascript30.html`} title="JavaScript 30. View the projects and the code.">
+            <Link to={`${process.env.PUBLIC_URL}/portfolio/javascript30`} title="JavaScript 30. View the projects and the code.">
               <div className={`${classes.ShowcaseExample} no-bottom-space margin-top-0-mobile-margin-top-2`}>
                 <img src={JavaScript30Showcase} alt="" role="presentation" />
               </div>
@@ -121,11 +121,11 @@ const portfolioProjects = props => {
               detailed <Link to="https://www.youtube.com/watch?v=H2aW5V46khA" target="_blank" rel="noopener noreferrer"
                 title="Follow the lesson by Meth Meth Method that helped me create Tetris using JavaScript">lesson by
                 Meth&nbsp;Meth&nbsp;Method</Link>.</p>
-            <Link className={`${classes.CTA} ${classes.ProjectCTA}`} to={`${process.env.PUBLIC_URL}/portfolio/development/javascript-tetris.html`}
+            <Link className={`${classes.CTA} ${classes.ProjectCTA}`} to={`${process.env.PUBLIC_URL}/portfolio/javascript-tetris`}
               title="JavaScript Tetris. View the project and the code.">View the project and code</Link>
           </div>
           <div className="small-12 large-7 columns end" data-aos="fade-up" data-aos-delay="100">
-            <Link to={`${process.env.PUBLIC_URL}/portfolio/development/javascript-tetris.html`}
+            <Link to={`${process.env.PUBLIC_URL}/portfolio/javascript-tetris`}
               title="JavaScript Tetris. View the project and the code.">
               <div className={`${classes.ShowcaseExample} no-bottom-space margin-top-0-mobile-margin-top-2`}>
                 <img src={JavaScriptTetrisShowcase} alt="" role="presentation" />
@@ -155,7 +155,7 @@ const portfolioProjects = props => {
             </Link>
           </div>
           <div className="small-12 medium-6 columns" data-aos="fade-up" data-aos-delay="100">
-            <Link to={`${process.env.PUBLIC_URL}/portfolio/development/responsive-email-template-compiled.html`}
+            <Link to={`${process.env.PUBLIC_URL}/portfolio/responsive-email-template-compiled`}
               title="A responsive email template I developed.">
               <div className={`${classes.ShowcaseExample} no-bottom-space`}>
                 <h3 className="h4 black">Responsive Email</h3>
