@@ -38,6 +38,36 @@ const ContactBanner = React.lazy(() => import('./components/ContactBanner/Contac
 const ContactForm = React.lazy(() => import('./components/ContactForm/ContactForm'));
 
 const JavaScript30 = React.lazy(() => import('./containers/JavaScript30/JavaScript30'));
+const JS30DrumKit = React.lazy(() => import('./components/JavaScript30/DrumKit/DrumKit'));
+const JS30Clock = React.lazy(() => import('./components/JavaScript30/Clock/Clock'));
+const JS30UpdateCSSVariables = React.lazy(() => import('./components/JavaScript30/UpdateCSSVariables/UpdateCSSVariables'));
+const JS30ArrayCardioDay1 = React.lazy(() => import('./components/JavaScript30/ArrayCardioDay1/ArrayCardioDay1'));
+const JS30FlexPanelGallery = React.lazy(() => import('./components/JavaScript30/FlexPanelGallery/FlexPanelGallery'));
+const JS30TypeAhead = React.lazy(() => import('./components/JavaScript30/TypeAhead/TypeAhead'));
+const JS30ArrayCardioDay2 = React.lazy(() => import('./components/JavaScript30/ArrayCardioDay2/ArrayCardioDay2'));
+const JS30FunWithHTML5Canvas = React.lazy(() => import('./components/JavaScript30/FunWithHTML5Canvas/FunWithHTML5Canvas'));
+const JS30DevToolsDomination = React.lazy(() => import('./components/JavaScript30/DevToolsDomination/DevToolsDomination'));
+const JS30HoldShiftAndCheckCheckboxes = React.lazy(() => import('./components/JavaScript30/HoldShiftAndCheckCheckboxes/HoldShiftAndCheckCheckboxes'));
+const JS30CustomVideoPlayer = React.lazy(() => import('./components/JavaScript30/CustomVideoPlayer/CustomVideoPlayer'));
+const JS30KeySequenceDetection = React.lazy(() => import('./components/JavaScript30/KeySequenceDetection/KeySequenceDetection'));
+const JS30SlideInOnScroll = React.lazy(() => import('./components/JavaScript30/SlideInOnScroll/SlideInOnScroll'));
+const JS30JavaScriptReferencesVsCopying = React.lazy(() => import('./components/JavaScript30/JavaScriptReferencesVsCopying/JavaScriptReferencesVsCopying'));
+const JS30LocalStorage = React.lazy(() => import('./components/JavaScript30/LocalStorage/LocalStorage'));
+const JS30MouseMoveShadow = React.lazy(() => import('./components/JavaScript30/MouseMoveShadow/MouseMoveShadow'));
+const JS30SortWithoutArticles = React.lazy(() => import('./components/JavaScript30/SortWithoutArticles/SortWithoutArticles'));
+const JS30AddingUpTimesWithReduce = React.lazy(() => import('./components/JavaScript30/AddingUpTimesWithReduce/AddingUpTimesWithReduce'));
+const JS30WebcamFun = React.lazy(() => import('./components/JavaScript30/WebcamFun/WebcamFun'));
+const JS30SpeechDetection = React.lazy(() => import('./components/JavaScript30/SpeechDetection/SpeechDetection'));
+const JS30Geolocation = React.lazy(() => import('./components/JavaScript30/Geolocation/Geolocation'));
+const JS30FollowAlongLinkHighlighter = React.lazy(() => import('./components/JavaScript30/FollowAlongLinkHighlighter/FollowAlongLinkHighlighter'));
+const JS30SpeechSynthesis = React.lazy(() => import('./components/JavaScript30/SpeechSynthesis/SpeechSynthesis'));
+const JS30StickyNav = React.lazy(() => import('./components/JavaScript30/StickyNav/StickyNav'));
+const JS30EventCapturePropogationBubblingAndOnce = React.lazy(() => import('./components/JavaScript30/EventCapturePropogationBubblingAndOnce/EventCapturePropogationBubblingAndOnce'));
+const JS30StripeFollowAlongNav = React.lazy(() => import('./components/JavaScript30/StripeFollowAlongNav/StripeFollowAlongNav'));
+const JS30ClickAndDrag = React.lazy(() => import('./components/JavaScript30/ClickAndDrag/ClickAndDrag'));
+const JS30VideoSpeedController = React.lazy(() => import('./components/JavaScript30/VideoSpeedController/VideoSpeedController'));
+const JS30CountdownTimer = React.lazy(() => import('./components/JavaScript30/CountdownTimer/CoutdownTimer'));
+const JS30WhackAMole = React.lazy(() => import('./components/JavaScript30/WhackAMole/WhackAMole'));
 
 const SiteIndexComponent = React.lazy(() => import('./components/SiteIndexComponent/SiteIndexComponent'));
 const NotFoundComponent = React.lazy(() => import('./components/NotFoundComponent/NotFoundComponent'));
@@ -69,6 +99,276 @@ function Portfolio() {
   return (
     <React.Fragment>
       <Switch>
+      <Route 
+          path={`${match.path}/javascript30/drum-kit`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30DrumKit />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/clock`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30Clock />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/update-css-variables`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30UpdateCSSVariables />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/array-cardio-day-1`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30ArrayCardioDay1 />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/flex-panel-gallery`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30FlexPanelGallery />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/type-ahead`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30TypeAhead />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/array-cardio-day-2`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30ArrayCardioDay2 />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/fun-with-html5-canvas`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30FunWithHTML5Canvas />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/dev-tools-domination`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30DevToolsDomination />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/hold-shift-and-check-checkboxes`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30HoldShiftAndCheckCheckboxes />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/custom-video-player`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30CustomVideoPlayer />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/key-sequence-detection`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30KeySequenceDetection />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/slide-in-on-scroll`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30SlideInOnScroll />
+            </Suspense>
+          )} 
+        />
+        
+        <Route 
+          path={`${match.path}/javascript30/javascript-references-vs-copying`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30JavaScriptReferencesVsCopying />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/localstorage`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30LocalStorage />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/mouse-move-shadow`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30MouseMoveShadow />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/sort-without-articles`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30SortWithoutArticles />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/adding-up-times-with-reduce`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30AddingUpTimesWithReduce />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/webcam-fun`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30WebcamFun />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/speech-detection`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30SpeechDetection />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/geolocation`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30Geolocation />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/follow-along-link-highlighter`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30FollowAlongLinkHighlighter />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/speech-synthesis`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30SpeechSynthesis />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/sticky-nav`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30StickyNav />
+            </Suspense>
+          )} 
+        />
+        
+        <Route 
+          path={`${match.path}/javascript30/event-capture-propogation-bubbling-and-once`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30EventCapturePropogationBubblingAndOnce />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/stripe-follow-along-nav`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30StripeFollowAlongNav />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/click-and-drag`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30ClickAndDrag />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/video-speed-controller`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30VideoSpeedController />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/countdown-timer`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30CountdownTimer />
+            </Suspense>
+          )} 
+        />
+
+        <Route 
+          path={`${match.path}/javascript30/whack-a-mole`} 
+          render={() => (
+            <Suspense fallback={<div>Loading...</div>}>
+              <JS30WhackAMole />
+            </Suspense>
+          )} 
+        />
+
         <Route 
           path={`${match.path}/javascript30`} 
           render={() => (
