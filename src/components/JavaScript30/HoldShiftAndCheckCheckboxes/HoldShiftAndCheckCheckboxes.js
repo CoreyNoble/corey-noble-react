@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './HoldShiftAndCheckCheckboxes.module.scss';
+import './HoldShiftAndCheckCheckboxes.module.scss';
 
 const holdShiftAndCheckCheckboxes = props => {
   // Select all of the checkboxes
@@ -44,11 +44,11 @@ const holdShiftAndCheckCheckboxes = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -56,15 +56,15 @@ const holdShiftAndCheckCheckboxes = props => {
             <h1>Hold Shift and Check Checkboxes</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab" aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab" aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I add functionality that allows the user to hold 'shift' and 'click' to select multiple
                     list items at&nbsp;once.</p>
@@ -79,7 +79,7 @@ const holdShiftAndCheckCheckboxes = props => {
                   <p>Finally set 'lastChecked' to the current checkbox&nbsp;'this'.</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="RzJvoB"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 10 - Hold Shift And Check Checkboxes">
@@ -97,31 +97,31 @@ const holdShiftAndCheckCheckboxes = props => {
       </div>
 
       {/* <!-- JavaScript30 | 10 | Hold Shift and Check Checkboxes --> */}
-      <div id="javascript30-10" class="section">
-        <div class="row">
-          <div class="small-12 column">
-            <div class="inbox">
-              <div class="item">
+      <div id="javascript30-10" className="section">
+        <div className="row">
+          <div className="small-12 column">
+            <div className="inbox">
+              <div className="item">
                 <input type="checkbox" />
                 <p>Check one item.</p>
               </div>
-              <div class="item">
+              <div className="item">
                 <input type="checkbox" />
                 <p>Hold down your Shift key.</p>
               </div>
-              <div class="item">
+              <div className="item">
                 <input type="checkbox" />
                 <p>Check another item.</p>
               </div>
-              <div class="item">
+              <div className="item">
                 <input type="checkbox" />
                 <p>Everything in between will also become 'checked'.</p>
               </div>
-              <div class="item">
+              <div className="item">
                 <input type="checkbox" />
                 <p>This works both from top-to-bottom.</p>
               </div>
-              <div class="item">
+              <div className="item">
                 <input type="checkbox" />
                 <p>And from bottom-to-top.</p>
               </div>

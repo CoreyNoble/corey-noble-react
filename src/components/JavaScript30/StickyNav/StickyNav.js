@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './StickyNav.module.scss';
+import './StickyNav.module.scss';
 
 const stickyNav = props => {
   // Scoping this exercise to the page ID. Parent <div>.
@@ -32,11 +32,11 @@ const stickyNav = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -44,15 +44,15 @@ const stickyNav = props => {
             <h1>Sticky Nav</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I create a sticky navigation that starts partway down the page but sticks to the top when
                     the page is scrolled and the &lt;div&gt; hits the top of the&nbsp;viewport.</p>
@@ -65,7 +65,7 @@ const stickyNav = props => {
                     '.fixed-nav' class and remove the padding that was added to the top of the&nbsp;page.</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="JQZxMM"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 24 - Sticky Nav">
@@ -85,14 +85,14 @@ const stickyNav = props => {
       <div id="javascript30-24">
         <div id="sticky-nav">
           <ul>
-            <li class="logo"><a href="#">LOGO</a></li>
-            <li class="show-for-medium"><a href="#">Home</a></li>
+            <li className="logo"><a href="#">LOGO</a></li>
+            <li className="show-for-medium"><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Locations</a></li>
           </ul>
         </div>
 
-        <div class="site-wrap">
+        <div className="site-wrap">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a
             qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis
             quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,

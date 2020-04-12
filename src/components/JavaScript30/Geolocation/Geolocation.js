@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Geolocation.module.scss';
+import './Geolocation.module.scss';
 
 const geolocation = props => {
   const arrow = document.querySelector('.arrow'); // Compass
@@ -27,11 +27,11 @@ const geolocation = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -39,15 +39,15 @@ const geolocation = props => {
             <h1>Geolocation</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I am accessing the users' geolocation and displaying their current speed
                     and&nbsp;direction.</p>
@@ -55,12 +55,12 @@ const geolocation = props => {
                   <p>Next I request to watch the geolocation data (navigator.geolocation.watchPosition((data) =>&nbsp;{}). If
                     the user accepts the request, I change 'speed.textContent' to match the speed value provided by the
                     response (speed.textContent&nbsp;= data.coords.speed). For 'arrow' I rotate the image using the 'heading'
-                    in the response (arrow.style.transform&nbsp;= `rotate(${data.coords.heading}deg)`).</p>
+                    in the response (arrow.style.transform&nbsp;= `rotate(data.coords.heading deg)`).</p>
                   <p>If the user denies the request, I log an error to the console and alert the user that the application
                     requires geolocation permission to&nbsp;function.</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="dBKaVe"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 21 - Geolocation">
@@ -78,12 +78,12 @@ const geolocation = props => {
       </div>
 
       {/* <!-- JavaScript30 | 21 | Geolocation --> */}
-      <div id="javascript30-21" class="section">
-        <div class="row">
-          <div class="small-12 column">
-            <div class="locator">
-              <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" version="1.1"
-                x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+      <div id="javascript30-21" className="section">
+        <div className="row">
+          <div className="small-12 column">
+            <div className="locator">
+              <svg className="arrow" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="https://www.w3.org/1999/xlink" version="1.1"
+                x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xmlSpace="preserve">
                 <g>
                   <path fill="#fff"
                     d="M32,1.824C15.361,1.824,1.825,15.361,1.825,32c0,16.639,13.537,30.176,30.175,30.176   S62.175,48.639,62.175,32C62.175,15.361,48.639,1.824,32,1.824z M29.715,3.988h1.12l2.333,3.807V3.988h1.069v5.701h-1.155   l-2.298-3.718v3.718h-1.069V3.988z M9.323,33.917H8.102l-1.136-4.262l-1.132,4.262H4.587l-1.361-5.701h1.178l0.859,3.916   l1.042-3.916h1.369l0.999,3.982l0.875-3.982h1.159L9.323,33.917z M33.995,59.828c-0.181,0.285-0.438,0.497-0.77,0.636   c-0.332,0.139-0.745,0.208-1.241,0.208c-0.721,0-1.274-0.167-1.661-0.5c-0.386-0.333-0.617-0.819-0.692-1.456l1.12-0.109   c0.067,0.376,0.204,0.652,0.41,0.828c0.206,0.176,0.484,0.264,0.834,0.264c0.371,0,0.65-0.078,0.838-0.235   c0.188-0.157,0.282-0.34,0.282-0.55c0-0.135-0.04-0.25-0.119-0.344c-0.079-0.095-0.217-0.177-0.414-0.247   c-0.135-0.047-0.442-0.13-0.922-0.249c-0.617-0.153-1.05-0.341-1.299-0.564c-0.35-0.314-0.525-0.696-0.525-1.147   c0-0.29,0.082-0.562,0.247-0.815c0.165-0.253,0.402-0.445,0.712-0.577c0.31-0.132,0.684-0.198,1.122-0.198   c0.716,0,1.254,0.157,1.616,0.471c0.362,0.314,0.552,0.733,0.57,1.256l-1.151,0.051c-0.049-0.293-0.155-0.504-0.317-0.632   c-0.162-0.128-0.405-0.193-0.729-0.193c-0.334,0-0.596,0.069-0.786,0.206c-0.122,0.088-0.183,0.206-0.183,0.354   c0,0.135,0.057,0.25,0.171,0.346c0.145,0.122,0.498,0.249,1.058,0.381c0.56,0.132,0.974,0.269,1.243,0.41   c0.268,0.141,0.478,0.334,0.63,0.58c0.152,0.245,0.227,0.548,0.227,0.908C34.267,59.237,34.176,59.543,33.995,59.828z M32,52.795   c-11.466,0-20.795-9.329-20.795-20.795c0-11.466,9.329-20.795,20.795-20.795S52.795,20.534,52.795,32   C52.795,43.466,43.466,52.795,32,52.795z M55.014,33.917v-5.701h4.227v0.965h-3.076v1.264h2.862v0.96h-2.862v1.552h3.185v0.961   H55.014z" />
@@ -103,9 +103,9 @@ const geolocation = props => {
               </svg>
 
 
-              <h2 class="speed">
-                <span class="speed-value">0</span>
-                <span class="units">KM/H</span>
+              <h2 className="speed">
+                <span className="speed-value">0</span>
+                <span className="units">KM/H</span>
               </h2>
             </div>
           </div>

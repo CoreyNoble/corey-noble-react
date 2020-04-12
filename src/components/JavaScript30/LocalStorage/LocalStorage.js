@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './LocalStorage.module.scss';
+import './LocalStorage.module.scss';
 
 const localStorage = props => {
   const addItems = document.querySelector('.add-items'); // <form>
@@ -89,11 +89,11 @@ const localStorage = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -101,15 +101,15 @@ const localStorage = props => {
             <h1>LocalStorage</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I am saving the state of all of the user inputs into&nbsp;LocalStorage.</p>
                   <p>First I grab the &lt;form&gt; and &lt;ul&gt; on the page, as well as the 'items' in localStorage
@@ -149,7 +149,7 @@ const localStorage = props => {
                     and re-populate the list (populateList(items,&nbsp;itemsList).</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="xozMdL"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 15 - LocalStorage">
@@ -167,13 +167,13 @@ const localStorage = props => {
       </div>
 
       {/* <!-- JavaScript30 | 15 | LocalStorage --> */}
-      <div id="javascript30-15" class="section dark-blue">
-        <div class="row">
-          <div class="small-12 column">
+      <div id="javascript30-15" className="section dark-blue">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Fish SVG Cred: https://thenounproject.com/search/?q=fish&i=589236 --> */}
 
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
-              viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="https://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+              viewBox="0 0 512 512" enable-background="new 0 0 512 512" xmlSpace="preserve">
               <g>
                 <path
                   d="M495.9,425.3H16.1c-5.2,0-10.1,2.9-12.5,7.6c-2.4,4.7-2.1,10.3,0.9,14.6l39,56.4c2.6,3.8,7,6.1,11.6,6.1h401.7   c4.6,0,9-2.3,11.6-6.1l39-56.4c3-4.3,3.3-9.9,0.9-14.6C506,428.2,501.1,425.3,495.9,425.3z M449.4,481.8H62.6L43,453.6H469   L449.4,481.8z" />
@@ -189,14 +189,14 @@ const localStorage = props => {
               </g>
             </svg>
           </div>
-          <div class="small-12 column">
-            <div class="wrapper">
+          <div className="small-12 column">
+            <div className="wrapper">
               <h2>LOCAL TAPAS</h2>
               <p></p>
-              <ul class="plates">
+              <ul className="plates">
                 <li>Loading Tapas...</li>
               </ul>
-              <form class="add-items">
+              <form className="add-items">
                 <input type="text" name="item" placeholder="Item Name" required />
                 <input type="submit" value="+ Add Item" />
               </form>

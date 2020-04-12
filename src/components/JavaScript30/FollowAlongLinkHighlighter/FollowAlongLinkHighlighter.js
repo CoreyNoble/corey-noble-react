@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './FollowAlongLinkHighlighter.module.scss';
+import './FollowAlongLinkHighlighter.module.scss';
 
 const followAlongLinkHighlighter = props => {
   // Page. Parent <div>.
@@ -47,11 +47,11 @@ const followAlongLinkHighlighter = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -59,15 +59,15 @@ const followAlongLinkHighlighter = props => {
             <h1>Follow Along Link Highlighter</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I create a puppy &lt;div&gt; that follows along as the user hovers over links. The puppy
                     &lt;div&gt; re-sizes itself to match the width, height and position of the link the user is
@@ -92,13 +92,13 @@ const followAlongLinkHighlighter = props => {
                     top: linkCoords.top +&nbsp;window.scrollY,<br />
                     left: linkCoords.left +&nbsp;window.scrollX
                   </p>
-                  <p>Next inject the puppy div with the coordinates:<br />highlight.style.width = `${coords.width}px`;<br />
-                    highlight.style.height = `${coords.height}px`;<br />
-                    highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;</p>
+                  <p>Next inject the puppy div with the coordinates:<br />highlight.style.width = `coords.width px`;<br />
+                    highlight.style.height = `coords.height px`;<br />
+                    highlight.style.transform = `translate(coords.left px, coords.top px)`;</p>
                   <p>In <strong>mouseLeave()</strong> - Remove the '.active' class from the&nbsp;&lt;a&gt;.</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="ydEZPO"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 22 - Follow Along Link Highlighter">
@@ -116,24 +116,24 @@ const followAlongLinkHighlighter = props => {
       </div>
 
       {/* <!-- JavaScript30 | 22 | Follow Along Link Highlighter --> */}
-      <div id="javascript30-22" class="section">
-        <div class="nav row">
-          <div class="small-6 large-3 column">
+      <div id="javascript30-22" className="section">
+        <div className="nav row">
+          <div className="small-6 large-3 column">
             <a href="">Home</a>
           </div>
-          <div class="small-6 large-3 column">
+          <div className="small-6 large-3 column">
             <a href="">Order Status</a>
           </div>
-          <div class="small-6 large-3 column">
+          <div className="small-6 large-3 column">
             <a href="">Read Our History</a>
           </div>
-          <div class="small-6 large-3 column end">
+          <div className="small-6 large-3 column end">
             <a href="">Contact Us</a>
           </div>
         </div>
-        <div class="row">
-          <div class="small-12 column">
-            <div class="wrapper">
+        <div className="row">
+          <div className="small-12 column">
+            <div className="wrapper">
               <p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit. Est <a href="">explicabo</a> unde
                 natus necessitatibus esse obcaecati distinctio, aut itaque, qui&nbsp;vitae!</p>
               <p>Aspernatur sapiente quae sint <a href="">soluta</a> modi, atque praesentium laborum pariatur earum <a

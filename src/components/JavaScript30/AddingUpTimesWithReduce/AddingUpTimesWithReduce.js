@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './AddingUpTimesWithReduce.module.scss';
+import './AddingUpTimesWithReduce.module.scss';
 
 const addingUpTimesWithReduce = props => {
   const total = document.querySelector('.total-time');
@@ -40,11 +40,11 @@ const addingUpTimesWithReduce = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -52,15 +52,15 @@ const addingUpTimesWithReduce = props => {
             <h1>Adding Up Times with Reduce</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I am taking an array of elements with a data attribute of [data-time]. With that array I
                     calculate the 'total' amount of time in 'hours', 'minutes' and&nbsp;'secondsLeft'.</p>
@@ -80,7 +80,7 @@ const addingUpTimesWithReduce = props => {
                   <p>Finally output the values to the 'innerHTML' of&nbsp;'total'.</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="qzKgjV"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 18 - Adding Up Times With Reduce">
@@ -98,11 +98,11 @@ const addingUpTimesWithReduce = props => {
       </div>
 
       {/* <!-- JavaScript30 | 18 | Adding Up Times with Reduce --> */}
-      <div id="javascript30-18" class="section">
-        <div class="row">
-          <div class="small-12 column">
-            <h2 class="total">Total&nbsp;Time: <span class="total-time"></span></h2>
-            <ul class="videos">
+      <div id="javascript30-18" className="section">
+        <div className="row">
+          <div className="small-12 column">
+            <h2 className="total">Total&nbsp;Time: <span className="total-time"></span></h2>
+            <ul className="videos">
               <li data-time="5:43">
                 Video&nbsp;1: <strong>5:43</strong>
               </li>

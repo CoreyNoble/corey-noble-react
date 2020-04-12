@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './ClickAndDrag.module.scss';
+import './ClickAndDrag.module.scss';
 
 const clickAndDrag = props => {
   // The parent <div>.
@@ -61,11 +61,11 @@ const clickAndDrag = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -73,15 +73,15 @@ const clickAndDrag = props => {
             <h1>Click and Drag</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I create click and drag&nbsp;functionality.</p>
                   <p>First I get 'slider' and initialize some variables: isDown&nbsp;=&nbsp;false, startX,&nbsp;scrollLeft.
@@ -120,7 +120,7 @@ const clickAndDrag = props => {
                   </ul>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="JQZxLM"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 27 - Click And Drag">
@@ -139,32 +139,32 @@ const clickAndDrag = props => {
 
       {/* <!-- JavaScript30 | 27 | Click and Drag --> */}
       <div id="javascript30-27">
-        <div class="items">
-          <div class="item item1">01</div>
-          <div class="item item2">02</div>
-          <div class="item item3">03</div>
-          <div class="item item4">04</div>
-          <div class="item item5">05</div>
-          <div class="item item6">06</div>
-          <div class="item item7">07</div>
-          <div class="item item8">08</div>
-          <div class="item item9">09</div>
-          <div class="item item10">10</div>
-          <div class="item item11">11</div>
-          <div class="item item12">12</div>
-          <div class="item item13">13</div>
-          <div class="item item14">14</div>
-          <div class="item item15">15</div>
-          <div class="item item16">16</div>
-          <div class="item item17">17</div>
-          <div class="item item18">18</div>
-          <div class="item item19">19</div>
-          <div class="item item20">20</div>
-          <div class="item item21">21</div>
-          <div class="item item22">22</div>
-          <div class="item item23">23</div>
-          <div class="item item24">24</div>
-          <div class="item item25">25</div>
+        <div className="items">
+          <div className="item item1">01</div>
+          <div className="item item2">02</div>
+          <div className="item item3">03</div>
+          <div className="item item4">04</div>
+          <div className="item item5">05</div>
+          <div className="item item6">06</div>
+          <div className="item item7">07</div>
+          <div className="item item8">08</div>
+          <div className="item item9">09</div>
+          <div className="item item10">10</div>
+          <div className="item item11">11</div>
+          <div className="item item12">12</div>
+          <div className="item item13">13</div>
+          <div className="item item14">14</div>
+          <div className="item item15">15</div>
+          <div className="item item16">16</div>
+          <div className="item item17">17</div>
+          <div className="item item18">18</div>
+          <div className="item item19">19</div>
+          <div className="item item20">20</div>
+          <div className="item item21">21</div>
+          <div className="item item22">22</div>
+          <div className="item item23">23</div>
+          <div className="item item24">24</div>
+          <div className="item item25">25</div>
         </div>
       </div>
     </React.Fragment>

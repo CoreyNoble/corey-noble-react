@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './TypeAhead.module.scss';
+import './TypeAhead.module.scss';
 
 const typeAhead = props => {
   // JSON Data
@@ -45,17 +45,17 @@ const typeAhead = props => {
       // Find what it matched in the regex (City + State). Replace the characters with a surrounding <span> to highlight the search term.
       const cityName = place.city.replace(
         regex,
-        `<span class="hl">${this.value}</span>`
+        `<span className="hl">${this.value}</span>`
       );
       const stateName = place.state.replace(
         regex,
-        `<span class="hl">${this.value}</span>`
+        `<span className="hl">${this.value}</span>`
       );
       // Return the list item (City, State + Population).
       return `
             <li>
-                <span class="name">${cityName}, ${stateName}</span>
-                <span class="population">${numberWithCommas(
+                <span className="name">${cityName}, ${stateName}</span>
+                <span className="population">${numberWithCommas(
                   place.population
                 )}</span>
             </li>
@@ -78,11 +78,11 @@ const typeAhead = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -90,15 +90,15 @@ const typeAhead = props => {
             <h1>Type Ahead</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I am taking in JSON data and am using .filter() on the search &lt;input&gt; to display and
                     pair down the&nbsp;list.</p>
@@ -119,7 +119,7 @@ const typeAhead = props => {
                     .innerHTML of the 'suggestions'&nbsp;element.</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="LKrqZz"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 6 - Type Ahead">
@@ -137,12 +137,12 @@ const typeAhead = props => {
       </div>
 
       {/* <!-- JavaScript30 | 6 | Type Ahead --> */}
-      <div id="javascript30-6" class="section">
-        <div class="row">
-          <div class="small-12 column">
-            <form class="search-form">
-              <input type="text" class="search" placeholder="City or State" />
-              <ul class="suggestions">
+      <div id="javascript30-6" className="section">
+        <div className="row">
+          <div className="small-12 column">
+            <form className="search-form">
+              <input type="text" className="search" placeholder="City or State" />
+              <ul className="suggestions">
                 <li>Filter for a&nbsp;city</li>
                 <li>or a state</li>
               </ul>

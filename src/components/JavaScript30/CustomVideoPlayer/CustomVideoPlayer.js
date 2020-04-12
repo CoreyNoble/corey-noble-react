@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './CustomVideoPlayer.module.scss';
+import './CustomVideoPlayer.module.scss';
 
 const customVideoPlayer = props => {
   /* Elements */
@@ -95,11 +95,11 @@ const customVideoPlayer = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -107,15 +107,15 @@ const customVideoPlayer = props => {
             <h1>Custom Video Player</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I create a custom video&nbsp;player.</p>
                   <p>First I grab all of the required elements and put them into variables. I <strong>listen</strong> for the
@@ -196,7 +196,7 @@ const customVideoPlayer = props => {
                       <ul>
                         <li>Calculate the 'percent' remaining ((video.currentTime&nbsp;/ video.duration)&nbsp;*100). Then
                           update the width of the 'progressBar' to match the 'percent' by injecting 'percent' into the style
-                          attribute (progressBar.style.flexBasis =&nbsp;`${percent}%`).</li>
+                          attribute (progressBar.style.flexBasis =&nbsp;`percent`).</li>
                       </ul>
                     </li>
                     <li>
@@ -209,7 +209,7 @@ const customVideoPlayer = props => {
                   </ul>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="ewKxgz"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 11 - Custom Video Player">
@@ -227,22 +227,22 @@ const customVideoPlayer = props => {
       </div>
 
       {/* <!-- JavaScript30 | 11 | Custom Video Player --> */}
-      <div id="javascript30-11" class="section">
-        <div class="row">
-          <div class="small-12 column">
-            <div class="player">
-              <video class="player__video viewer"
+      <div id="javascript30-11" className="section">
+        <div className="row">
+          <div className="small-12 column">
+            <div className="player">
+              <video className="player__video viewer"
                 src="{{root}}assets/video/javascript30/11-custom-video-player/11-custom-video-player-example.mp4"></video>
 
-              <div class="player__controls">
-                <div class="progress">
-                  <div class="progress__filled"></div>
+              <div className="player__controls">
+                <div className="progress">
+                  <div className="progress__filled"></div>
                 </div>
-                <button class="player__button toggle" title="Toggle Play">►</button>
-                <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1" />
-                <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1" />
-                <button data-skip="-10" class="player__button">« 10s</button>
-                <button data-skip="25" class="player__button">25s »</button>
+                <button className="player__button toggle" title="Toggle Play">►</button>
+                <input type="range" name="volume" className="player__slider" min="0" max="1" step="0.05" value="1" />
+                <input type="range" name="playbackRate" className="player__slider" min="0.5" max="2" step="0.1" value="1" />
+                <button data-skip="-10" className="player__button">« 10s</button>
+                <button data-skip="25" className="player__button">25s »</button>
               </div>
             </div>
           </div>

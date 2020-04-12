@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './EventCapturePropogationBubblingAndOnce.module.scss';
+import './EventCapturePropogationBubblingAndOnce.module.scss';
 
 const eventCapturePropogationBubblingAndOnce = props => {
   // All <divs>.
@@ -13,7 +13,7 @@ const eventCapturePropogationBubblingAndOnce = props => {
   //// When the Event Capture is complete, it then starts to bubble up (bottom->top). Starting at the current DOM <element>, then proceeding on to its' the parent <element>, one at a time, until it gets back up to the document level (root).
   function logText(e) {
     // For example:
-    // Clicking on <div class="three"> returns 'three', 'two', 'one' when we're looking for the classList on the <div>.
+    // Clicking on <div className="three"> returns 'three', 'two', 'one' when we're looking for the classList on the <div>.
     console.log(this.classList.value);
     // Log the <element>.
     // console.log(this);
@@ -53,11 +53,11 @@ const eventCapturePropogationBubblingAndOnce = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -65,15 +65,15 @@ const eventCapturePropogationBubblingAndOnce = props => {
             <h1>Event Capture, Propagation, Bubbling and Once</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I learned about Event capture, Propagation, Bubbling, and&nbsp;Once.</p>
                   <p><strong>Event Capture</strong>&nbsp;- When the user makes a 'click', the event ripples top to bottom from
@@ -92,7 +92,7 @@ const eventCapturePropogationBubblingAndOnce = props => {
                     the event only fires one&nbsp;time.</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="wLXNpV"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 25 - Event Capture, Propagation, Bubbling and Once">
@@ -110,15 +110,15 @@ const eventCapturePropogationBubblingAndOnce = props => {
       </div>
 
       {/* <!-- JavaScript30 | 25 | Event Capture, Propagation, Bubbling and Once --> */}
-      <div id="javascript30-25" class="section">
-        <div class="row">
-          <div class="small-12 column">
-            <h2 class="h3">One</h2>
-            <div class="one">
-              <h2 class="h3">Two</h2>
-              <div class="two">
-                <h2 class="h3">Three</h2>
-                <div class="three">
+      <div id="javascript30-25" className="section">
+        <div className="row">
+          <div className="small-12 column">
+            <h2 className="h3">One</h2>
+            <div className="one">
+              <h2 className="h3">Two</h2>
+              <div className="two">
+                <h2 className="h3">Three</h2>
+                <div className="three">
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './CoutdownTimer.module.scss';
+import './CoutdownTimer.module.scss';
 
 const coutdownTimer = props => {
   // Initialize the countdown.
@@ -103,11 +103,11 @@ const coutdownTimer = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -115,15 +115,15 @@ const coutdownTimer = props => {
             <h1>Countdown Timer</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I create a countdown timer&nbsp;application.</p>
                   <p>First I initialize a 'countdown' variable. Then I get the following elements: 'timerDisplay', 'endTime',
@@ -166,7 +166,7 @@ const coutdownTimer = props => {
                   </ul>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="WqyPJb"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 29 - Countdown Timer">
@@ -184,29 +184,29 @@ const coutdownTimer = props => {
       </div>
 
       {/* <!-- JavaScript30 | 29 | Countdown Timer --> */}
-      <div id="javascript30-29" class="section">
-        <div class="row">
-          <div class="small-12 column">
-            <div class="timer">
-              <div class="timer__controls">
-                <div class="row" data-equalizer>
-                  <div class="timer__control small-6 large-2 columns" data-equalizer-watch>
-                    <button data-time="20" class="timer__button">20 Secs</button>
+      <div id="javascript30-29" className="section">
+        <div className="row">
+          <div className="small-12 column">
+            <div className="timer">
+              <div className="timer__controls">
+                <div className="row" data-equalizer>
+                  <div className="timer__control small-6 large-2 columns" data-equalizer-watch>
+                    <button data-time="20" className="timer__button">20 Secs</button>
                   </div>
-                  <div class="timer__control small-6 large-2 columns" data-equalizer-watch>
-                    <button data-time="300" class="timer__button">Work 5</button>
+                  <div className="timer__control small-6 large-2 columns" data-equalizer-watch>
+                    <button data-time="300" className="timer__button">Work 5</button>
                   </div>
-                  <div class="timer__control small-6 large-2 columns" data-equalizer-watch>
-                    <button data-time="900" class="timer__button">Quick 15</button>
+                  <div className="timer__control small-6 large-2 columns" data-equalizer-watch>
+                    <button data-time="900" className="timer__button">Quick 15</button>
                   </div>
-                  <div class="timer__control small-6 large-2 columns" data-equalizer-watch>
-                    <button data-time="1200" class="timer__button">Snack 20</button>
+                  <div className="timer__control small-6 large-2 columns" data-equalizer-watch>
+                    <button data-time="1200" className="timer__button">Snack 20</button>
                   </div>
-                  <div class="timer__control small-6 large-2 columns" data-equalizer-watch>
-                    <button data-time="3600" class="timer__button">Lunch Break</button>
+                  <div className="timer__control small-6 large-2 columns" data-equalizer-watch>
+                    <button data-time="3600" className="timer__button">Lunch Break</button>
                   </div>
-                  <div class="timer__control small-6 large-2 columns end" data-equalizer-watch>
-                    <div class="contact-form">
+                  <div className="timer__control small-6 large-2 columns end" data-equalizer-watch>
+                    <div className="contact-form">
                       <form name="customForm" id="custom">
                         <input type="text" name="minutes" placeholder="Enter Minutes" />
                       </form>
@@ -214,9 +214,9 @@ const coutdownTimer = props => {
                   </div>
                 </div>
               </div>
-              <div class="display">
-                <h2 class="display__time-left">0:00</h2>
-                <p class="display__end-time">Should be back</p>
+              <div className="display">
+                <h2 className="display__time-left">0:00</h2>
+                <p className="display__end-time">Should be back</p>
               </div>
             </div>
           </div>

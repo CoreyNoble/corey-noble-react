@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './SlideInOnScroll.module.scss';
+import './SlideInOnScroll.module.scss';
 
 const slideInOnScroll = props => {
   // debounce: for performance. Pass a function through debounce to minimize how often the function can be run (wait = 20(milliseconds)).
@@ -50,11 +50,11 @@ const slideInOnScroll = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section black">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section black">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -62,15 +62,15 @@ const slideInOnScroll = props => {
             <h1>Slide in on Scroll</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I learn how to create a slide in on scroll effect on&nbsp;elements.</p>
                   <p>First I create a variable that finds all '.slide-in'&nbsp;elements.</p>
@@ -84,7 +84,7 @@ const slideInOnScroll = props => {
                     Otherwise remove the '.active' class. This transitions the&nbsp;element.</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="rEKPyW"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 13 - Slide In On Scroll">
@@ -102,9 +102,9 @@ const slideInOnScroll = props => {
       </div>
 
       {/* <!-- JavaScript30 | 13 | Slide in on Scroll --> */}
-      <div class="section white">
-        <div class="row">
-          <div id="javascript30-13" class="small-12 column">
+      <div className="section white">
+        <div className="row">
+          <div id="javascript30-13" className="small-12 column">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis
               a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis
               quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
@@ -114,7 +114,7 @@ const slideInOnScroll = props => {
               quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
               ut,&nbsp;dignissimos.</p>
 
-            <img class="align-left slide-in" src="https://unsplash.it/400/400" alt="" role="presentation" />
+            <img className="align-left slide-in" src="https://unsplash.it/400/400" alt="" role="presentation" />
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt facilis et iste corrupti omnis
               tenetur est. Iste ut est dicta dolor itaque adipisci, dolorum minima, veritatis earum provident error molestias.
@@ -125,7 +125,7 @@ const slideInOnScroll = props => {
               fuga, nisi eligendi natus maiores illum quas quos et aperiam aut doloremque optio maxime fugiat doloribus. Eum
               dolorum expedita quam,&nbsp;nesciunt</p>
 
-            <img class="align-right slide-in" src="https://unsplash.it/400/401" alt="" role="presentation" />
+            <img className="align-right slide-in" src="https://unsplash.it/400/401" alt="" role="presentation" />
 
             <p> at provident praesentium atque quas rerum optio dignissimos repudiandae ullam illum quibusdam. Vel ad error
               quibusdam, illo ex totam placeat. Quos excepturi fuga, molestiae ea quisquam minus, ratione dicta consectetur
@@ -149,11 +149,11 @@ const slideInOnScroll = props => {
               Aperiam, qui ut tenetur, voluptate doloremque officiis dicta quaerat voluptatem rerum natus magni. Eum amet
               autem dolor&nbsp;ullam.</p>
 
-            <img class="align-left slide-in" src="https://unsplash.it/200/500" alt="" role="presentation" />
+            <img className="align-left slide-in" src="https://unsplash.it/200/500" alt="" role="presentation" />
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio maiores adipisci quibusdam repudiandae
               dolor vero placeat esse sit! Quibusdam saepe aperiam explicabo placeat optio, consequuntur nihil voluptatibus
-              expedita quia vero perferendis, deserunt et incidunt eveniet <img class="align-right slide-in" src="https://unsplash.it/200/200" alt="" role="presentation" /> temporibus doloremque possimus facilis. Possimus labore, officia dolore! Eaque
+              expedita quia vero perferendis, deserunt et incidunt eveniet <img className="align-right slide-in" src="https://unsplash.it/200/200" alt="" role="presentation" /> temporibus doloremque possimus facilis. Possimus labore, officia dolore! Eaque
               ratione saepe, alias harum laboriosam deserunt laudantium blanditiis eum explicabo placeat reiciendis labore
               iste sint. Consectetur expedita dignissimos, non quos distinctio, eos rerum facilis eligendi. Asperiores
               laudantium, rerum ratione consequatur, culpa consectetur possimus atque ab tempore illum non dolor nesciunt.
@@ -176,7 +176,7 @@ const slideInOnScroll = props => {
               voluptas porro officiis, amet! Molestias, fugit, ut! Tempore non magnam, amet, facere ducimus accusantium eos
               veritatis&nbsp;neque.</p>
 
-            <img class="align-right slide-in" src="https://unsplash.it/400/400" alt="" role="presentation" />
+            <img className="align-right slide-in" src="https://unsplash.it/400/400" alt="" role="presentation" />
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio maiores adipisci quibusdam repudiandae
               dolor vero placeat esse sit! Quibusdam saepe aperiam explicabo placeat optio, consequuntur nihil voluptatibus

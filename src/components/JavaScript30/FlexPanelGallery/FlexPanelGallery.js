@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './FlexPanelGallery.module.scss';
+import './FlexPanelGallery.module.scss';
 
 const flexPanelGallery = props => {
   // Find all panels. Gives us a Node List.
@@ -28,11 +28,11 @@ const flexPanelGallery = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -40,15 +40,15 @@ const flexPanelGallery = props => {
             <h1>Flex Panel Gallery</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I create an interactive panel&nbsp;gallery.</p>
                   <p>First I find all of the elements with a class of '.panel', I then <strong>listen</strong> for
@@ -67,7 +67,7 @@ const flexPanelGallery = props => {
                     'e.propertyName.includes('flex')'. If so, I toggle the second class&nbsp;'.open-active'.</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="RzJvaJ"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 5 - Flex Panel Gallery">
@@ -85,33 +85,33 @@ const flexPanelGallery = props => {
       </div>
 
       {/* <!-- JavaScript30 | 5 | Flex Panel Gallery --> */}
-      <div class="section dark-blue">
-        <div class="row">
-          <div id="javascript30-5" class="small-12 column">
-            <div class="panels">
-              <div class="panel panel1">
+      <div className="section dark-blue">
+        <div className="row">
+          <div id="javascript30-5" className="small-12 column">
+            <div className="panels">
+              <div className="panel panel1">
                 <p>Hey</p>
-                <p class="primary">Let's</p>
+                <p className="primary">Let's</p>
                 <p>Dance</p>
               </div>
-              <div class="panel panel2">
+              <div className="panel panel2">
                 <p>Give</p>
-                <p class="primary">Take</p>
+                <p className="primary">Take</p>
                 <p>Receive</p>
               </div>
-              <div class="panel panel3">
+              <div className="panel panel3">
                 <p>Experience</p>
-                <p class="primary">It</p>
+                <p className="primary">It</p>
                 <p>Today</p>
               </div>
-              <div class="panel panel4">
+              <div className="panel panel4">
                 <p>Give</p>
-                <p class="primary">All</p>
+                <p className="primary">All</p>
                 <p>You&nbsp;can</p>
               </div>
-              <div class="panel panel5">
+              <div className="panel panel5">
                 <p>Life</p>
-                <p class="primary">In</p>
+                <p className="primary">In</p>
                 <p>Motion</p>
               </div>
             </div>

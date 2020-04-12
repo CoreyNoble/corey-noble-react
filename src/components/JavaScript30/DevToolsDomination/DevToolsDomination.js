@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './DevToolsDomination.module.scss';
+import './DevToolsDomination.module.scss';
 
 const devToolsDomination = props => {
   const dogs = [
@@ -96,11 +96,11 @@ const devToolsDomination = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -108,15 +108,15 @@ const devToolsDomination = props => {
             <h1>Dev Tools Domination</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I learned about the tools and methods that are available inside of the&nbsp;console.</p>
                   <p><strong>Regular console.log()</strong>&nbsp;- Outputs whatever you pass into it, String, variable,
@@ -133,7 +133,7 @@ const devToolsDomination = props => {
                   <p><strong>console.log(p)</strong>&nbsp;- Display the&nbsp;&lt;element&gt;</p>
                   <p><strong>console.dir(p)</strong>&nbsp;- display the available methods and properties for
                     an&nbsp;&lt;element&gt;.</p>
-                  <p><strong>console.group(`${dog.name}`) / console.groupEnd(`${dog.name}`)</strong>&nbsp;- Creating a
+                  <p><strong>console.group(dog.name) / console.groupEnd(dog.name)</strong>&nbsp;- Creating a
                     collapsable group of logs in the&nbsp;console.</p>
                   <p><strong>console.count()</strong>&nbsp;- Each time the same item appears, it will log the item, and will
                     also increment the counter of occurrences from that logged&nbsp;item.</p>
@@ -143,7 +143,7 @@ const devToolsDomination = props => {
                     properties, displays the data in a table format inside of the&nbsp;console.</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="QXxYGL"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 9 - Dev Tools Domination">
@@ -161,27 +161,27 @@ const devToolsDomination = props => {
       </div>
 
       {/* <!-- JavaScript30 | 9 | Dev Tools Domination --> */}
-      <div class="section blue">
-        <div class="row">
-          <div id="javascript30-9" class="small-12 column">
-            <h2 class="h4">This project work is only visible within the JavaScript&nbsp;console.</h2>
-            <div class="row">
-              <div class="small-12 medium-6 large-3 columns">
-                <h3 class="h5">Chrome</h3>
+      <div className="section blue">
+        <div className="row">
+          <div id="javascript30-9" className="small-12 column">
+            <h2 className="h4">This project work is only visible within the JavaScript&nbsp;console.</h2>
+            <div className="row">
+              <div className="small-12 medium-6 large-3 columns">
+                <h3 className="h5">Chrome</h3>
                   <p>Windows: Ctrl + Shift +&nbsp;J.</p>
                   <p>Mac: Cmd + Opt +&nbsp;J.</p>
               </div>
-              <div class="small-12 medium-6 large-3 columns">
-                <h3 class="h5">Firefox</h3>
+              <div className="small-12 medium-6 large-3 columns">
+                <h3 className="h5">Firefox</h3>
                   <p>Windows: Ctrl + Shift +&nbsp;K.</p>
                   <p>Mac: Cmd + Opt +&nbsp;K.</p>
               </div>
-              <div class="small-12 medium-6 large-3 columns">
-                <h3 class="h5">Safari</h3>
+              <div className="small-12 medium-6 large-3 columns">
+                <h3 className="h5">Safari</h3>
                 <p>Cmd + Opt +&nbsp;C.</p>
               </div>
-              <div class="small-12 medium-6 large-3 columns">
-                <h3 class="h5">Edge&nbsp;/ Internet&nbsp;Explorer</h3>
+              <div className="small-12 medium-6 large-3 columns">
+                <h3 className="h5">Edge&nbsp;/ Internet&nbsp;Explorer</h3>
                   <p>F12, then click on the “Console”&nbsp;tab.</p>
               </div>
             </div>

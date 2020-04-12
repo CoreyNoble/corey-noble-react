@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './UpdateCSSVariables.module.scss';
+import './UpdateCSSVariables.module.scss';
 
 const updateCSSVariables = props => {
   // Get all of the inputs
@@ -22,11 +22,11 @@ const updateCSSVariables = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -34,15 +34,15 @@ const updateCSSVariables = props => {
             <h1>Update CSS Variables</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I update CSS variables using&nbsp;JavaScript.</p>
                   <p>First I get all of the &lt;input&gt; elements on the page with a class of '.controls'
@@ -55,7 +55,7 @@ const updateCSSVariables = props => {
                     +&nbsp;suffix).</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="XLYOmK"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 3 - Update CSS Variables">
@@ -73,22 +73,22 @@ const updateCSSVariables = props => {
       </div>
 
       {/* <!-- JavaScript30 | 3 | Update CSS Variables --> */}
-      <div class="section black">
-        <div class="row">
-          <div id="javascript30-3" class="small-12 column">
-            <h2>Update CSS Variables with&nbsp;<span class="hl">JavaScript</span></h2>
+      <div className="section black">
+        <div className="row">
+          <div id="javascript30-3" className="small-12 column">
+            <h2>Update CSS Variables with&nbsp;<span className="hl">JavaScript</span></h2>
 
-            <div class="black controls row">
-              <div class="small-12 large-4 columns">
-                <label class="h4" for="spacing">Spacing:</label>
+            <div className="black controls row">
+              <div className="small-12 large-4 columns">
+                <label className="h4" for="spacing">Spacing:</label>
                 <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px" />
               </div>
-              <div class="small-12 large-4 columns">
-                <label class="h4" for="blur">Blur:</label>
+              <div className="small-12 large-4 columns">
+                <label className="h4" for="blur">Blur:</label>
                 <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px" />
               </div>
-              <div class="small-12 large-4 columns end">
-                <label class="h4" for="base">Base Color:</label>
+              <div className="small-12 large-4 columns end">
+                <label className="h4" for="base">Base Color:</label>
                 <input id="base" type="color" name="base" value="#6dbfbf" />
               </div>
             </div>

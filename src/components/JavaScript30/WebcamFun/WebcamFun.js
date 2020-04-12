@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './WebcamFun.module.scss';
+import './WebcamFun.module.scss';
 
 const webcamFun = props => {
   const video = document.querySelector('#player'); // <video>
@@ -208,11 +208,11 @@ const webcamFun = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -220,15 +220,15 @@ const webcamFun = props => {
             <h1>Webcam Fun</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I stream a users' webcam and output that video feed to the browser, I then copy the pixel
                     data from the video feed into a &lt;canvas&gt; element. From there I can run various filter functions that
@@ -253,7 +253,7 @@ const webcamFun = props => {
                   </ul>
                   <p>I also initialize a function&nbsp;getVideo().</p>
                   <p>In <strong>getVideo()</strong>&nbsp;- Get the users' webcam feed
-                    (navigator.mediaDevices.getUserMedia({&nbsp;video:&nbsp;true, audio:&nbsp;false&nbsp;}) When it receives
+                    (navigator.mediaDevices.getUserMedia(&nbsp;video:&nbsp;true, audio:&nbsp;false&nbsp;) When it receives
                     the promise .then() set the 'video.srcObject' to the feed, and .play() the&nbsp;&lt;video&gt;.</p>
                   <p>In <strong>paintToCanvas()</strong>&nbsp;- Set the 'width' and 'height' of the &lt;canvas&gt; element
                     equal to the resolution of the video stream (width&nbsp;=&nbsp;video.videoWidth).</p>
@@ -269,13 +269,13 @@ const webcamFun = props => {
                     that uses 'toDataURL('image/jpeg')' and a variable 'link' that creates an &lt;a&gt; element. Set the
                     'link' to equal the&nbsp;'data'</p>
                   <p>On the link also 'setAttribute' to ensure the link downloads the image, with a specific name. Then set
-                    the .innerHTML to an &lt;img&gt; with a 'src="${data}". This creates both the image thumbnail, and the
+                    the .innerHTML to an &lt;img&gt; with a 'src="data". This creates both the image thumbnail, and the
                     download link for that&nbsp;image.</p>
                   <p>Finally, insert the image at the beginning of the 'strip' buy using .insertBefore
                     (strip.insertBefore(link, strip.firstChild)).</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="pXKGrj"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 19 - Webcam Fun">
@@ -293,49 +293,49 @@ const webcamFun = props => {
       </div>
 
       {/* <!-- JavaScript30 | 19 | Webcam Fun --> */}
-      <div id="javascript30-19" class="section">
-        <div class="row">
-          <div class="small-12 column">
+      <div id="javascript30-19" className="section">
+        <div className="row">
+          <div className="small-12 column">
             <div id="photobooth">
-              <div class="row">
-                <div class="small-12 large-6 columns">
+              <div className="row">
+                <div className="small-12 large-6 columns">
                   <canvas id="photo"></canvas>
                   <video id="player"></video>
                 </div>
 
-                <div class="controls small-12 large-6 columns">
-                  <h2 class="h4">Controls:</h2>
-                  <ul class="accordion" data-accordion data-allow-all-closed="true">
-                    <li class="accordion-item" data-accordion-item="">
+                <div className="controls small-12 large-6 columns">
+                  <h2 className="h4">Controls:</h2>
+                  <ul className="accordion" data-accordion data-allow-all-closed="true">
+                    <li className="accordion-item" data-accordion-item="">
                       {/* <!-- Title --> */}
-                      <a href="#" class="accordion-title" aria-controls="green-screen" role="tab" aria-expanded="false" aria-selected="false">
-                        <h3 class="h5">Green Screen Colour Knockout</h3>
+                      <a href="#" className="accordion-title" aria-controls="green-screen" role="tab" aria-expanded="false" aria-selected="false">
+                        <h3 className="h5">Green Screen Colour Knockout</h3>
                       </a>
 
-                      <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="green-screen"
+                      <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="green-screen"
                         aria-hidden="true" id="green-screen" style="display: none;">
                         {/* <!-- Content --> */}
-                        <div class="row rgb">
-                          <div class="small-12 columns">
+                        <div className="row rgb">
+                          <div className="small-12 columns">
                             <label for="greenScreen">Knockout Colour</label>
                             <input id="greenScreen" type="radio" name="filterInput" value="greenScreen" />
                           </div>
 
-                          <div class="small-6 medium-4 columns">
+                          <div className="small-6 medium-4 columns">
                             <label for="rmin">Red Min:</label>
                             <input id="rmin" type="range" min="0" max="255" name="rmin" />
                             <label for="rmax">Red Max:</label>
                             <input id="rmax" type="range" min="0" max="255" name="rmax" />
                           </div>
 
-                          <div class="small-6 medium-4 columns">
+                          <div className="small-6 medium-4 columns">
                             <label for="gmin">Green Min:</label>
                             <input id="gmin" type="range" min="0" max="255" name="gmin" />
                             <label for="gmax">Green Max:</label>
                             <input id="gmax" type="range" min="0" max="255" name="gmax" />
                           </div>
 
-                          <div class="small-6 medium-4 columns end">
+                          <div className="small-6 medium-4 columns end">
                             <label for="bmin">Blue Min:</label>
                             <input id="bmin" type="range" min="0" max="255" name="bmin" />
                             <label for="bmax">Blue Max:</label>
@@ -344,25 +344,25 @@ const webcamFun = props => {
                         </div>
                       </div>
                     </li>
-                    <li class="accordion-item" data-accordion-item="">
+                    <li className="accordion-item" data-accordion-item="">
                       {/* <!-- Title --> */}
-                      <a href="#" class="accordion-title" aria-controls="filters" role="tab" aria-expanded="false" aria-selected="false">
-                        <h3 class="h5">Filters</h3>
+                      <a href="#" className="accordion-title" aria-controls="filters" role="tab" aria-expanded="false" aria-selected="false">
+                        <h3 className="h5">Filters</h3>
                       </a>
 
-                      <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="filters"
+                      <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="filters"
                         aria-hidden="true" id="filters" style="display: none;">
                         {/* <!-- Content --> */}
-                        <div class="row">
-                          <div class="small-12 medium-6 columns">
+                        <div className="row">
+                          <div className="small-12 medium-6 columns">
                             <label for="redShift">Red Shift</label>
                             <input id="redShift" type="radio" name="filterInput" value="redShift" />
                           </div>
-                          <div class="small-12 medium-6 columns">
+                          <div className="small-12 medium-6 columns">
                             <label for="rgbShift">RGB Split</label>
                             <input id="rgbShift" type="radio" name="filterInput" value="rgbShift" />
                           </div>
-                          {/* <!-- <div class="small-12 medium-4 columns">
+                          {/* <!-- <div className="small-12 medium-4 columns">
                               <label for="ghosting">Ghosting</label>
                               <input id="ghosting" type="checkbox" name="ghosting">
                           </div> --> */}
@@ -375,9 +375,9 @@ const webcamFun = props => {
                 </div>
               </div>
 
-              <div class="row">
-                <div class="small-12 columns">
-                  <div class="strip"></div>
+              <div className="row">
+                <div className="small-12 columns">
+                  <div className="strip"></div>
                 </div>
               </div>
             </div>
@@ -385,7 +385,7 @@ const webcamFun = props => {
         </div>
       </div>
 
-      <audio class="snap" src="{{root}}assets/sounds/javascript30/19-webcam-fun/snap.mp3" hidden></audio>
+      <audio className="snap" src="{{root}}assets/sounds/javascript30/19-webcam-fun/snap.mp3" hidden></audio>
     </React.Fragment>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './speechDetection.module.scss';
+import './SpeechDetection.module.scss';
 
 const speechDetection = props => {
   // 'SpeechRecognition' is a global variable that lives in the browser. It lives on top of 'window'.
@@ -8,7 +8,7 @@ const speechDetection = props => {
   window.SpeechRecognition || window.webkitSpeechRecognition;
 
   // Create a new instance of SpeechRecognition().
-  const recognition = new SpeechRecognition();
+  const recognition = new window.SpeechRecognition();
   // See what you are saying, as you are saying it. Without this, the text would only show when the line is finished.
   recognition.interimResults = true;
 
@@ -56,11 +56,11 @@ const speechDetection = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -68,15 +68,15 @@ const speechDetection = props => {
             <h1>Speech Detection</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I detect speech in the browser and output the resulting string to the&nbsp;DOM.</p>
                   <p>First I initialize the speech recognition in the browser(window.SpeechRecognition&nbsp;=
@@ -98,7 +98,7 @@ const speechDetection = props => {
                     ends ('end',&nbsp;recognition.start).</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="YovBxj"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 20 - Speech Detection">
@@ -116,10 +116,10 @@ const speechDetection = props => {
       </div>
 
       {/* <!-- JavaScript30 | 20 | Speech Detection --> */}
-      <div id="javascript30-20" class="section">
-        <div class="row">
-          <div class="small-12 column">
-            <div class="words" contenteditable></div>
+      <div id="javascript30-20" className="section">
+        <div className="row">
+          <div className="small-12 column">
+            <div className="words" contenteditable></div>
           </div>
         </div>
       </div>

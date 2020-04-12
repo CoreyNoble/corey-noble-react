@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './JavaScriptReferencesVsCopying.module.scss';
+import './JavaScriptReferencesVsCopying.module.scss';
 
 const javaScriptReferencesVsCopying = props => {
   // Strings, numbers and booleans
@@ -169,11 +169,11 @@ const javaScriptReferencesVsCopying = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -181,15 +181,15 @@ const javaScriptReferencesVsCopying = props => {
             <h1>JavaScript References VS Copying</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I learned about the differences between a reference and a copy in&nbsp;JavaScript.</p>
                   <p>Strings, numbers and booleans all update as they are set.</p>
@@ -206,11 +206,11 @@ const javaScriptReferencesVsCopying = props => {
                   <p>With <strong>objects{}</strong> it's the same as an array. You make a <strong>reference</strong> to the
                     object by doing this (captain{}&nbsp;= person{}).</p>
                   <p>In-order to make a <strong>copy</strong>, you can assign a new object to the variable 
-                    (Object.assign({},&nbsp;person, {&nbsp;number:&nbsp;99, age:&nbsp;12&nbsp;})).</p>
+                    (Object.assign(,&nbsp;person, &nbsp;number:&nbsp;99, age:&nbsp;12&nbsp;)).</p>
                   <p><em>Note: This only goes one level deep both for arrays[] and&nbsp;objects{}.</em></p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="BgVMWE"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 14 - JavaScript References VS Copying">
@@ -228,27 +228,27 @@ const javaScriptReferencesVsCopying = props => {
       </div>
 
       {/* <!-- JavaScript30 | 14 | JavaScript References VS Copying --> */}
-      <div class="section blue">
-        <div class="row">
-          <div id="javascript30-14" class="small-12 column">
-            <h2 class="h4">This project work is only visible within the JavaScript&nbsp;console.</h2>
-            <div class="row">
-              <div class="small-12 medium-6 large-3 columns">
-                <h3 class="h5">Chrome</h3>
+      <div className="section blue">
+        <div className="row">
+          <div id="javascript30-14" className="small-12 column">
+            <h2 className="h4">This project work is only visible within the JavaScript&nbsp;console.</h2>
+            <div className="row">
+              <div className="small-12 medium-6 large-3 columns">
+                <h3 className="h5">Chrome</h3>
                   <p>Windows: Ctrl + Shift +&nbsp;J.</p>
                   <p>Mac: Cmd + Opt +&nbsp;J.</p>
               </div>
-              <div class="small-12 medium-6 large-3 columns">
-                <h3 class="h5">Firefox</h3>
+              <div className="small-12 medium-6 large-3 columns">
+                <h3 className="h5">Firefox</h3>
                   <p>Windows: Ctrl + Shift +&nbsp;K.</p>
                   <p>Mac: Cmd + Opt +&nbsp;K.</p>
               </div>
-              <div class="small-12 medium-6 large-3 columns">
-                <h3 class="h5">Safari</h3>
+              <div className="small-12 medium-6 large-3 columns">
+                <h3 className="h5">Safari</h3>
                 <p>Cmd + Opt +&nbsp;C.</p>
               </div>
-              <div class="small-12 medium-6 large-3 columns">
-                <h3 class="h5">Edge&nbsp;/ Internet&nbsp;Explorer</h3>
+              <div className="small-12 medium-6 large-3 columns">
+                <h3 className="h5">Edge&nbsp;/ Internet&nbsp;Explorer</h3>
                   <p>F12, then click on the “Console”&nbsp;tab.</p>
               </div>
             </div>

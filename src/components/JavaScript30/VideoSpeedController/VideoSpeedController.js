@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './VideoSpeedController.module.scss';
+import './VideoSpeedController.module.scss';
 
 const videoSpeedController = props => {
   // Parent <div>
@@ -42,11 +42,11 @@ const videoSpeedController = props => {
   return (
     <React.Fragment>
       {/* <!-- Introduction --> */}
-      <div class="js30-intro section white">
-        <div class="row">
-          <div class="small-12 column">
+      <div className="js30-intro section white">
+        <div className="row">
+          <div className="small-12 column">
             {/* <!-- Back CTA --> */}
-            <p class="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
+            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
@@ -54,15 +54,15 @@ const videoSpeedController = props => {
             <h1>Video Speed Controller</h1>
 
             {/* <!-- Accordion --> */}
-            <ul class="accordion" data-accordion data-allow-all-closed="true">
-              <li class="accordion-item" data-accordion-item="">
+            <ul className="accordion" data-accordion data-allow-all-closed="true">
+              <li className="accordion-item" data-accordion-item="">
                 {/* <!-- Title --> */}
-                <a href="#" class="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
+                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
                   aria-selected="false">
-                  <h2 class="h5">Project Synopsis and&nbsp;Code</h2>
+                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
                 </a>
                 {/* <!-- Content --> */}
-                <div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
+                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
                   aria-hidden="true" id="project-synopsis" style="display: none;">
                   <p>In this lesson I create a slider interface that manipulates the &lt;video&gt;&nbsp;speed.</p>
                   <p>First I get the parent &lt;div&gt; 'speed', child &lt;div&gt; 'bar' and &lt;video&gt;
@@ -82,7 +82,7 @@ const videoSpeedController = props => {
                     'video.playbackRate' to&nbsp;'playbackRate'.</p>
 
                   {/* <!-- CodePen --> */}
-                  <p class="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
+                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
                     data-slug-hash="GbGzxz"
                     style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
                     data-pen-title="JavaScript30 - 28 - Video Speed Controller">
@@ -100,15 +100,15 @@ const videoSpeedController = props => {
       </div>
 
       {/* <!-- JavaScript30 | 28 | Video Speed Controller --> */}
-      <div id="javascript30-28" class="section">
-        <div class="row">
-          <div class="small-12 column">
-            <div class="wrapper">
-              <video class="flex"
+      <div id="javascript30-28" className="section">
+        <div className="row">
+          <div className="small-12 column">
+            <div className="wrapper">
+              <video className="flex"
                 src="{{root}}assets/video/javascript30/11-custom-video-player/11-custom-video-player-example.mp4" loop
                 controls></video>
-              <div class="speed">
-                <div class="speed-bar">1×</div>
+              <div className="speed">
+                <div className="speed-bar">1×</div>
               </div>
             </div>
           </div>
