@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './DrumKit.module.scss';
 
 const drumKit = props => {
@@ -37,8 +40,8 @@ const drumKit = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -97,14 +100,14 @@ const drumKit = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 1 | Drum Kit --> */}
       <div id="javascript30-1" className="section">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <div className="keys">
               <div data-key="65" className="key">
                 <kbd>A</kbd>
@@ -153,8 +156,8 @@ const drumKit = props => {
             <audio data-key="74" src="{{root}}assets/sounds/javascript30/1-drum-kit/snare.wav"></audio>
             <audio data-key="75" src="{{root}}assets/sounds/javascript30/1-drum-kit/tom.wav"></audio>
             <audio data-key="76" src="{{root}}assets/sounds/javascript30/1-drum-kit/tink.wav"></audio>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

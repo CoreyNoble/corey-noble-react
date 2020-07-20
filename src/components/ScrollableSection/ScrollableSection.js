@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Column } from 'react-foundation';
+
 import classes from './ScrollableSection.module.scss';
 
 import ReactLogo from '../../assets/img/icons/react.png';
@@ -30,113 +33,116 @@ import SafariLogo from '../../assets/img/icons/safari.png';
 
 const scrollableSection = props => {
   return (
-    <div id="icon-container" className="icon-container small-12 medium-12 large-7 columns">
+    <Column 
+      id="icon-container" className="icon-container" 
+      small={12} medium={12} large={7}
+    >
       <h3 className="h5 black text-center">The programs and technologies I use most&nbsp;often:</h3>
-      <div className="icon small-6 medium-3 columns">
+      <Column className="icon" small={6} medium={3}>
         <img src={ReactLogo} alt="" role="presentation" />
         <p>React</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={JavaScriptLogo} alt="" role="presentation" />
         <p>JavaScript</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={HTML5Logo} alt="" role="presentation" />
         <p>HTML 5</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={CSSLogo} alt="" role="presentation" />
         <p>CSS</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={SASSLogo} alt="" role="presentation" />
         <p>SCSS / SASS</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={LESSLogo} alt="" role="presentation" />
         <p>LESS</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={GITLogo} alt="" role="presentation" />
         <p>Git</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={NPMLogo} alt="" role="presentation" />
         <p>NPM</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={FoundationLogo} alt="" role="presentation" />
         <p>Foundation</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={BootstrapLogo} alt="" role="presentation" />
         <p>Bootstrap</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={JiraLogo} alt="" role="presentation" />
         <p>JIRA</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={NETMVCLogo} alt="" role="presentation" />
         <p>.NET / MVC</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={SitefinityLogo} alt="" role="presentation" />
         <p>Sitefinity</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={KenticoLogo} alt="" role="presentation" />
         <p>Kentico</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={AEMLogo} alt="" role="presentation" />
         <p>AEM</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={WordPressLogo} alt="" role="presentation" />
         <p>WordPress</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={RedDotLogo} alt="" role="presentation" />
         <p>RedDot</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={SiteCoreLogo} alt="" role="presentation" />
         <p>Sitecore</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={FileZillaLogo} alt="" role="presentation" />
         <p>FTP</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={VisualStudioLogo} alt="" role="presentation" />
         <p>Visual Studio</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={VisualStudioCodeLogo} alt="" role="presentation" />
         <p>VS Code</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={SublimeTextLogo} alt="" role="presentation" />
         <p>Sublime Text</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={PhotoshopLogo} alt="" role="presentation" />
         <p>Photoshop</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={FirefoxLogo} alt="" role="presentation" />
         <p>Firefox</p>
-      </div>
-      <div className="icon small-6 medium-3 columns">
+      </Column>
+      <Column className="icon" small={6} medium={3}>
         <img src={ChromeLogo} alt="" role="presentation" />
         <p>Chrome</p>
-      </div>
-      <div className="icon small-6 medium-3 columns end">
+      </Column>
+      <Column className="icon end" small={6} medium={3}>
         <img src={SafariLogo} alt="" role="presentation" />
         <p>Safari</p>
-      </div>
-    </div>
+      </Column>
+    </Column>
   );
 };
 

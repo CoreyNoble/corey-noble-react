@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './TypeAhead.module.scss';
 
 const typeAhead = props => {
@@ -79,8 +82,8 @@ const typeAhead = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -132,14 +135,14 @@ const typeAhead = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 6 | Type Ahead --> */}
       <div id="javascript30-6" className="section">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <form className="search-form">
               <input type="text" className="search" placeholder="City or State" />
               <ul className="suggestions">
@@ -147,8 +150,8 @@ const typeAhead = props => {
                 <li>or a state</li>
               </ul>
             </form>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

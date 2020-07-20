@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './StripeFollowAlongNav.module.scss';
 
 const stripeFollowAlongNav = props => {
@@ -87,8 +90,8 @@ const stripeFollowAlongNav = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -161,14 +164,14 @@ const stripeFollowAlongNav = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 26 | Stripe Follow Along Nav --> */}
       <div id="javascript30-26" className="section">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <div className="top">
               <div className="dropdownBackground">
                 <span className="arrow"></span>
@@ -209,8 +212,8 @@ const stripeFollowAlongNav = props => {
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

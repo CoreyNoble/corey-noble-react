@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './AddingUpTimesWithReduce.module.scss';
 
 const addingUpTimesWithReduce = props => {
@@ -41,8 +44,8 @@ const addingUpTimesWithReduce = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -93,14 +96,14 @@ const addingUpTimesWithReduce = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 18 | Adding Up Times with Reduce --> */}
       <div id="javascript30-18" className="section">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <h2 className="total">Total&nbsp;Time: <span className="total-time"></span></h2>
             <ul className="videos">
               <li data-time="5:43">
@@ -278,8 +281,8 @@ const addingUpTimesWithReduce = props => {
                 Video&nbsp;58: <strong>4:04</strong>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

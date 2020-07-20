@@ -1,9 +1,12 @@
 import React from 'react';
+
+import { Column } from 'react-foundation';
+
 import classes from './ExperienceArticle.module.scss';
 
 const experienceArticle = props => {
   return (
-    <div className="about-experience small-12 medium-9 large-10 columns">
+    <Column className="about-experience" small={12} medium={9} large={10}>
       <h3 className="job-title" data-aos="fade-up" data-aos-delay="100">Co-Owner, Website Developer and Graphic&nbsp;Artist
       </h3>
       <h4 className="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100"><strong>9&nbsp;months</strong> &nbsp;|&nbsp;
@@ -33,7 +36,7 @@ const experienceArticle = props => {
         </div>
         <a role="button" className="js-show-more">Show more +</a>
       </div>
-    </div>
+    </Column>
   );
 };
 

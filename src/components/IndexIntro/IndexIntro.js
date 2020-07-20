@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import classes from './IndexIntro.module.scss';
 
 import Section from '../../containers/Section/Section';
@@ -9,9 +12,9 @@ import LinkedInLogo from '../../assets/img/linkedin-icon.png';
 
 const indexIntro = props => {
   return (
-    <Section background="black">
-      <div className={`${classes.AboutMe} row`}>
-        <div className="small-12 medium-12 large-7 columns">
+    <Section background="black" animStyle="none">
+      <Row className={`${classes.AboutMe}`}>
+        <Column small={12} large={7}>
           <h3>Hi! My name is <strong>Corey&nbsp;Noble</strong>,</h3>
           <br />
           <p className={`${classes.h5} h5`}>I am a <strong>Web&nbsp;Application&nbsp;Developer</strong> currently employed by <a
@@ -32,12 +35,12 @@ const indexIntro = props => {
               <img src={LinkedInLogo} alt="LinkedIn" />
             </a>
           </span>
-        </div>
+        </Column>
 
-        <div className={`${classes.PortraitSuit} small-12 medium-12 large-5 columns`}>
+        <Column className={classes.PortraitSuit} small={12} large={5}>
           <img src={CoreyNobleIndexPortrait} alt="" role="presentation" />
-        </div>
-      </div>
+        </Column>
+      </Row>
     </Section>
   );
 };

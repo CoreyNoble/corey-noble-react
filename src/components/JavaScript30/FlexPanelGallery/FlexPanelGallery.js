@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './FlexPanelGallery.module.scss';
 
 const flexPanelGallery = props => {
@@ -29,8 +32,8 @@ const flexPanelGallery = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -80,14 +83,14 @@ const flexPanelGallery = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 5 | Flex Panel Gallery --> */}
       <div className="section dark-blue">
-        <div className="row">
-          <div id="javascript30-5" className="small-12 column">
+        <Row>
+          <Column id="javascript30-5" small={12}>
             <div className="panels">
               <div className="panel panel1">
                 <p>Hey</p>
@@ -115,8 +118,8 @@ const flexPanelGallery = props => {
                 <p>Motion</p>
               </div>
             </div>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

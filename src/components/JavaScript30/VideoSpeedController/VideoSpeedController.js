@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './VideoSpeedController.module.scss';
 
 const videoSpeedController = props => {
@@ -43,8 +46,8 @@ const videoSpeedController = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -95,14 +98,14 @@ const videoSpeedController = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 28 | Video Speed Controller --> */}
       <div id="javascript30-28" className="section">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <div className="wrapper">
               <video className="flex"
                 src="{{root}}assets/video/javascript30/11-custom-video-player/11-custom-video-player-example.mp4" loop
@@ -111,8 +114,8 @@ const videoSpeedController = props => {
                 <div className="speed-bar">1×</div>
               </div>
             </div>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

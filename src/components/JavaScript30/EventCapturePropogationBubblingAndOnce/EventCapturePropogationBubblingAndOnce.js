@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './EventCapturePropogationBubblingAndOnce.module.scss';
 
 const eventCapturePropogationBubblingAndOnce = props => {
@@ -54,8 +57,8 @@ const eventCapturePropogationBubblingAndOnce = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -105,14 +108,14 @@ const eventCapturePropogationBubblingAndOnce = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 25 | Event Capture, Propagation, Bubbling and Once --> */}
       <div id="javascript30-25" className="section">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <h2 className="h3">One</h2>
             <div className="one">
               <h2 className="h3">Two</h2>
@@ -124,8 +127,8 @@ const eventCapturePropogationBubblingAndOnce = props => {
             </div>
 
             <button>Only fires once</button>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

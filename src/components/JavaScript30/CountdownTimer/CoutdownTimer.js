@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './CoutdownTimer.module.scss';
 
 const coutdownTimer = props => {
@@ -104,8 +107,8 @@ const coutdownTimer = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -179,48 +182,48 @@ const coutdownTimer = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 29 | Countdown Timer --> */}
       <div id="javascript30-29" className="section">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <div className="timer">
               <div className="timer__controls">
-                <div className="row" data-equalizer>
-                  <div className="timer__control small-6 large-2 columns" data-equalizer-watch>
+                <Row className="row" data-equalizer>
+                  <Column className="timer__control" small={6} large={2} data-equalizer-watch>
                     <button data-time="20" className="timer__button">20 Secs</button>
-                  </div>
-                  <div className="timer__control small-6 large-2 columns" data-equalizer-watch>
+                  </Column>
+                  <Column className="timer__control" small={6} large={2} data-equalizer-watch>
                     <button data-time="300" className="timer__button">Work 5</button>
-                  </div>
-                  <div className="timer__control small-6 large-2 columns" data-equalizer-watch>
+                  </Column>
+                  <Column className="timer__control" small={6} large={2} data-equalizer-watch>
                     <button data-time="900" className="timer__button">Quick 15</button>
-                  </div>
-                  <div className="timer__control small-6 large-2 columns" data-equalizer-watch>
+                  </Column>
+                  <Column className="timer__control" small={6} large={2} data-equalizer-watch>
                     <button data-time="1200" className="timer__button">Snack 20</button>
-                  </div>
-                  <div className="timer__control small-6 large-2 columns" data-equalizer-watch>
+                  </Column>
+                  <Column className="timer__control" small={6} large={2} data-equalizer-watch>
                     <button data-time="3600" className="timer__button">Lunch Break</button>
-                  </div>
-                  <div className="timer__control small-6 large-2 columns end" data-equalizer-watch>
+                  </Column>
+                  <Column className="timer__control end" small={6} large={2} data-equalizer-watch>
                     <div className="contact-form">
                       <form name="customForm" id="custom">
                         <input type="text" name="minutes" placeholder="Enter Minutes" />
                       </form>
                     </div>
-                  </div>
-                </div>
+                  </Column>
+                </Row>
               </div>
               <div className="display">
                 <h2 className="display__time-left">0:00</h2>
                 <p className="display__end-time">Should be back</p>
               </div>
             </div>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

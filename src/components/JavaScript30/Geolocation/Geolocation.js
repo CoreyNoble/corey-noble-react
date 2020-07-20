@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './Geolocation.module.scss';
 
 const geolocation = props => {
@@ -28,8 +31,8 @@ const geolocation = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -73,14 +76,14 @@ const geolocation = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 21 | Geolocation --> */}
       <div id="javascript30-21" className="section">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <div className="locator">
               <svg className="arrow" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="https://www.w3.org/1999/xlink" version="1.1"
                 x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xmlSpace="preserve">
@@ -108,8 +111,8 @@ const geolocation = props => {
                 <span className="units">KM/H</span>
               </h2>
             </div>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

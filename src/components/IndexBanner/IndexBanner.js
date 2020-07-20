@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { Column } from 'react-foundation';
+
 import classes from './IndexBanner.module.scss';
 
 import * as THREE from "three";
@@ -111,10 +113,10 @@ class IndexBanner extends Component {
     return (
       <div id="mainCanvas" className={classes.MainCanvas}>
         <div className={classes.IndexTitle}>
-          <div className="small-12 column">
+          <Column small={12}>
             <h1 data-aos="fade-down" data-aos-delay="600">Corey&nbsp;Noble</h1>
             <h2 data-aos="fade-up" data-aos-delay="1200"><em>Web&nbsp;Application&nbsp;Developer</em></h2>
-          </div>
+          </Column>
         </div>
         <div id="canvas" className={classes.Canvas}></div>
       </div>

@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './FollowAlongLinkHighlighter.module.scss';
 
 const followAlongLinkHighlighter = props => {
@@ -48,8 +51,8 @@ const followAlongLinkHighlighter = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -111,28 +114,28 @@ const followAlongLinkHighlighter = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 22 | Follow Along Link Highlighter --> */}
       <div id="javascript30-22" className="section">
-        <div className="nav row">
-          <div className="small-6 large-3 column">
+        <Row className="nav">
+          <Column small={6} large={3}>
             <a href="">Home</a>
-          </div>
-          <div className="small-6 large-3 column">
+          </Column>
+          <Column small={6} large={3}>
             <a href="">Order Status</a>
-          </div>
-          <div className="small-6 large-3 column">
+          </Column>
+          <Column small={6} large={3}>
             <a href="">Read Our History</a>
-          </div>
-          <div className="small-6 large-3 column end">
+          </Column>
+          <Column className="end" small={6} large={3}>
             <a href="">Contact Us</a>
-          </div>
-        </div>
-        <div className="row">
-          <div className="small-12 column">
+          </Column>
+        </Row>
+        <Row>
+          <Column small={12}>
             <div className="wrapper">
               <p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit. Est <a href="">explicabo</a> unde
                 natus necessitatibus esse obcaecati distinctio, aut itaque, qui&nbsp;vitae!</p>
@@ -146,8 +149,8 @@ const followAlongLinkHighlighter = props => {
                 <a href="">odio</a>, distinctio magni impedit tempore enim repellendus <a href="">repudiandae</a>&nbsp;quas!
               </p>
             </div>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

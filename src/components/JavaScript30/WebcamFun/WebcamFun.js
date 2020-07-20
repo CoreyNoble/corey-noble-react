@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './WebcamFun.module.scss';
 
 const webcamFun = props => {
@@ -209,8 +212,8 @@ const webcamFun = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -288,22 +291,22 @@ const webcamFun = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 19 | Webcam Fun --> */}
       <div id="javascript30-19" className="section">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <div id="photobooth">
-              <div className="row">
-                <div className="small-12 large-6 columns">
+              <Row>
+                <Column small={12} large={6}>
                   <canvas id="photo"></canvas>
                   <video id="player"></video>
-                </div>
+                </Column>
 
-                <div className="controls small-12 large-6 columns">
+                <Column className="controls" small={12} large={6}>
                   <h2 className="h4">Controls:</h2>
                   <ul className="accordion" data-accordion data-allow-all-closed="true">
                     <li className="accordion-item" data-accordion-item="">
@@ -315,33 +318,33 @@ const webcamFun = props => {
                       <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="green-screen"
                         aria-hidden="true" id="green-screen" style="display: none;">
                         {/* <!-- Content --> */}
-                        <div className="row rgb">
-                          <div className="small-12 columns">
+                        <Row className="rgb">
+                          <Column small={12}>
                             <label for="greenScreen">Knockout Colour</label>
                             <input id="greenScreen" type="radio" name="filterInput" value="greenScreen" />
-                          </div>
+                          </Column>
 
-                          <div className="small-6 medium-4 columns">
+                          <Column small={6} medium={4}>
                             <label for="rmin">Red Min:</label>
                             <input id="rmin" type="range" min="0" max="255" name="rmin" />
                             <label for="rmax">Red Max:</label>
                             <input id="rmax" type="range" min="0" max="255" name="rmax" />
-                          </div>
+                          </Column>
 
-                          <div className="small-6 medium-4 columns">
+                          <Column small={6} medium={4}>
                             <label for="gmin">Green Min:</label>
                             <input id="gmin" type="range" min="0" max="255" name="gmin" />
                             <label for="gmax">Green Max:</label>
                             <input id="gmax" type="range" min="0" max="255" name="gmax" />
-                          </div>
+                          </Column>
 
-                          <div className="small-6 medium-4 columns end">
+                          <Column className="end" small={6} medium={4}>
                             <label for="bmin">Blue Min:</label>
                             <input id="bmin" type="range" min="0" max="255" name="bmin" />
                             <label for="bmax">Blue Max:</label>
                             <input id="bmax" type="range" min="0" max="255" name="bmax" />
-                          </div>
-                        </div>
+                          </Column>
+                        </Row>
                       </div>
                     </li>
                     <li className="accordion-item" data-accordion-item="">
@@ -353,36 +356,38 @@ const webcamFun = props => {
                       <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="filters"
                         aria-hidden="true" id="filters" style="display: none;">
                         {/* <!-- Content --> */}
-                        <div className="row">
-                          <div className="small-12 medium-6 columns">
+                        <Row>
+                          <Column small={12} medium={6}>
                             <label for="redShift">Red Shift</label>
                             <input id="redShift" type="radio" name="filterInput" value="redShift" />
-                          </div>
-                          <div className="small-12 medium-6 columns">
+                          </Column>
+                          <Column small={12} medium={6}>
                             <label for="rgbShift">RGB Split</label>
                             <input id="rgbShift" type="radio" name="filterInput" value="rgbShift" />
-                          </div>
-                          {/* <!-- <div className="small-12 medium-4 columns">
+                          </Column>
+                          {/* 
+                            <Column small={12} medium={4}>
                               <label for="ghosting">Ghosting</label>
                               <input id="ghosting" type="checkbox" name="ghosting">
-                          </div> --> */}
-                        </div>
+                            </Column> 
+                          */}
+                        </Row>
                       </div>
                     </li>
                   </ul>
 
                   <button id="photoCTA">Take Photo</button>
-                </div>
-              </div>
+                </Column>
+              </Row>
 
-              <div className="row">
-                <div className="small-12 columns">
+              <Row>
+                <Column small={12}>
                   <div className="strip"></div>
-                </div>
-              </div>
+                </Column>
+              </Row>
             </div>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       <audio className="snap" src="{{root}}assets/sounds/javascript30/19-webcam-fun/snap.mp3" hidden></audio>

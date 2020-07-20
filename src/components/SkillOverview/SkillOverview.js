@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { Row, Column } from 'react-foundation';
+
 import classes from './SkillOverview.module.scss';
 
 import ResponsiveIcon from '../../assets/img/icons/responsive-icon.png';
@@ -76,20 +78,37 @@ class skillOverview extends Component {
   render() {
     return (
       <React.Fragment>
-        <h2>Skill Overview</h2>
-        <h3 className={`h4 ${classes.IndexHeader}`}>A brief overview of what I bring to the&nbsp;table.</h3>
+        <Row className={classes.ServicesPromotion}>
+          <Column 
+            className="aos-init aos-animate" 
+            small={12}
+            data-aos="fade-right" data-aos-delay="100"
+          >
+            <h2>Skill Overview</h2>
+            <h3 className={`h4 ${classes.IndexHeader}`}>A brief overview of what I bring to the&nbsp;table.</h3>
+          </Column>
+        </Row>
 
-        <div className={`${classes.ServicesPromotion} row`} data-equalizer="equalize-skill">
+        <Row 
+          className={classes.ServicesPromotion} 
+          data-equalizer="equalize-skill"
+        >
           {this.state.skillOverview.map(skill => {
             return (
-              <div key={skill.key} className={`${classes.ServicesPromotion} small-12 medium-12 large-4 columns ${skill.class}`} data-aos="fade-up" data-aos-delay="100" data-equalizer-watch="equalize-skill">
+              <Column 
+                className={`${classes.ServicesPromotion} ${skill.class}`}
+                small={12} medium={12} large={4}
+                data-aos="fade-up" data-aos-delay="100" 
+                data-equalizer-watch="equalize-skill"
+                key={skill.key}
+              >
                 <img src={skill.icon} alt="" role="presentation" />
                 <h4>{skill.title}</h4>
                 <p dangerouslySetInnerHTML={{__html: skill.paragraph}}></p>
-              </div>
+              </Column>
             );
           })}
-        </div>
+        </Row>
       </React.Fragment>
     );
   }

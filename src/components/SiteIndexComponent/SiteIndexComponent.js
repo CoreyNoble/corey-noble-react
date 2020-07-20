@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
+import { Row, Column } from 'react-foundation';
+
 import classes from './SiteIndexComponent.module.scss';
 
 import Section from '../../containers/Section/Section';
@@ -9,16 +11,16 @@ const siteIndex = props => {
   return (
     <React.Fragment>
       <Section background="blue">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <h1 className="header-no-parallax">Site Index</h1>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </Section>
 
       <Section background="black">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <h2 className="h3">Below is my full website hierarchy:</h2>
             <ul>
               <li className="h4"><Link to={`${process.env.PUBLIC_URL}/`} title="Visit the home page">Home</Link></li>
@@ -52,8 +54,8 @@ const siteIndex = props => {
               <Link className={`${classes.Resume} h5`} to={`${process.env.PUBLIC_URL}/assets/pdf/CoreyNoble-Resume.pdf`} target="_blank"
                 rel="noopener noreferrer">View My CV / Resume</Link>
             </div>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </Section>
     </React.Fragment>
   );

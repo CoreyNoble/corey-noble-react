@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './LocalStorage.module.scss';
 
 const localStorage = props => {
@@ -90,8 +93,8 @@ const localStorage = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -162,14 +165,14 @@ const localStorage = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 15 | LocalStorage --> */}
       <div id="javascript30-15" className="section dark-blue">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Fish SVG Cred: https://thenounproject.com/search/?q=fish&i=589236 --> */}
 
             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="https://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
@@ -188,8 +191,8 @@ const localStorage = props => {
                 <circle cx="398.8" cy="273.8" r="14.1" />
               </g>
             </svg>
-          </div>
-          <div className="small-12 column">
+          </Column>
+          <Column small={12}>
             <div className="wrapper">
               <h2>LOCAL TAPAS</h2>
               <p></p>
@@ -201,8 +204,8 @@ const localStorage = props => {
                 <input type="submit" value="+ Add Item" />
               </form>
             </div>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

@@ -78,7 +78,7 @@ function Index() {
       <IndexBanner />
       <IndexIntro />
 
-      <Section background="blue">
+      <Section background="blue" animStyle="none">
         <SkillOverview />
       </Section>
 

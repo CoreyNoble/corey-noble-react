@@ -1,14 +1,21 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import classes from './Section.module.scss';
 
 const section = props => {
   return (
     <div className={classes.Section + ' ' + props.background}>
-      <div className="row">
-        <div className="small-12 column" data-aos="fade-right" data-aos-delay="100">
-          {props.children}
-        </div>
-      </div>
+      <Row>
+        <Column 
+          small={12} 
+          data-aos={props.animStyle || 'fade-right'}
+          data-aos-delay={props.animDelay || 100}
+        >
+            {props.children}
+        </Column>
+      </Row>
     </div>
   );
 };

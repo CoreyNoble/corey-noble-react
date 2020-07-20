@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './SlideInOnScroll.module.scss';
 
 const slideInOnScroll = props => {
@@ -51,8 +54,8 @@ const slideInOnScroll = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section black">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -97,14 +100,14 @@ const slideInOnScroll = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 13 | Slide in on Scroll --> */}
       <div className="section white">
-        <div className="row">
-          <div id="javascript30-13" className="small-12 column">
+        <Row>
+          <Column id="javascript30-13" small={12}>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis
               a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis
               quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
@@ -222,8 +225,8 @@ const slideInOnScroll = props => {
               quis reprehenderit repudiandae neque, ab ducimus, odit excepturi voluptate saepe ipsam. Voluptatem eum error
               voluptas porro officiis, amet! Molestias, fugit, ut! Tempore non magnam, amet, facere ducimus accusantium eos
               veritatis&nbsp;neque.</p>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

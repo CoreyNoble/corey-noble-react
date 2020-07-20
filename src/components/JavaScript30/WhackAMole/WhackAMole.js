@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './WhackAMole.module.scss';
 
 const whackAMole = props => {
@@ -93,8 +96,8 @@ const whackAMole = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -162,14 +165,14 @@ const whackAMole = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 30 | Whack A Mole --> */}
       <div id="javascript30-30" className="section">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <h2 className="h3">Whack-a-mole! <span className="score">0</span></h2>
             <button id="start-cta">Start!</button>
 
@@ -193,8 +196,8 @@ const whackAMole = props => {
                 <div className="mole"></div>
               </div>
             </div>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import classes from './AboutContent.module.scss';
 
 import EvertzLogo from '../../assets/img/logos/evertz.png';
@@ -10,8 +13,8 @@ import GraduationImage from '../../assets/img/icons/graduate.png';
 
 const aboutContent = props => {
   return (
-    <div className="row">
-      <div id="about-intro" className="small-12 column" data-aos="fade-up" data-aos-delay="100">
+    <Row>
+      <Column id="about-intro" small={12} data-aos="fade-up" data-aos-delay="100">
         <h2>My Story</h2>
         <div>
           <div>
@@ -62,20 +65,19 @@ const aboutContent = props => {
 
           <a role="button" className="js-show-more">Show more +</a>
         </div>
+      </Column>
 
-      </div>
-
-      <div id="experience" className="small-12 column">
+      <Column id="experience" small={12}>
         <h2 data-aos="fade-right" data-aos-delay="100">Job Experience</h2>
         <hr data-aos="fade-up" data-aos-delay="100" />
-      </div>
+      </Column>
 
-      <div className="about-experience small-12 medium-3 large-2 columns">
+      <Column className="about-experience" small={12} medium={3} large={2}>
         <img className="company-logo" src={EvertzLogo} alt="Evertz Microsystems Limited"
           data-aos="rotate-in-ltr" data-aos-delay="100" />
-      </div>
+      </Column>
 
-      <div className="about-experience small-12 medium-9 large-10 columns">
+      <Column className="about-experience" small={12} medium={9} large={10}>
         <h3 className="job-title" data-aos="fade-up" data-aos-delay="100">Developer</h3>
         <h4 className="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100">December&nbsp;2019 -&nbsp;Present</h4>
         <h5 className="company-name" data-aos="fade-up" data-aos-delay="100"><em>Evertz Microsystems Ltd.</em></h5>
@@ -85,16 +87,16 @@ const aboutContent = props => {
             driven to better myself and the team by making meaningful contributions in any way I can. I always welcome
             constructive critisism and keep an open mind to alternative&nbsp;ideas.</p>
         </div>
-      </div>
+      </Column>
 
       <hr data-aos="fade-up" data-aos-delay="100" />
 
-      <div className="about-experience small-12 medium-3 large-2 columns">
+      <Column className="about-experience" small={12} medium={3} large={2}>
         <img className="company-logo" src={ThrillworksLogo} alt="Thrillworks Inc."
           data-aos="rotate-in-ltr" data-aos-delay="100" />
-      </div>
+      </Column>
 
-      <div className="about-experience small-12 medium-9 large-10 columns">
+      <Column className="about-experience" small={12} medium={9} large={10}>
         <h3 className="job-title" data-aos="fade-up" data-aos-delay="100">Developer</h3>
         <h4 className="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100"><strong>2&nbsp;years, 4&nbsp;months</strong>
           &nbsp;|&nbsp; August&nbsp;2017 -&nbsp;December&nbsp;2019</h4>
@@ -130,16 +132,16 @@ const aboutContent = props => {
           </div>
           <a role="button" className="js-show-more">Show more +</a>
         </div>
-      </div>
+      </Column>
 
       <hr data-aos="fade-up" data-aos-delay="100" />
 
-      <div className="about-experience small-12 medium-3 large-2 columns">
+      <Column className="about-experience" small={12} medium={3} large={2}>
         <img className="company-logo" src={ThrillworksLogo} alt="Thrillworks Inc."
           data-aos="rotate-in-ltr" data-aos-delay="100" />
-      </div>
+      </Column>
 
-      <div className="about-experience small-12 medium-9 large-10 columns">
+      <Column className="about-experience" small={12} medium={9} large={10}>
         <h3 className="job-title" data-aos="fade-up" data-aos-delay="100">Web Production Specialist</h3>
         <h4 className="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100"><strong>3&nbsp;years, 3&nbsp;months</strong>
           &nbsp;|&nbsp; May&nbsp;2014 -&nbsp;July&nbsp;2017</h4>
@@ -203,16 +205,16 @@ const aboutContent = props => {
           </div>
           <a role="button" className="js-show-more">Show more +</a>
         </div>
-      </div>
+      </Column>
 
       <hr data-aos="fade-up" data-aos-delay="100" />
 
-      <div className="about-experience small-12 medium-3 large-2 columns">
+      <Column className="about-experience" small={12} medium={3} large={2}>
         <img className="company-logo" src={RightChoiceLogo} alt="Right Choice Web Development"
           data-aos="rotate-in-ltr" data-aos-delay="100" />
-      </div>
+      </Column>
 
-      <div className="about-experience small-12 medium-9 large-10 columns">
+      <Column className="about-experience" small={12} medium={9} large={10}>
         <h3 className="job-title" data-aos="fade-up" data-aos-delay="100">Co-Owner, Website Developer and Graphic&nbsp;Artist
         </h3>
         <h4 className="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100"><strong>9&nbsp;months</strong> &nbsp;|&nbsp;
@@ -242,16 +244,16 @@ const aboutContent = props => {
           </div>
           <a role="button" className="js-show-more">Show more +</a>
         </div>
-      </div>
+      </Column>
 
       <hr data-aos="fade-up" data-aos-delay="100" />
 
-      <div className="about-experience small-12 medium-3 large-2 columns">
+      <Column className="about-experience" small={12} medium={3} large={2}>
         <img className="company-logo" src={SlightlySocialLogo} alt="Slightly Social"
           data-aos="rotate-in-ltr" data-aos-delay="100" />
-      </div>
+      </Column>
 
-      <div className="about-experience small-12 medium-9 large-10 columns">
+      <Column className="about-experience" small={12} medium={9} large={10}>
         <h3 className="job-title" data-aos="fade-up" data-aos-delay="100">3D Artist and Unity Developer</h3>
         <h4 className="h5 job-timeframe" data-aos="fade-up" data-aos-delay="100"><strong>4&nbsp;months</strong> &nbsp;|&nbsp;
           May&nbsp;2013 -&nbsp;August&nbsp;2013</h4>
@@ -276,21 +278,21 @@ const aboutContent = props => {
           </div>
           <a role="button" className="js-show-more">Show more +</a>
         </div>
-      </div>
+      </Column>
 
-      <div id="education" className="small-12 column">
+      <Column id="education" small={12}>
         <h2 data-aos="fade-right" data-aos-delay="100">Education</h2>
         <hr data-aos="fade-up" data-aos-delay="100" />
         <img src={FanshaweCollegeLogo} alt="Fanshawe College" data-aos="fade-up"
           data-aos-delay="100" />
-      </div>
+      </Column>
 
-      <div className="about-experience small-12 medium-3 large-2 columns">
+      <Column className="about-experience" small={12} medium={3} large={2}>
         <img className="company-logo" src={GraduationImage} alt="Graduate" data-aos="rotate-in-ltr"
           data-aos-delay="100" />
-      </div>
+      </Column>
 
-      <div className="about-experience small-12 medium-9 large-10 columns">
+      <Column className="about-experience" small={12} medium={9} large={10}>
         <h3 data-aos="fade-up" data-aos-delay="100">3D Animation and Character&nbsp;Design</h3>
         <p data-aos="fade-up" data-aos-delay="100">
           <strong>2012&nbsp;-&nbsp;2013 &nbsp;|&nbsp; Certificate</strong>
@@ -333,16 +335,16 @@ const aboutContent = props => {
           </div>
           <a role="button" className="js-show-more">Show more +</a>
         </div>
-      </div>
+      </Column>
 
       <hr data-aos="fade-up" data-aos-delay="100" />
 
-      <div className="about-experience small-12 medium-3 large-2 columns">
+      <Column className="about-experience" small={12} medium={3} large={2}>
         <img className="company-logo" src={GraduationImage} alt="Graduate" data-aos="rotate-in-ltr"
           data-aos-delay="100" />
-      </div>
+      </Column>
 
-      <div className="about-experience no-bottom-space small-12 medium-9 large-10 columns">
+      <Column className="about-experience no-bottom-space" small={12} medium={9} large={10}>
         <h3 data-aos="fade-up" data-aos-delay="100">Multi Media Design and&nbsp;Production</h3>
         <p data-aos="fade-up" data-aos-delay="100">
           <strong>2010&nbsp;-&nbsp;2012 &nbsp;|&nbsp; Diploma</strong>
@@ -373,8 +375,8 @@ const aboutContent = props => {
           </div>
           <a role="button" className="js-show-more">Show more +</a>
         </div>
-      </div>
-    </div>
+      </Column>
+    </Row>
   );
 };
 

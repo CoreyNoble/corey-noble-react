@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './SpeechSynthesis.module.scss';
 
 const speechSynthesis = props => {
@@ -81,8 +84,8 @@ const speechSynthesis = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -171,14 +174,14 @@ const speechSynthesis = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 23 | Speech Synthesis --> */}
       <div id="javascript30-23" className="section">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <div className="voiceinator">
               <h2>The Voiceinator 5000</h2>
 
@@ -186,24 +189,24 @@ const speechSynthesis = props => {
                 <option value="">Select A Voice</option>
               </select>
 
-              <div className="row">
-                <div className="small-6 columns">
+              <Row>
+                <Column small={6}>
                   <label for="rate">Rate:</label>
                   <input id="rate" name="rate" type="range" min="0" max="3" value="1" step="0.1" />
-                </div>
+                </Column>
 
-                <div className="small-6 columns">
+                <Column small={6}>
                   <label for="pitch">Pitch:</label>
                   <input id="pitch" name="pitch" type="range" min="0" max="2" step="0.1" />
-                </div>
-              </div>
+                </Column>
+              </Row>
 
               <textarea name="text">Hello! I love JavaScript 👍</textarea>
               <button id="stop">Stop!</button>
               <button id="speak">Speak</button>
             </div>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

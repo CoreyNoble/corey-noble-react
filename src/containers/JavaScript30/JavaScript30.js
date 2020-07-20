@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import classes from './JavaScript30.module.scss';
 
 import DrumKit from '../../assets/img/showcase/javascript30/1-drum-kit.jpg';
@@ -251,20 +254,26 @@ class javaScript30 extends Component {
   render() {
     return (
       <div id="javascript30" className="section">
-        <div className="row showcase-2" data-equalizer>
+        <Row className="showcase-2" data-equalizer="project">
           {this.state.javaScript30.map(project => {
             return (
-              <div key={project.key} className="small-12 medium-6 large-4 columns end" data-aos="fade-up" data-aos-delay="100" data-equalizer-watch="project">
+              <Column 
+                className="end"
+                small={12} medium={6} large={4}
+                data-aos="fade-up" data-aos-delay="100"
+                data-equalizer-watch="project"
+                key={project.key}
+              >
                 <a href={`${project.url}`} title={project.linkTitle}>
                   <div className="showcase-example">
                     <h3 className="h5 white">{project.title}</h3>
                     <img src={project.image} alt="" role="presentation" />
                   </div>
                 </a>
-              </div>
+              </Column>
             );
           })}
-        </div>
+        </Row>
       </div>
     );
   }

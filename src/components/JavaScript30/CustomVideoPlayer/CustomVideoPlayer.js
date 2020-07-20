@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './CustomVideoPlayer.module.scss';
 
 const customVideoPlayer = props => {
@@ -96,8 +99,8 @@ const customVideoPlayer = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -222,14 +225,14 @@ const customVideoPlayer = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 11 | Custom Video Player --> */}
       <div id="javascript30-11" className="section">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <div className="player">
               <video className="player__video viewer"
                 src="{{root}}assets/video/javascript30/11-custom-video-player/11-custom-video-player-example.mp4"></video>
@@ -245,8 +248,8 @@ const customVideoPlayer = props => {
                 <button data-skip="25" className="player__button">25s »</button>
               </div>
             </div>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

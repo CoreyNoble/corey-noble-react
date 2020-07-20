@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './FunWithHTML5Canvas.module.scss';
 
 const funWithHTML5Canvas = props => {
@@ -85,8 +88,8 @@ const funWithHTML5Canvas = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -143,17 +146,17 @@ const funWithHTML5Canvas = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       <div id="javascript30-8" className="section">
-        <div className="row">
-          <div id="parent" className="small-12">
+        <Row>
+          <Column id="parent" small={12}>
             {/* <!-- JavaScript30 | 8 | Fun with HTML5 Canvas --> */}
             <canvas id="draw"></canvas>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

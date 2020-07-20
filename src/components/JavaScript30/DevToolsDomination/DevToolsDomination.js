@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './DevToolsDomination.module.scss';
 
 const devToolsDomination = props => {
@@ -97,8 +100,8 @@ const devToolsDomination = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -156,37 +159,37 @@ const devToolsDomination = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 9 | Dev Tools Domination --> */}
       <div className="section blue">
-        <div className="row">
-          <div id="javascript30-9" className="small-12 column">
+        <Row>
+          <Column id="javascript30-9" small={12}>
             <h2 className="h4">This project work is only visible within the JavaScript&nbsp;console.</h2>
-            <div className="row">
-              <div className="small-12 medium-6 large-3 columns">
+            <Row>
+              <Column small={12} medium={6} large={3}>
                 <h3 className="h5">Chrome</h3>
                   <p>Windows: Ctrl + Shift +&nbsp;J.</p>
                   <p>Mac: Cmd + Opt +&nbsp;J.</p>
-              </div>
-              <div className="small-12 medium-6 large-3 columns">
+              </Column>
+              <Column small={12} medium={6} large={3}>
                 <h3 className="h5">Firefox</h3>
                   <p>Windows: Ctrl + Shift +&nbsp;K.</p>
                   <p>Mac: Cmd + Opt +&nbsp;K.</p>
-              </div>
-              <div className="small-12 medium-6 large-3 columns">
+              </Column>
+              <Column small={12} medium={6} large={3}>
                 <h3 className="h5">Safari</h3>
                 <p>Cmd + Opt +&nbsp;C.</p>
-              </div>
-              <div className="small-12 medium-6 large-3 columns">
+              </Column>
+              <Column small={12} medium={6} large={3}>
                 <h3 className="h5">Edge&nbsp;/ Internet&nbsp;Explorer</h3>
                   <p>F12, then click on the “Console”&nbsp;tab.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+              </Column>
+            </Row>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

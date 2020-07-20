@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { Column } from 'react-foundation';
+
 import classes from './BlogEntries.module.scss';
 
 class blogEntries extends Component {
@@ -43,12 +45,16 @@ class blogEntries extends Component {
       <React.Fragment>
         {this.state.blogEntries.map(entry => {
           return (
-            <div key={entry.key} className={`${classes.BlogEntry} small-12 column ${entry.class}`}>
+            <Column 
+              className={`${classes.BlogEntry} ${entry.class}`} 
+              small={12}
+              key={entry.key} 
+            >
               <a href={`%PUBLIC_URL%${entry.url}`}>
                 <h3 className="h4">{entry.title}</h3>
                 <p dangerouslySetInnerHTML={{__html: entry.paragraph}}></p>
               </a>
-            </div>
+            </Column>
           );
         })}
       </React.Fragment>

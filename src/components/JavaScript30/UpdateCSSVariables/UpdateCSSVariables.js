@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Row, Column } from 'react-foundation';
+
 import './UpdateCSSVariables.module.scss';
 
 const updateCSSVariables = props => {
@@ -23,8 +26,8 @@ const updateCSSVariables = props => {
     <React.Fragment>
       {/* <!-- Introduction --> */}
       <div className="js30-intro section white">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             {/* <!-- Back CTA --> */}
             <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
                     title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
@@ -68,34 +71,34 @@ const updateCSSVariables = props => {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
 
       {/* <!-- JavaScript30 | 3 | Update CSS Variables --> */}
       <div className="section black">
-        <div className="row">
-          <div id="javascript30-3" className="small-12 column">
+        <Row>
+          <Column id="javascript30-3" small={12}>
             <h2>Update CSS Variables with&nbsp;<span className="hl">JavaScript</span></h2>
 
-            <div className="black controls row">
-              <div className="small-12 large-4 columns">
+            <Row className="black controls">
+              <Column small={12} large={4}>
                 <label className="h4" for="spacing">Spacing:</label>
                 <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px" />
-              </div>
-              <div className="small-12 large-4 columns">
+              </Column>
+              <Column small={12} large={4}>
                 <label className="h4" for="blur">Blur:</label>
                 <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px" />
-              </div>
-              <div className="small-12 large-4 columns end">
+              </Column>
+              <Column className="end" small={12} large={4}>
                 <label className="h4" for="base">Base Color:</label>
                 <input id="base" type="color" name="base" value="#6dbfbf" />
-              </div>
-            </div>
+              </Column>
+            </Row>
 
             <img src="{{root}}assets/img/aesthetic-geometry.svg" alt="" role="presentation" />
-          </div>
-        </div>
+          </Column>
+        </Row>
       </div>
     </React.Fragment>
   );

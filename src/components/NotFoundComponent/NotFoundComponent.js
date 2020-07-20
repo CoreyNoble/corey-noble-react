@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
+import { Row, Column } from 'react-foundation';
+
 import classes from './NotFoundComponent.module.scss';
 
 import Section from '../../containers/Section/Section';
@@ -9,17 +11,17 @@ const notFound = props => {
   return (
     <React.Fragment>
       <Section background="blue">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <h1 className="header-no-parallax">404</h1>
             <p className="h3">Sorry, that page does not exist.</p>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </Section>
 
       <Section background="black">
-        <div className="row">
-          <div className="small-12 column">
+        <Row>
+          <Column small={12}>
             <h2 className="h3">Please visit one of the pages below:</h2>
             <ul>
               <li className="h4"><Link to={`${process.env.PUBLIC_URL}/`} title="Visit the home page">Home</Link></li>
@@ -32,8 +34,8 @@ const notFound = props => {
             <div className={`${classes.ResumeCTA} ${classes.ResumeCTALeft}`}>
               <Link className={`${classes.Resume} h5`} to={`${process.env.PUBLIC_URL}/assets/pdf/CoreyNoble-Resume.pdf`}>View My CV / Resume</Link>
             </div>
-          </div>
-        </div>
+          </Column>
+        </Row>
       </Section>
     </React.Fragment>
   );
