@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row, Column } from 'react-foundation';
+import { Row, Column, ShowForScreenSize } from 'react-foundation-components/lib/grid-flex';
 
 import classes from './Footer.module.scss';
 
@@ -18,7 +18,7 @@ const footer = props => {
           <Column small={4} medium={4} large={3}>
             <img src={CoreyNobleFootnoteProfileImage} alt="" role="presentation" />
           </Column>
-          <Column className="end" small={8} medium={8} large={9}>
+          <Column end small={8} medium={8} large={9}>
             <div className={classes.FootnotePosition}>
               <h2 className={`h3 blue-text ${classes.Name}`}>Corey Noble</h2>
               <h3 className={`${classes.Title}`}>Web Application Developer</h3>
@@ -37,37 +37,48 @@ const footer = props => {
         </Column>
 
         {/* Social Media */}
-        <Column className="show-for-large end" small={12} medium={5} large={5}>
-          <div className={classes.SocialMedia}>
-            <div className={classes.LinkedIn}>
-              <Column className={`${classes.SocialText} end`} small={10} medium={9} large={10}>
-                <h4>View my <a href="https://ca.linkedin.com/in/corey-noble" target="_blank" rel="noopener noreferrer"
-                    title="View my LinkedIn">LinkedIn</a>&nbsp;profile</h4>
-                <br />
-              </Column>
-              <Column className={classes.SocialIcon} small={2} medium={3} large={2}>
-                <a href="https://ca.linkedin.com/in/corey-noble" target="_blank" rel="noopener noreferrer" tabIndex="-1"
-                  aria-hidden="true">
-                  <img src={LinkedInLogo} alt="" role="presentation" />
-                </a>
-              </Column>
-            </div>
+        {/* <ShowForScreenSize screenSize="large"> */}
+          <Column end small={12} medium={5} large={5}>
+            <div className={classes.SocialMedia}>
+              <div className={classes.LinkedIn}>
+                <Column 
+                  className={classes.SocialText} 
+                  end small={10} medium={9} large={10}
+                >
+                  <h4>View my <a href="https://ca.linkedin.com/in/corey-noble" target="_blank" rel="noopener noreferrer"
+                      title="View my LinkedIn">LinkedIn</a>&nbsp;profile</h4>
+                  <br />
+                </Column>
+                <Column className={classes.SocialIcon} small={2} medium={3} large={2}>
+                  <a href="https://ca.linkedin.com/in/corey-noble" target="_blank" rel="noopener noreferrer" tabIndex="-1"
+                    aria-hidden="true">
+                    <img src={LinkedInLogo} alt="" role="presentation" />
+                  </a>
+                </Column>
+              </div>
 
-            <div className={classes.Github}>
-              <Column className={`${classes.SocialText} show-for-medium-up end`} small={10} medium={9} large={10}>
-                <h4>View my <a href="https://github.com/CoreyNoble" target="_blank" rel="noopener noreferrer"
-                    title="View my GitHub">GitHub</a>&nbsp;projects</h4>
-                <br />
-              </Column>
-              <Column className={classes.SocialIcon} small={2} medium={3} large={2}>
-                <a href="https://github.com/CoreyNoble" target="_blank" rel="noopener noreferrer" tabIndex="-1"
-                  aria-hidden="true">
-                  <img src={GitHubLogo} alt="" role="presentation" />
-                </a>
-              </Column>
+              <div className={classes.Github}>
+                {/* <ShowForScreenSize screenSize="medium"> */}
+                  <Column 
+                    className={classes.SocialText} 
+                    end small={10} medium={9} large={10}
+                  >
+                    <h4>View my <a href="https://github.com/CoreyNoble" target="_blank" rel="noopener noreferrer"
+                        title="View my GitHub">GitHub</a>&nbsp;projects</h4>
+                    <br />
+                  </Column>
+                {/* </ShowForScreenSize> */}
+                
+                <Column className={classes.SocialIcon} small={2} medium={3} large={2}>
+                  <a href="https://github.com/CoreyNoble" target="_blank" rel="noopener noreferrer" tabIndex="-1"
+                    aria-hidden="true">
+                    <img src={GitHubLogo} alt="" role="presentation" />
+                  </a>
+                </Column>
+              </div>
             </div>
-          </div>
-        </Column>
+          </Column>
+        {/* </ShowForScreenSize> */}
       </Row>
     </footer>
   );

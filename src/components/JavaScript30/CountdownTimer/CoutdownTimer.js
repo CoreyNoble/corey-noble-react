@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row, Column } from 'react-foundation';
+import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
 import './CoutdownTimer.module.scss';
 
@@ -192,7 +192,7 @@ const coutdownTimer = props => {
           <Column small={12}>
             <div className="timer">
               <div className="timer__controls">
-                <Row className="row" data-equalizer>
+                <Row data-equalizer>
                   <Column className="timer__control" small={6} large={2} data-equalizer-watch>
                     <button data-time="20" className="timer__button">20 Secs</button>
                   </Column>
@@ -208,7 +208,7 @@ const coutdownTimer = props => {
                   <Column className="timer__control" small={6} large={2} data-equalizer-watch>
                     <button data-time="3600" className="timer__button">Lunch Break</button>
                   </Column>
-                  <Column className="timer__control end" small={6} large={2} data-equalizer-watch>
+                  <Column className="timer__control" end small={6} large={2} data-equalizer-watch>
                     <div className="contact-form">
                       <form name="customForm" id="custom">
                         <input type="text" name="minutes" placeholder="Enter Minutes" />

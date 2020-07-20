@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row, Column } from 'react-foundation';
+import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
 import './UpdateCSSVariables.module.scss';
 
@@ -90,7 +90,7 @@ const updateCSSVariables = props => {
                 <label className="h4" for="blur">Blur:</label>
                 <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px" />
               </Column>
-              <Column className="end" small={12} large={4}>
+              <Column end small={12} large={4}>
                 <label className="h4" for="base">Base Color:</label>
                 <input id="base" type="color" name="base" value="#6dbfbf" />
               </Column>

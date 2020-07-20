@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Row, Column } from 'react-foundation';
+import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
 import classes from './JavaScript30.module.scss';
 
@@ -258,8 +258,7 @@ class javaScript30 extends Component {
           {this.state.javaScript30.map(project => {
             return (
               <Column 
-                className="end"
-                small={12} medium={6} large={4}
+                end small={12} medium={6} large={4}
                 data-aos="fade-up" data-aos-delay="100"
                 data-equalizer-watch="project"
                 key={project.key}

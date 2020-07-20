@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row, Column } from 'react-foundation';
+import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
 import classes from './PortfolioPiece.module.scss';
 
@@ -8,7 +8,7 @@ const portfolioPiece = props => {
   return (
     <Row className="showcase-2">
       <Column 
-        small={12} large={5} large-push={7} 
+        small={12} large={5} largeOrder={1} smallOrder={2}
         data-aos="fade-up" data-aos-delay="100"
       >
         <h3><em>PC&nbsp;Financial</em></h3>
@@ -21,8 +21,7 @@ const portfolioPiece = props => {
       </Column>
       
       <Column 
-        className="end" 
-        small={12} large={7} large-pull={5} 
+        end small={12} large={7} largeOrder={2} smallOrder={1}
         data-aos="fade-up" data-aos-delay="100"
       >
         <a href="https://www.pcfinancial.ca/en/campaign/new-digital-experience" target="_blank" rel="noopener noreferrer"

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row, Column } from 'react-foundation';
+import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
 import './FollowAlongLinkHighlighter.module.scss';
 
@@ -130,7 +130,7 @@ const followAlongLinkHighlighter = props => {
           <Column small={6} large={3}>
             <a href="">Read Our History</a>
           </Column>
-          <Column className="end" small={6} large={3}>
+          <Column end small={6} large={3}>
             <a href="">Contact Us</a>
           </Column>
         </Row>

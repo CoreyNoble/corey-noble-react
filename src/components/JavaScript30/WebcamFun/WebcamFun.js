@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row, Column } from 'react-foundation';
+import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
 import './WebcamFun.module.scss';
 
@@ -338,7 +338,7 @@ const webcamFun = props => {
                             <input id="gmax" type="range" min="0" max="255" name="gmax" />
                           </Column>
 
-                          <Column className="end" small={6} medium={4}>
+                          <Column end small={6} medium={4}>
                             <label for="bmin">Blue Min:</label>
                             <input id="bmin" type="range" min="0" max="255" name="bmin" />
                             <label for="bmax">Blue Max:</label>

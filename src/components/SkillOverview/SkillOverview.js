@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Row, Column } from 'react-foundation';
+import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
 import classes from './SkillOverview.module.scss';
 
@@ -90,12 +90,13 @@ class skillOverview extends Component {
         </Row>
 
         <Row 
+          isExpanded
           className={classes.ServicesPromotion} 
           data-equalizer="equalize-skill"
         >
           {this.state.skillOverview.map(skill => {
             return (
-              <Column 
+              <Column
                 className={`${classes.ServicesPromotion} ${skill.class}`}
                 small={12} medium={12} large={4}
                 data-aos="fade-up" data-aos-delay="100" 

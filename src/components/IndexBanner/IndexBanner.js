@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Column } from 'react-foundation';
+import { Column } from 'react-foundation-components/lib/grid-flex';
 
 import classes from './IndexBanner.module.scss';
 

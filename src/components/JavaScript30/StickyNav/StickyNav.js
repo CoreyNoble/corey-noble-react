@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row, Column } from 'react-foundation';
+import { Row, Column, ShowForScreenSize } from 'react-foundation-components/lib/grid-flex';
 
 import './StickyNav.module.scss';
 
@@ -89,7 +89,11 @@ const stickyNav = props => {
         <div id="sticky-nav">
           <ul>
             <li className="logo"><a href="#">LOGO</a></li>
-            <li className="show-for-medium"><a href="#">Home</a></li>
+
+            {/* <ShowForScreenSize screenSize="large"> */}
+              <li><a href="#">Home</a></li>
+            {/* </ShowForScreenSize> */}
+
             <li><a href="#">About</a></li>
             <li><a href="#">Locations</a></li>
           </ul>
