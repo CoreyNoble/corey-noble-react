@@ -12,7 +12,7 @@ import LinkedInLogo from '../../assets/img/linkedin-icon.png';
 
 const indexIntro = props => {
   return (
-    <Section background="black" animStyle="none">
+    <Section background="black">
       <Row className={`${classes.AboutMe}`}>
         <Column small={12} large={7}>
           <h3>Hi! My name is <strong>Corey&nbsp;Noble</strong>,</h3>

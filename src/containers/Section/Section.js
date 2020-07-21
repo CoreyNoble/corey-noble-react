@@ -8,11 +8,7 @@ const section = props => {
   return (
     <div className={classes.Section + ' ' + props.background}>
       <Row>
-        <Column 
-          small={12} 
-          data-aos={props.animStyle || 'fade-right'}
-          data-aos-delay={props.animDelay || 100}
-        >
+        <Column small={12}>
             {props.children}
         </Column>
       </Row>
