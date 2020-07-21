@@ -10,9 +10,7 @@ const BackToTop = props => {
   });
 
   const scrollFunction = () => {
-    const footerElements = document.getElementsByTagName('footer');
-    const footer = footerElements[0];
-    const footerBounds = footer.getBoundingClientRect();
+    const footerBounds = document.querySelector('footer').getBoundingClientRect();
 
     if (window.pageYOffset > 1000) { // Show backToTopButton
       if(!backToTopButton.current.classList.contains(`${classes.btnEntrance}`)) {
