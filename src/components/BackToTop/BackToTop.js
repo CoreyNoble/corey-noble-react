@@ -10,6 +10,10 @@ const BackToTop = props => {
   });
 
   const scrollFunction = () => {
+    const footerElements = document.getElementsByTagName('footer');
+    const footer = footerElements[0];
+    const footerBounds = footer.getBoundingClientRect();
+
     if (window.pageYOffset > 1000) { // Show backToTopButton
       if(!backToTopButton.current.classList.contains(`${classes.btnEntrance}`)) {
         backToTopButton.current.style.display = "block";
@@ -17,8 +21,18 @@ const BackToTop = props => {
         backToTopButton.current.classList.remove(`${classes.btnExit}`);
         backToTopButton.current.classList.add(`${classes.btnEntrance}`);
       }
-    }
-    else { // Hide backToTopButton
+
+      if (
+        footerBounds.top >= 0 &&
+        footerBounds.top <= (window.innerHeight || document.documentElement.clientHeight)
+      ) {
+        backToTopButton.current.classList.add(`${classes.bottomedOut}`);
+        backToTopButton.current.style.top = `${footerBounds.top - 30}px`;
+      } else {
+        backToTopButton.current.classList.remove(`${classes.bottomedOut}`);
+        backToTopButton.current.style.removeProperty('top');
+      }
+    } else { // Hide backToTopButton
       if(backToTopButton.current.classList.contains(`${classes.btnEntrance}`)) {
         backToTopButton.current.classList.remove(`${classes.btnEntrance}`);
         backToTopButton.current.classList.add(`${classes.btnExit}`);

@@ -13,14 +13,13 @@
   right: 1em;
   text-decoration: none;
   transition: 
-    bottom .3s ease,
     display .3s ease,
     float .3s ease,
     position .3s ease;
   width: 3em;
+  z-index: 1;
 
-  &:hover,
-  &:focus {
+  &:hover {
     span {
       top: 7px;
     }
@@ -36,16 +35,11 @@
     transition: top .66s ease;
   }
 
-  &.bottomed-out {
-    bottom: -3.66em;
+  &.bottomedOut {
     display: block;
     float: right;
     margin-top: -2em;
-    position: relative;
-
-    @media screen and (min-width: 64em) {
-      bottom: 2em;
-    }
+    position: fixed;
   }
 
   &.btnEntrance {
