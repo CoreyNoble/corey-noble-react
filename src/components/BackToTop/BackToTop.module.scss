@@ -1,10 +1,6 @@
 @import '../../assets/styles/variables.scss';
 
 .BackToTop {
-
-}
-
-#return-to-top {
   background: $background;
   border-radius: .33em;
     -moz-border-radius: .33em;
@@ -16,7 +12,11 @@
   position: fixed;
   right: 1em;
   text-decoration: none;
-  transition: bottom .5s ease, position .5s ease, display .5s ease, float .5s ease;
+  transition: 
+    bottom .3s ease,
+    display .3s ease,
+    float .3s ease,
+    position .3s ease;
   width: 3em;
 
   &:hover,
@@ -46,5 +46,40 @@
     @media screen and (min-width: 64em) {
       bottom: 2em;
     }
+  }
+
+  &.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+  }
+
+  &.btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;  
+    animation-name: btnExit;
+  }
+}
+
+/* fadeInUp */
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* zoomOut */
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
   }
 }

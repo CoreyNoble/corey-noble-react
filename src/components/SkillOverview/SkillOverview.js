@@ -89,15 +89,11 @@ class skillOverview extends Component {
           </Column>
         </Row>
 
-        <Row 
-          isExpanded
-          className={classes.ServicesPromotion} 
-          data-equalizer="equalize-skill"
-        >
+        <Row>
           {this.state.skillOverview.map(skill => {
             return (
               <Column
-                className={`${classes.ServicesPromotion} ${skill.class}`}
+                className={classes.ServicesPromotion}
                 small={12} medium={12} large={4}
                 data-aos="fade-up" data-aos-delay="100" 
                 data-equalizer-watch="equalize-skill"

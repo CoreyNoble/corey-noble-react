@@ -14,16 +14,16 @@ const indexPortfolioSection = props => {
         <h3 className={`h4 ${classes.IndexHeader}`}>Want to see what I can do? Check out my <a href="%PUBLIC_URL%/portfolio">Portfolio</a> page</h3>
       </Column>
 
-      <div className={classes.Showcase2}>
         <Column small={12} data-aos="fade-up" data-aos-delay="100">
-          <a href="%PUBLIC_URL%/portfolio">
-            <div className={`${classes.ShowcaseExample} ${classes.NoBottomSpace}`}>
-              <h3 className="h4 black">My Portfolio</h3>
-              <img src={PortfolioShowcase} alt="View My Portfolio" />
-            </div>
-          </a>
+          <div className={classes.Showcase2}>
+            <a href="%PUBLIC_URL%/portfolio">
+              <div className={`${classes.ShowcaseExample} ${classes.NoBottomSpace}`}>
+                <h3 className="h4 black">My Portfolio</h3>
+                <img src={PortfolioShowcase} alt="View My Portfolio" />
+              </div>
+            </a>
+          </div>
         </Column>
-      </div>
     </Row>
   );
 };

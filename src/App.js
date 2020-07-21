@@ -14,7 +14,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 
 import Navigation from './components/Navigation/Navigation';
-// import BackToTop from './components/BackToTop/BackToTop';
+import BackToTop from './components/BackToTop/BackToTop';
 import Footer from './components/Footer/Footer';
 
 import Section from './containers/Section/Section';
@@ -548,7 +548,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Navigation />
-          {/* <BackToTop /> */}
+          <BackToTop />
 
           <Switch>
             <Route 
