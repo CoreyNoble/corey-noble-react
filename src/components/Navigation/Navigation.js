@@ -66,24 +66,24 @@ const navigation = props => {
           </Link>
         </li>
         <li className={classes.NavSocials}>
-          <Link 
+          <a 
             className={classes.NavGithubLink}
-            to="https://github.com/CoreyNoble"
+            href="https://github.com/CoreyNoble"
             target="_blank"
             rel="noopener noreferrer"
             title="View my GitHub"
           >
             <img src={GitHubLogo} alt="GitHub" />
-          </Link>
-          <Link 
+          </a>
+          <a 
             className={classes.NavLinkedInLink}
-            to="https://ca.linkedin.com/in/corey-noble"
+            href="https://ca.linkedin.com/in/corey-noble"
             target="_blank"
             rel="noopener noreferrer"
             title="View my GitHub"
           >
             <img src={LinkedInLogo} alt="LinkedIn" />
-          </Link>
+          </a>
         </li>
       </ul>
       <a href="#" className={classes.Pull} onClick={() => {viewSomething()}} title="Toggle the navigation menu" aria-label="Navigation Menu">
