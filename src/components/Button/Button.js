@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
@@ -12,8 +13,14 @@ const button = props => {
       <Column className={classes.AboutMoreInfo} small={12}>
         <h3 data-aos="fade-right" data-aos-delay="100">Want to Know More About&nbsp;Me?</h3>
         <div className={classes.ResumeCTA} data-aos="fade-up" data-aos-delay="100">
-          <a className={`${classes.Resume} h5`} href={CoreyNobleResume} target="_blank"
-            rel="noopener noreferrer">View My CV / Resume</a>
+          <Link 
+            className={`${classes.Resume} h5`}
+            to={`${process.env.PUBLIC_URL}${CoreyNobleResume}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View My CV / Resume
+          </Link>
         </div>
       </Column>
     </Row>

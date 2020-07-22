@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
@@ -11,17 +12,17 @@ const indexPortfolioSection = props => {
     <Row>
       <Column small={12} data-aos="fade-right" data-aos-delay="100">
         <h2>My Work</h2>
-        <h3 className={`h4 ${classes.IndexHeader}`}>Want to see what I can do? Check out my <a href="%PUBLIC_URL%/portfolio">Portfolio</a> page</h3>
+        <h3 className={`h4 ${classes.IndexHeader}`}>Want to see what I can do? Check out my <Link to={`${process.env.PUBLIC_URL}/portfolio`}>Portfolio</Link> page</h3>
       </Column>
 
         <Column small={12} data-aos="fade-up" data-aos-delay="100">
           <div className={classes.Showcase2}>
-            <a href="%PUBLIC_URL%/portfolio">
+            <Link to={`${process.env.PUBLIC_URL}/portfolio`}>
               <div className={`${classes.ShowcaseExample} ${classes.NoBottomSpace}`}>
                 <h3 className="h4 black">My Portfolio</h3>
                 <img src={PortfolioShowcase} alt="View My Portfolio" />
               </div>
-            </a>
+            </Link>
           </div>
         </Column>
     </Row>

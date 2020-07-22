@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 import { ShowForScreenSize } from 'react-foundation-components/lib/visibility';
@@ -6,7 +7,7 @@ import { ShowForScreenSize } from 'react-foundation-components/lib/visibility';
 import classes from './Footer.module.scss';
 
 import CoreyNobleFootnoteProfileImage from '../../assets/img/Corey-Noble-Footnote-Profile.png';
-import CoreyNobleResumePDF from '../../assets/pdf/CoreyNoble-Resume.pdf';
+import CoreyNobleResume from '../../assets/pdf/CoreyNoble-Resume.pdf';
 import GitHubLogo from '../../assets/img/github-icon.png';
 import LinkedInLogo from '../../assets/img/linkedin-icon.png';
 
@@ -25,12 +26,23 @@ const footer = props => {
               <h3 className={`${classes.Title}`}>Web Application Developer</h3>
               <div className={classes.FootnoteContact}>
                 <h4>
-                  <a href={CoreyNobleResumePDF} title="Read my resume" target="_blank"
-                    rel="noopener noreferrer">My Resume</a>
+                  <Link 
+                    to={`${process.env.PUBLIC_URL}${CoreyNobleResume}`}
+                    title="Read my resume" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    My Resume
+                  </Link>
                 </h4>
                 <span aria-hidden="true">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                 <h4>
-                  <a href={`${process.env.PUBLIC_URL}/site-index`} title="View the site index">Site Index</a>
+                  <Link 
+                    to={`${process.env.PUBLIC_URL}/site-index`}
+                    title="View the site index"
+                  >
+                    Site Index
+                  </Link>
                 </h4>
               </div>
             </div>

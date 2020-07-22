@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
@@ -23,8 +24,8 @@ const indexIntro = props => {
             broadcast solutions with headquarters based in the beautiful city of
             Burlington,&nbsp;ON&nbsp;&#8209;&nbsp;Canada.</p>
           <p className={`${classes.h5} h5`}>Welcome to my website! A portfolio that showcases some of my work, as well as the skills and
-            experience that I bring to the&nbsp;table. If you like what you see and would like to reach out, please <a
-              href="%PUBLIC_URL%/contact" title="Contact Me">contact&nbsp;me</a>.</p>
+            experience that I bring to the&nbsp;table. If you like what you see and would like to reach out, please <Link
+              to={`${process.env.PUBLIC_URL}/contact`} title="Contact Me">contact&nbsp;me</Link>.</p>
           <span className={classes.Socials}>
             <a className={classes.GithubLink} href="https://github.com/CoreyNoble" target="_blank" rel="noopener noreferrer"
               title="View my GitHub">
