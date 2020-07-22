@@ -12,6 +12,16 @@ const BackToTop = props => {
   const scrollFunction = () => {
     const footerBounds = document.querySelector('footer').getBoundingClientRect();
     const notMobileResolution = window.matchMedia("(min-width: 64em)");
+    let backToTopOffset,
+        footerOffset;
+
+    if (notMobileResolution.matches) {
+      backToTopOffset = -30;
+      footerOffset = 0;
+    } else {
+      backToTopOffset = 60
+      footerOffset = -80;
+    }
 
     if (window.pageYOffset > 1000) { // Show backToTopButton
       if(!backToTopButton.current.classList.contains(`${classes.btnEntrance}`)) {
@@ -21,28 +31,15 @@ const BackToTop = props => {
         backToTopButton.current.classList.add(`${classes.btnEntrance}`);
       }
 
-      if (notMobileResolution.matches) {
-        if (
-          footerBounds.top >= 0 &&
-          footerBounds.top <= (window.innerHeight || document.documentElement.clientHeight)
-        ) {
-          backToTopButton.current.classList.add(`${classes.bottomedOut}`);
-          backToTopButton.current.style.top = `${footerBounds.top - 30}px`;
-        } else {
-          backToTopButton.current.classList.remove(`${classes.bottomedOut}`);
-          backToTopButton.current.style.removeProperty('top');
-        }
+      if (
+        footerBounds.top >= 0 &&
+        footerBounds.top <= (window.innerHeight || document.documentElement.clientHeight) + footerOffset
+      ) {
+        backToTopButton.current.classList.add(`${classes.bottomedOut}`);
+        backToTopButton.current.style.top = `${footerBounds.top + backToTopOffset}px`;
       } else {
-        if (
-          footerBounds.top >= 0 &&
-          footerBounds.top <= (window.innerHeight || document.documentElement.clientHeight) - 80
-        ) {
-          backToTopButton.current.classList.add(`${classes.bottomedOut}`);
-          backToTopButton.current.style.top = `${footerBounds.top + 50}px`;
-        } else {
-          backToTopButton.current.classList.remove(`${classes.bottomedOut}`);
-          backToTopButton.current.style.removeProperty('top');
-        }
+        backToTopButton.current.classList.remove(`${classes.bottomedOut}`);
+        backToTopButton.current.style.removeProperty('top');
       }
 
     } else { // Hide backToTopButton
