@@ -93,7 +93,7 @@ class skillOverview extends Component {
           {this.state.skillOverview.map(skill => {
             return (
               <Column
-                className={classes.ServicesPromotion}
+                className={`${classes.ServicesPromotion} ${skill.class}`}
                 small={12} medium={12} large={4}
                 data-aos="fade-up" data-aos-delay="100" 
                 data-equalizer-watch="equalize-skill"

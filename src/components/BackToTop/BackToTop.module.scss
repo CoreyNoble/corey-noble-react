@@ -8,7 +8,7 @@
   border: 2px solid $white;
   bottom: 1em;
   display: none;
-  height: 3em;
+  height: 2.25em;
   position: fixed;
   right: 1em;
   text-decoration: none;
@@ -16,8 +16,13 @@
     display .3s ease,
     float .3s ease,
     position .3s ease;
-  width: 3em;
+  width: 2.25em;
   z-index: 1;
+
+  @media screen and (min-width: 40em) {
+    height: 3em;
+    width: 3em;
+  }
 
   &:hover {
     span {
@@ -27,12 +32,18 @@
 
   span {
     color: $white;
-    font-size: 1.5em;
-    left: .47em;
+    font-size: 1.15em;
+    left: .45em;
     margin: 0;
     position: relative;
-    top: .47em;
+    top: .25em;
     transition: top .66s ease;
+
+    @media screen and (min-width: 40em) {
+      font-size: 1.5em;
+      left: .47em;
+      top: .47em;
+    }
   }
 
   &.bottomedOut {
