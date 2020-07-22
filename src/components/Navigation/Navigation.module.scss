@@ -53,6 +53,10 @@
     background: $black;
   }
 
+  &a {
+    background: $black;
+  }
+
   ul {
     margin-left: 0;
     margin-bottom: 0;
@@ -261,9 +265,8 @@
     &:hover,
     &:visited,
     &:focus {
-      @media screen and (max-width: 940px) {
-        color: $white;
-      }
+      color: $white;
+      background: $background;
     }
 
     &:focus {
