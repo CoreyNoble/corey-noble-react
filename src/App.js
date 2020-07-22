@@ -550,70 +550,72 @@ class App extends Component {
           <Navigation />
           <BackToTop />
 
-          <Switch>
-            <Route 
-              path="/404" 
-              render={() => (
-                <Suspense fallback={<div>Loading...</div>}>
-                  <NotFound />
-                </Suspense>
-              )} 
-            />
+          <main id="main">
+            <Switch>
+              <Route 
+                path="/404" 
+                render={() => (
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <NotFound />
+                  </Suspense>
+                )} 
+              />
 
-            <Route 
-              path="/site-index" 
-              render={() => (
-                <Suspense fallback={<div>Loading...</div>}>
-                  <SiteIndex />
-                </Suspense>
-              )} 
-            />
+              <Route 
+                path="/site-index" 
+                render={() => (
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <SiteIndex />
+                  </Suspense>
+                )} 
+              />
 
-            <Route 
-              path="/portfolio" 
-              render={() => (
-                <Suspense fallback={<div>Loading...</div>}>
-                  <Portfolio />
-                </Suspense>
-              )} 
-            />
+              <Route 
+                path="/portfolio" 
+                render={() => (
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <Portfolio />
+                  </Suspense>
+                )} 
+              />
 
-            <Route 
-              path="/about" 
-              render={() => (
-                <Suspense fallback={<div>Loading...</div>}>
-                  <About />
-                </Suspense>
-              )} 
-            />
+              <Route 
+                path="/about" 
+                render={() => (
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <About />
+                  </Suspense>
+                )} 
+              />
 
-            <Route 
-              path="/blog" 
-              render={() => (
-                <Suspense fallback={<div>Loading...</div>}>
-                  <Blog />
-                </Suspense>
-              )} 
-            />
+              <Route 
+                path="/blog" 
+                render={() => (
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <Blog />
+                  </Suspense>
+                )} 
+              />
 
-            <Route 
-              path="/contact" 
-              render={() => (
-                <Suspense fallback={<div>Loading...</div>}>
-                  <Contact />
-                </Suspense>
-              )} 
-            />
+              <Route 
+                path="/contact" 
+                render={() => (
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <Contact />
+                  </Suspense>
+                )} 
+              />
 
-            <Route 
-              path="/" 
-              render={() => (
-                <Suspense fallback={<div>Loading...</div>}>
-                  <Index />
-                </Suspense>
-              )} 
-            />
-          </Switch>
+              <Route 
+                path="/" 
+                render={() => (
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <Index />
+                  </Suspense>
+                )} 
+              />
+            </Switch>
+          </main>
 
           <Footer />
         </div>
