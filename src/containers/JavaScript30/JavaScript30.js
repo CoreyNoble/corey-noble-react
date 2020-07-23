@@ -254,13 +254,12 @@ class javaScript30 extends Component {
   render() {
     return (
       <div id="javascript30" className="section">
-        <Row className="showcase-2" data-equalizer="project">
+        <Row className="showcase-2">
           {this.state.javaScript30.map(project => {
             return (
               <Column 
                 end small={12} medium={6} large={4}
                 data-aos="fade-up" data-aos-delay="100"
-                data-equalizer-watch="project"
                 key={project.key}
               >
                 <a href={`${project.url}`} title={project.linkTitle}>

@@ -192,23 +192,23 @@ const coutdownTimer = props => {
           <Column small={12}>
             <div className="timer">
               <div className="timer__controls">
-                <Row data-equalizer>
-                  <Column className="timer__control" small={6} large={2} data-equalizer-watch>
+                <Row>
+                  <Column className="timer__control" small={6} large={2}>
                     <button data-time="20" className="timer__button">20 Secs</button>
                   </Column>
-                  <Column className="timer__control" small={6} large={2} data-equalizer-watch>
+                  <Column className="timer__control" small={6} large={2}>
                     <button data-time="300" className="timer__button">Work 5</button>
                   </Column>
-                  <Column className="timer__control" small={6} large={2} data-equalizer-watch>
+                  <Column className="timer__control" small={6} large={2}>
                     <button data-time="900" className="timer__button">Quick 15</button>
                   </Column>
-                  <Column className="timer__control" small={6} large={2} data-equalizer-watch>
+                  <Column className="timer__control" small={6} large={2}>
                     <button data-time="1200" className="timer__button">Snack 20</button>
                   </Column>
-                  <Column className="timer__control" small={6} large={2} data-equalizer-watch>
+                  <Column className="timer__control" small={6} large={2}>
                     <button data-time="3600" className="timer__button">Lunch Break</button>
                   </Column>
-                  <Column className="timer__control" end small={6} large={2} data-equalizer-watch>
+                  <Column className="timer__control" end small={6} large={2}>
                     <div className="contact-form">
                       <form name="customForm" id="custom">
                         <input type="text" name="minutes" placeholder="Enter Minutes" />

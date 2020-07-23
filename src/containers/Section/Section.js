@@ -6,7 +6,7 @@ import classes from './Section.module.scss';
 
 const section = props => {
   return (
-    <div className={classes.Section + ' ' + props.background}>
+    <div className={`${classes.Section} ${props.background} ${props.classProp}`}>
       <Row>
         <Column small={12}>
             {props.children}

@@ -34,110 +34,110 @@ import SafariLogo from '../../assets/img/icons/safari.png';
 const scrollableSection = props => {
   return (
       <React.Fragment>
-        <h3 className="h5 black text-center">The programs and technologies I use most&nbsp;often:</h3>
+        <h3 className={`${classes.Heading} h5 black text-center`}>The programs and technologies I use most&nbsp;often:</h3>
 
-        <Row horizontalAlignment="left">
-          <Column className="icon" small={6} medium={3}>
+        <Row smallUp={2} mediumUp={4}>
+          <Column className={classes.Icon}>
             <img src={ReactLogo} alt="" role="presentation" />
             <p>React</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={JavaScriptLogo} alt="" role="presentation" />
             <p>JavaScript</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={HTML5Logo} alt="" role="presentation" />
             <p>HTML 5</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={CSSLogo} alt="" role="presentation" />
             <p>CSS</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={SASSLogo} alt="" role="presentation" />
             <p>SCSS / SASS</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={LESSLogo} alt="" role="presentation" />
             <p>LESS</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={GITLogo} alt="" role="presentation" />
             <p>Git</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={NPMLogo} alt="" role="presentation" />
             <p>NPM</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={FoundationLogo} alt="" role="presentation" />
             <p>Foundation</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={BootstrapLogo} alt="" role="presentation" />
             <p>Bootstrap</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={JiraLogo} alt="" role="presentation" />
             <p>JIRA</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={NETMVCLogo} alt="" role="presentation" />
             <p>.NET / MVC</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={SitefinityLogo} alt="" role="presentation" />
             <p>Sitefinity</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={KenticoLogo} alt="" role="presentation" />
             <p>Kentico</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={AEMLogo} alt="" role="presentation" />
             <p>AEM</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={WordPressLogo} alt="" role="presentation" />
             <p>WordPress</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={RedDotLogo} alt="" role="presentation" />
             <p>RedDot</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={SiteCoreLogo} alt="" role="presentation" />
             <p>Sitecore</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={FileZillaLogo} alt="" role="presentation" />
             <p>FTP</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={VisualStudioLogo} alt="" role="presentation" />
             <p>Visual Studio</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={VisualStudioCodeLogo} alt="" role="presentation" />
             <p>VS Code</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={SublimeTextLogo} alt="" role="presentation" />
             <p>Sublime Text</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={PhotoshopLogo} alt="" role="presentation" />
             <p>Photoshop</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={FirefoxLogo} alt="" role="presentation" />
             <p>Firefox</p>
           </Column>
-          <Column className="icon" small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={ChromeLogo} alt="" role="presentation" />
             <p>Chrome</p>
           </Column>
-          <Column className="icon" end small={6} medium={3}>
+          <Column className={classes.Icon}>
             <img src={SafariLogo} alt="" role="presentation" />
             <p>Safari</p>
           </Column>
