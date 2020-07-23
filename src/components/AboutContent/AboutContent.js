@@ -4,6 +4,8 @@ import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
 import classes from './AboutContent.module.scss';
 
+import ShowMoreLess from '../../containers/ShowMoreLess/ShowMoreLess';
+
 import EvertzLogo from '../../assets/img/logos/evertz.png';
 import ThrillworksLogo from '../../assets/img/logos/thrillworks.png';
 import RightChoiceLogo from '../../assets/img/logos/right-choice.png';
@@ -14,60 +16,54 @@ import GraduationImage from '../../assets/img/icons/graduate.png';
 const aboutContent = props => {
   return (
     <Row>
-      <Column id="about-intro" small={12} data-aos="fade-up" data-aos-delay="100">
+      <Column className={classes.AboutIntro} small={12} data-aos="fade-up" data-aos-delay="100">
         <h2>My Story</h2>
-        <div>
-          <div>
-            <div className="js-excerpt excerpt-hidden large-excerpt collapsible">
-              <p>My name is <strong>Corey&nbsp;Noble</strong>. I am a <strong>Web&nbsp;Application&nbsp;Developer</strong>
-                currently employed by <a className="evertz-text" href="https://evertz.com/"
-                  title="Visit the Evertz Microsystems Website" target="_blank"
-                  rel="noopener noreferrer"><strong>Evertz&nbsp;Microsystems&nbsp;Ltd.</strong></a>, A global leader in
-                broadcast solutions with headquarters based in the beautiful city of
-                Burlington,&nbsp;ON&nbsp;&#8209;&nbsp;Canada.</p>
-              <p>A breif history about&nbsp;me:</p>
-              <p>I began working in digital media in high school. I loved the variety that the digital space provided, so
-                I took as many media classes as I could. At the time I wanted to create environments in videogames. This
-                lead me to take a two year Multi Media Design and Production pre-requisite program at Fanshawe College,
-                with the ultimate goal of taking a 3D course to become a Video Game Developer. It was in this program that
-                I was introduced to website development. I fell in love with the complex and creative role that web
-                development provides. I enjoyed learning about the many parts of digital media that contributed to a
-                completed web project. To me, graduating from this course was the beginning of my career as a
-                Web&nbsp;Developer.</p>
-              <p>After I graduated from Multi Media Design and Production, I followed through with my original goal and
-                entered the proceeding 3D Animation and Character Design program. The 3D program was immensely difficult,
-                but amazing. I was mentored by a veteran in the industry. Due to the shorter than average timespan of this
-                3D course (1 year opposed to the average 3 years), our teacher pushed us to the very edge of our potential
-                in a very condensed&nbsp;timeline. Many people that work with me are amazed at the amount of dedication,
-                concentration and the general attitude I have towards my profession. I consider the 3D program to be the
-                reason for this. If I had any bad habits before the 3D course, they were broken by the time
-                I&nbsp;graduated.</p>
-              <p>While I loved both of my fields of study, post-graduation I chose Web Development as my preferred career
-                path.</p>
-              <p>First I started a freelance web development company called Right&nbsp;Choice Websites with a college
-                friend, which gave me some of the skills and confidence I needed to pursue a career in the&nbsp;industry.
-              </p>
-              <p>Next I landed a job at <a className="thrillworks-text" href="https://thrillworks.com"
-                  title="Visit the Thrillworks Website" target="_blank"
-                  rel="noopener noreferrer"><strong>Thrillworks&nbsp;Inc.</strong></a> as a
-                <strong>Web&nbsp;Production&nbsp;Specialist</strong>. At Thrillworks I was able to rapidly expand my
-                knowledge of web technologies and software development best practices. After 3+&nbsp;years at Thrillworks
-                I was promoted to <strong>Web&nbsp;Developer</strong> which was a position I held for an additional
-                2+&nbsp;years before I was ready to broaden my horizons once&nbsp;more.</p>
-              <p>I currently work for <strong>Evertz&nbsp;Microsystems&nbsp;Ltd.</strong> as a
-                <strong>Web&nbsp;Application&nbsp;Developer</strong>. Throughout my career so far I have had the great
-                privelage to work with very talented groups of people, on amazing and challenging projects that I am very
-                proud to have had a part in&nbsp;creating.</p>
-              <p>I feel blessed to have found my passion so early in life. I love that working in this industry means I
-                get to continually learn, grow and take on a new challenge every&nbsp;day.</p>
-            </div>
-          </div>
-
-          <a role="button" className="js-show-more">Show more +</a>
-        </div>
+        <ShowMoreLess isLargeExcerpt="true">
+          <p>My name is <strong>Corey&nbsp;Noble</strong>. I am a <strong>Web&nbsp;Application&nbsp;Developer</strong>
+            currently employed by <a className="evertz-text" href="https://evertz.com/"
+              title="Visit the Evertz Microsystems Website" target="_blank"
+              rel="noopener noreferrer"><strong>Evertz&nbsp;Microsystems&nbsp;Ltd.</strong></a>, A global leader in
+            broadcast solutions with headquarters based in the beautiful city of
+            Burlington,&nbsp;ON&nbsp;&#8209;&nbsp;Canada.</p>
+          <p>A breif history about&nbsp;me:</p>
+          <p>I began working in digital media in high school. I loved the variety that the digital space provided, so
+            I took as many media classes as I could. At the time I wanted to create environments in videogames. This
+            lead me to take a two year Multi Media Design and Production pre-requisite program at Fanshawe College,
+            with the ultimate goal of taking a 3D course to become a Video Game Developer. It was in this program that
+            I was introduced to website development. I fell in love with the complex and creative role that web
+            development provides. I enjoyed learning about the many parts of digital media that contributed to a
+            completed web project. To me, graduating from this course was the beginning of my career as a
+            Web&nbsp;Developer.</p>
+          <p>After I graduated from Multi Media Design and Production, I followed through with my original goal and
+            entered the proceeding 3D Animation and Character Design program. The 3D program was immensely difficult,
+            but amazing. I was mentored by a veteran in the industry. Due to the shorter than average timespan of this
+            3D course (1 year opposed to the average 3 years), our teacher pushed us to the very edge of our potential
+            in a very condensed&nbsp;timeline. Many people that work with me are amazed at the amount of dedication,
+            concentration and the general attitude I have towards my profession. I consider the 3D program to be the
+            reason for this. If I had any bad habits before the 3D course, they were broken by the time
+            I&nbsp;graduated.</p>
+          <p>While I loved both of my fields of study, post-graduation I chose Web Development as my preferred career
+            path.</p>
+          <p>First I started a freelance web development company called Right&nbsp;Choice Websites with a college
+            friend, which gave me some of the skills and confidence I needed to pursue a career in the&nbsp;industry.
+          </p>
+          <p>Next I landed a job at <a className="thrillworks-text" href="https://thrillworks.com"
+              title="Visit the Thrillworks Website" target="_blank"
+              rel="noopener noreferrer"><strong>Thrillworks&nbsp;Inc.</strong></a> as a
+            <strong>Web&nbsp;Production&nbsp;Specialist</strong>. At Thrillworks I was able to rapidly expand my
+            knowledge of web technologies and software development best practices. After 3+&nbsp;years at Thrillworks
+            I was promoted to <strong>Web&nbsp;Developer</strong> which was a position I held for an additional
+            2+&nbsp;years before I was ready to broaden my horizons once&nbsp;more.</p>
+          <p>I currently work for <strong>Evertz&nbsp;Microsystems&nbsp;Ltd.</strong> as a
+            <strong>Web&nbsp;Application&nbsp;Developer</strong>. Throughout my career so far I have had the great
+            privelage to work with very talented groups of people, on amazing and challenging projects that I am very
+            proud to have had a part in&nbsp;creating.</p>
+          <p>I feel blessed to have found my passion so early in life. I love that working in this industry means I
+            get to continually learn, grow and take on a new challenge every&nbsp;day.</p>
+        </ShowMoreLess>
       </Column>
 
-      <Column id="experience" small={12}>
+      {/* <Column id="experience" small={12}>
         <h2 data-aos="fade-right" data-aos-delay="100">Job Experience</h2>
         <hr data-aos="fade-up" data-aos-delay="100" />
       </Column>
@@ -375,7 +371,7 @@ const aboutContent = props => {
           </div>
           <a role="button" className="js-show-more">Show more +</a>
         </div>
-      </Column>
+      </Column> */}
     </Row>
   );
 };
