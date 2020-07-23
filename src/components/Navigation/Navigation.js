@@ -44,7 +44,6 @@ const Navigation = props => {
 
     if (windowWidth < desktopResolution) {
       isMobile = true;
-      nav.current.style.transition = 'none';
       nav.current.style.transform = 'translateY(-16.9em)';
     } else {
       isMobile = false;
