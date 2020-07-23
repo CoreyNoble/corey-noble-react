@@ -1,38 +1,11 @@
 @import '../../assets/styles/variables.scss';
 
-// ~~~ // Entirety of _about.scss
 .AboutMe {
   border-bottom: solid 3px $white;
-  
-  h1,
-  .h1 {
-    margin-top: 0;
-  }
-
-  h2,
-  .h2 {
-    margin-bottom: 1em;
-    line-height: 1;
-
-    em {
-      font-size: 80%;
-    }
-  }
-
-  h5,
-  .h5 {
-    margin-bottom: 1em;
-  }
 }
 
-.PortraitSuit {
-  position: relative;
-  top: 0;
-
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+.IntroParagraph {
+  margin-bottom: 1em;
 }
 
 .Socials {
@@ -82,5 +55,15 @@
         -o-transition: .25s ease-in-out;
       }
     }
+  }
+}
+
+.PortraitSuit {
+  position: relative;
+  top: 0;
+
+  img {
+    display: block;
+    margin: 0 auto;
   }
 }
