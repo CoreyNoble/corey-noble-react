@@ -447,6 +447,10 @@ function About() {
       <Section background="white">
         <AboutContent />
       </Section>
+      
+      <Section background="black">
+        <Button />
+      </Section>
     </React.Fragment>
   );
 }

@@ -9,3 +9,88 @@
     text-align: center;
   }
 }
+
+.Experience,
+.Education {
+  margin-bottom: 1em;
+
+  h2,
+  .h2 {
+    padding: 0;
+    margin: 0;
+    margin-top: 2em;
+  }
+
+  hr {
+    padding: 0;
+    margin: 0;
+    height: .1em;
+  }
+
+  img {
+    display: block;
+    margin: 3em auto;
+    max-width: 424px;
+    width: 100%;
+  }
+}
+
+.AboutExperience {
+  margin-bottom: 2em;
+  margin-top: 2em;
+
+  @media screen and (max-width: 40em) {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  .JobTitle {
+    margin-bottom: .5em;
+  }
+
+  .CompanyName {
+    margin-top: .5em;
+    margin-bottom: 2em;
+  }
+
+  p {
+    margin: 0;
+    padding: 0 0 1em 0;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+
+    &.CompanyLogo {
+      margin-top: .66em;
+      padding-right: 1em;
+      max-width: 11em;
+      width: 100%;
+
+      @media screen and (max-width: 40em) {
+        margin-top: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  &.no-bottom-space {
+    margin-bottom: 0;
+  }
+}
+
+.AboutMoreInfo {
+  h2,
+  .h2 {
+    display: block;
+    text-align: center;
+  }
+
+  h3,
+  .h3 {
+    display: block;
+    text-align: center;
+  }
+}
