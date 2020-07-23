@@ -7,39 +7,70 @@ import GitHubLogo from '../../assets/img/github-icon.png';
 import LinkedInLogo from '../../assets/img/linkedin-icon.png';
 
 const Navigation = props => {
-  const navButton = useRef();
+  const nav = useRef();
+  const navMenu = useRef();
   const homeLink = useRef();
-  const mobileResolution = window.matchMedia("(max-width: 940px)");
-
+  
+  const desktopResolution = 940;
+  let windowWidth;
   let navStyle;
+  let isMobile;
+  let mobileNavIsOpen = false;
 
-  if (mobileResolution.matches) {
-    navStyle = {
-      transform: 'translateY(-16.9em)'
-    };
-  } else {
-    navStyle = {
-      transform: 'translateY(0)'
-    };
+  const initWindowSize = () => {
+    windowWidth = window.screen.width;
+
+    if (windowWidth < desktopResolution) {
+      isMobile = true;
+
+      navStyle = {
+        transform: 'translateY(-16.9em)'
+      }
+    } else {
+      isMobile = false;
+
+      navStyle = {
+        transform: 'translateY(0)'
+      }
+    }
+  }
+  
+  const calculateWindowSize = () => {
+    windowWidth = window.screen.width;
+    
+    mobileNavIsOpen = false;
+    navMenu.current.innerHTML = 
+      '<strong><span>&lsaquo;</span> corey-noble /<span>&rsaquo;</span></strong>';
+
+    if (windowWidth < desktopResolution) {
+      isMobile = true;
+      nav.current.style.transform = 'translateY(-16.9em)';
+    } else {
+      isMobile = false;
+      nav.current.style.transform = 'translateY(0)';
+    }
   }
 
-  let shouldOpenNav = true;
-
   const toggleMobileNav = () => {
-    const nav = document.querySelector('nav');
+    if (!isMobile) {
+      return;
+    } 
 
-    if (shouldOpenNav) {
-      nav.style.removeProperty('transform');
-      navButton.current.innerHTML = '&nbsp;';
-      shouldOpenNav = false;
-      homeLink.current.focus();
-    } else {
-      nav.style.transform = 'translateY(-16.9em)';
-      navButton.current.innerHTML = 
+    if (mobileNavIsOpen) {
+      nav.current.style.transform = 'translateY(-16.9em)';
+      navMenu.current.innerHTML = 
       '<strong><span>&lsaquo;</span> corey-noble /<span>&rsaquo;</span></strong>';
-      shouldOpenNav = true;
+      mobileNavIsOpen = false;
+    } else {
+      nav.current.style.transform = 'translateY(0)';
+      navMenu.current.innerHTML = '&nbsp;';
+      homeLink.current.focus();
+      mobileNavIsOpen = true;
     }
   };
+
+  window.onresize = calculateWindowSize;
+  initWindowSize();
 
   return (
     <React.Fragment>
@@ -48,6 +79,7 @@ const Navigation = props => {
       <nav 
         className={classes.Nav}
         style={navStyle}
+        ref={nav}
       >
         <ul>
           <li className={classes.NavIndex}>
@@ -55,7 +87,7 @@ const Navigation = props => {
               className={classes.NavHomeLink}
               to={`${process.env.PUBLIC_URL}/`}
               title="Visit the home page"
-              onClick={mobileResolution.matches ? toggleMobileNav : ''}
+              onClick={toggleMobileNav}
               ref={homeLink}
             >
               <strong>&lsaquo; corey-noble /&rsaquo;</strong>
@@ -65,7 +97,7 @@ const Navigation = props => {
             <Link 
               to={`${process.env.PUBLIC_URL}/portfolio`}
               title="View my portfolio"
-              onClick={mobileResolution.matches ? toggleMobileNav : ''}
+              onClick={toggleMobileNav}
             >
               Portfolio
             </Link>
@@ -74,7 +106,7 @@ const Navigation = props => {
             <Link 
               to={`${process.env.PUBLIC_URL}/about`}
               title="Learn more about me"
-              onClick={mobileResolution.matches ? toggleMobileNav : ''}
+              onClick={toggleMobileNav}
             >
               About
             </Link>
@@ -83,7 +115,7 @@ const Navigation = props => {
             <Link 
               to={`${process.env.PUBLIC_URL}/blog`}
               title="Read my blog"
-              onClick={mobileResolution.matches ? toggleMobileNav : ''}
+              onClick={toggleMobileNav}
             >
               Blog
             </Link>
@@ -92,7 +124,7 @@ const Navigation = props => {
             <Link 
               to={`${process.env.PUBLIC_URL}/contact`}
               title="View my contact page"
-              onClick={mobileResolution.matches ? toggleMobileNav : ''}
+              onClick={toggleMobileNav}
             >
               Contact
             </Link>
@@ -123,8 +155,8 @@ const Navigation = props => {
           className={classes.Pull} 
           title="Toggle the navigation menu" 
           aria-label="Navigation Menu"
-          onClick={mobileResolution.matches ? toggleMobileNav : ''}
-          ref={navButton}
+          onClick={toggleMobileNav}
+          ref={navMenu}
         >
           <strong><span>&lsaquo;</span> corey-noble /<span>&rsaquo;</span></strong>
         </a>
