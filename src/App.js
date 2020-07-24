@@ -377,7 +377,7 @@ function JavaScript30() {
         />
         
         <Route 
-          path={`${match.path}/event-capture-propogation-bubbling-and-once`} 
+          path={`${match.path}/event-capture-propagation-bubbling-and-once`} 
           render={() => (
             <Suspense fallback={<div>Loading...</div>}>
               <JS30EventCapturePropogationBubblingAndOnce />

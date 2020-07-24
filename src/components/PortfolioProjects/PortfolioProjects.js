@@ -123,9 +123,9 @@ const portfolioProjects = props => {
             data-aos="fade-up" data-aos-delay="100"
           >
             <h3>JavaScript 30</h3>
-            <p>30 JavaScript (ES6) projects built and improved upon after following the <Link to="https://javascript30.com/"
+            <p>30 JavaScript (ES6) projects built and improved upon after following the <a href="https://javascript30.com/"
                 target="_blank" rel="noopener noreferrer" title="View the JavaSctipt30 course by Wes Bos.">JavaScript30
-                course</Link> created by Wes&nbsp;Bos.</p>
+                course</a> created by Wes&nbsp;Bos.</p>
             <Link className={`${classes.CTA} ${classes.ProjectCTA2}`} to={`${process.env.PUBLIC_URL}/portfolio/javascript30`}
               title="JavaScript 30. View the projects and the code.">View the projects and code</Link>
           </Column>

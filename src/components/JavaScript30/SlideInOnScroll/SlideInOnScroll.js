@@ -2,110 +2,73 @@ import React from 'react';
 
 import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
-import './SlideInOnScroll.module.scss';
+import Section from '../../../containers/Section/Section';
+
+import classes from './SlideInOnScroll.module.scss';
 
 const slideInOnScroll = props => {
-  // debounce: for performance. Pass a function through debounce to minimize how often the function can be run (wait = 20(milliseconds)).
-  function debounce(func, wait = 20, immediate = true) {
-    var timeout;
-    return function() {
-      var context = this,
-        args = arguments;
-      var later = function() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
-  }
+  // // debounce: for performance. Pass a function through debounce to minimize how often the function can be run (wait = 20(milliseconds)).
+  // function debounce(func, wait = 20, immediate = true) {
+  //   var timeout;
+  //   return function() {
+  //     var context = this,
+  //       args = arguments;
+  //     var later = function() {
+  //       timeout = null;
+  //       if (!immediate) func.apply(context, args);
+  //     };
+  //     var callNow = immediate && !timeout;
+  //     clearTimeout(timeout);
+  //     timeout = setTimeout(later, wait);
+  //     if (callNow) func.apply(context, args);
+  //   };
+  // }
 
-  // Grab all elements with .slide-in
-  const sliderImages = document.querySelectorAll('.slide-in');
+  // // Grab all elements with .slide-in
+  // const sliderImages = document.querySelectorAll('.slide-in');
 
-  function checkSlide(e) {
-    // Loop over each image
-    sliderImages.forEach(sliderImage => {
-      // The pixel level for where you are at the bottom of the viewport.
-      const slideInAt =
-        window.scrollY + window.innerHeight - sliderImage.height / 2;
-      // Where the bottom of the image is.
-      const imageBottom = sliderImage.offsetTop + sliderImage.height;
-      // When the viewport is halfway scrolled through the height of the image.
-      const isHalfShown = slideInAt > sliderImage.offsetTop;
-      // Have not scrolled past the image.
-      const isNotScrolledPast = window.scrollY < imageBottom;
+  // function checkSlide(e) {
+  //   // Loop over each image
+  //   sliderImages.forEach(sliderImage => {
+  //     // The pixel level for where you are at the bottom of the viewport.
+  //     const slideInAt =
+  //       window.scrollY + window.innerHeight - sliderImage.height / 2;
+  //     // Where the bottom of the image is.
+  //     const imageBottom = sliderImage.offsetTop + sliderImage.height;
+  //     // When the viewport is halfway scrolled through the height of the image.
+  //     const isHalfShown = slideInAt > sliderImage.offsetTop;
+  //     // Have not scrolled past the image.
+  //     const isNotScrolledPast = window.scrollY < imageBottom;
 
-      // When we toggle the visibility classes
-      if (isHalfShown && isNotScrolledPast) {
-        sliderImage.classList.add('active'); // Show
-      } else {
-        sliderImage.classList.remove('active'); // Hide
-      }
-    });
-  }
+  //     // When we toggle the visibility classes
+  //     if (isHalfShown && isNotScrolledPast) {
+  //       sliderImage.classList.add('active'); // Show
+  //     } else {
+  //       sliderImage.classList.remove('active'); // Hide
+  //     }
+  //   });
+  // }
 
-  // Every time the window is scrolled, debounce(checkslide(e))
-  window.addEventListener('scroll', debounce(checkSlide));
+  // // Every time the window is scrolled, debounce(checkslide(e))
+  // window.addEventListener('scroll', debounce(checkSlide));
 
   return (
     <React.Fragment>
-      {/* <!-- Introduction --> */}
-      <div className="js30-intro section black">
+      {/* Introduction */}
+      <Section className="js30-intro" background="black">
         <Row>
           <Column small={12}>
-            {/* <!-- Back CTA --> */}
-            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
-                    title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
-            </p>
+            {/* Back CTA */}
+            <p className="back-cta"><small><strong><a href="/portfolio/development/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
 
-            {/* <!-- Title --> */}
+            {/* Title */}
             <h1>Slide in on Scroll</h1>
-
-            {/* <!-- Accordion --> */}
-            <ul className="accordion" data-accordion data-allow-all-closed="true">
-              <li className="accordion-item" data-accordion-item="">
-                {/* <!-- Title --> */}
-                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
-                  aria-selected="false">
-                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
-                </a>
-                {/* <!-- Content --> */}
-                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
-                  aria-hidden="true" id="project-synopsis" style="display: none;">
-                  <p>In this lesson I learn how to create a slide in on scroll effect on&nbsp;elements.</p>
-                  <p>First I create a variable that finds all '.slide-in'&nbsp;elements.</p>
-                  <p>I <strong>listen</strong> on the 'window' object for a 'scroll' event and run checkSlide(e). This event
-                    ends up firing way too often so I wrap the call in a debounce() function to delay it from firing as often
-                    ('scroll',&nbsp;debounce(checkSlide(e))).</p>
-                  <p>In <strong>checkSlide(e)</strong>&nbsp;- For each '.slide-in' element, detect the scroll depth when the
-                    image should slide in ((window.scrollY&nbsp;+ window.innerHeight) - sliderImage.height&nbsp;/&nbsp;2).
-                    Also detect the bottom of the image, if the image is half shown, and if the image has not been scrolled
-                    past. Finally if the image is half shown, and is not scrolled past, add an '.active' class to the element.
-                    Otherwise remove the '.active' class. This transitions the&nbsp;element.</p>
-
-                  {/* <!-- CodePen --> */}
-                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
-                    data-slug-hash="rEKPyW"
-                    style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-                    data-pen-title="JavaScript30 - 13 - Slide In On Scroll">
-                    <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/rEKPyW/">
-                        JavaScript30 - 13 - Slide In On Scroll</a> by Corey Noble (<a
-                        href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
-                      on <a href="https://codepen.io">CodePen</a>.</span>
-                  </p>
-                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                </div>
-              </li>
-            </ul>
           </Column>
         </Row>
-      </div>
+      </Section>
 
-      {/* <!-- JavaScript30 | 13 | Slide in on Scroll --> */}
-      <div className="section white">
+      {/* JavaScript30 | 13 | Slide in on Scroll */}
+      <Section background="white">
         <Row>
           <Column id="javascript30-13" small={12}>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis
@@ -227,7 +190,7 @@ const slideInOnScroll = props => {
               veritatis&nbsp;neque.</p>
           </Column>
         </Row>
-      </div>
+      </Section>
     </React.Fragment>
   );
 };

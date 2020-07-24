@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
+import Section from '../Section/Section';
+
 import classes from './JavaScript30.module.scss';
 
 import DrumKit from '../../assets/img/showcase/javascript30/1-drum-kit.jpg';
@@ -38,7 +40,7 @@ import WhackAMole from '../../assets/img/showcase/javascript30/30-whack-a-mole.j
 class javaScript30 extends Component {
   state = {
     javaScript30: [
-      { heading: `Drum Kit`,
+      { title: `Drum Kit`,
         image: DrumKit,
         url: `/portfolio/javascript30/drum-kit`,
         linkTitle: `Drum Kit. JavaScript30.`,
@@ -253,26 +255,40 @@ class javaScript30 extends Component {
 
   render() {
     return (
-      <div id="javascript30" className="section">
-        <Row className="showcase-2">
-          {this.state.javaScript30.map(project => {
-            return (
-              <Column 
-                end small={12} medium={6} large={4}
-                data-aos="fade-up" data-aos-delay="100"
-                key={project.key}
-              >
-                <a href={`${project.url}`} title={project.linkTitle}>
-                  <div className="showcase-example">
-                    <h3 className="h5 white">{project.title}</h3>
-                    <img src={project.image} alt="" role="presentation" />
-                  </div>
-                </a>
-              </Column>
-            );
-          })}
-        </Row>
-      </div>
+      <React.Fragment>
+        <Section background="white">
+          <Row>
+            <Column small={12}>
+              <h1>JavaScript 30</h1>
+              <p class="h5">30 JavaScript (ES6) projects built following the <a href="https://javascript30.com/" title="View the JavaSctipt30 course by Wes Bos." target="_blank" rel="noopener noreferrer">JavaScript30 course</a> created by Wes&nbsp;Bos.</p>
+
+              {/* Back CTA */}
+              <p class="back-cta"><small><strong><a href="/portfolio" title="Return to my Portfolio page.">&lt;&nbsp;Back to my Portfolio</a></strong></small></p>
+            </Column>
+          </Row>
+        </Section>
+
+        <Section classProp={classes.JavaScript30} background="black">
+          <Row className={classes.Showcase2}>
+            {this.state.javaScript30.map(project => {
+              return (
+                <Column 
+                  end small={12} medium={6} large={4}
+                  data-aos="fade-up" data-aos-delay="100"
+                  key={project.key}
+                >
+                  <a href={`${project.url}`} title={project.linkTitle}>
+                    <div className={classes.ShowcaseExample}>
+                      <h3 className="h5 white">{project.title}</h3>
+                      <img src={project.image} alt="" role="presentation" />
+                    </div>
+                  </a>
+                </Column>
+              );
+            })}
+          </Row>
+        </Section>
+      </React.Fragment>
     );
   }
 };

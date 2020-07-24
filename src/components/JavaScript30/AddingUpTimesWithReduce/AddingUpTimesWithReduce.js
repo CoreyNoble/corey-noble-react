@@ -2,106 +2,63 @@ import React from 'react';
 
 import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
-import './AddingUpTimesWithReduce.module.scss';
+import Section from '../../../containers/Section/Section';
+
+import classes from './AddingUpTimesWithReduce.module.scss';
 
 const addingUpTimesWithReduce = props => {
-  const total = document.querySelector('.total-time');
+  // const total = document.querySelector('.total-time');
 
-  // Select all nodes with a data-time attribute. Returns a 'Node List' so we're converting it into an array so we can use .map().
-  const timeNodes = Array.from(document.querySelectorAll('[data-time]'));
-  const seconds = timeNodes
-    // will get data-time string '0:00'.
-    .map(node => node.dataset.time)
+  // // Select all nodes with a data-time attribute. Returns a 'Node List' so we're converting it into an array so we can use .map().
+  // const timeNodes = Array.from(document.querySelectorAll('[data-time]'));
+  // const seconds = timeNodes
+  //   // will get data-time string '0:00'.
+  //   .map(node => node.dataset.time)
 
-    .map(timeCode => {
-      // An array with mins, secs for each entry. Split string at ':' to separate mins and secs. .map(parseFloat) to map the strings to an array of numbers.
-      const [mins, secs] = timeCode.split(':').map(parseFloat);
-      // Return the timecode.
-      return mins * 60 + secs;
-    })
-    // .reduce(): Takes in an array, and return what you want.
-    // Take all of the numbers and reduce them down to one big number.
-    // Takes in each videos' seconds and adds them to the total.
-    .reduce((total, vidSeconds) => total + vidSeconds);
+  //   .map(timeCode => {
+  //     // An array with mins, secs for each entry. Split string at ':' to separate mins and secs. .map(parseFloat) to map the strings to an array of numbers.
+  //     const [mins, secs] = timeCode.split(':').map(parseFloat);
+  //     // Return the timecode.
+  //     return mins * 60 + secs;
+  //   })
+  //   // .reduce(): Takes in an array, and return what you want.
+  //   // Take all of the numbers and reduce them down to one big number.
+  //   // Takes in each videos' seconds and adds them to the total.
+  //   .reduce((total, vidSeconds) => total + vidSeconds);
 
-  let secondsLeft = seconds;
-  // Calculate hours remaining (seconds / 3600) to a round number (Math.floor()).
-  const hours = Math.floor(seconds / 3600);
-  // Get the remainder (%) after we calculate hours (3600).
-  secondsLeft = secondsLeft % 3600;
+  // let secondsLeft = seconds;
+  // // Calculate hours remaining (seconds / 3600) to a round number (Math.floor()).
+  // const hours = Math.floor(seconds / 3600);
+  // // Get the remainder (%) after we calculate hours (3600).
+  // secondsLeft = secondsLeft % 3600;
 
-  // Calculate minutes remaining (secondsLeft / 60) to a round number (Math.floor()).
-  const mins = Math.floor(secondsLeft / 60);
-  // Get the remainder (%) after we calculate minutes (60).
-  secondsLeft = secondsLeft % 60;
+  // // Calculate minutes remaining (secondsLeft / 60) to a round number (Math.floor()).
+  // const mins = Math.floor(secondsLeft / 60);
+  // // Get the remainder (%) after we calculate minutes (60).
+  // secondsLeft = secondsLeft % 60;
 
-  // Output: Hours, Minutes, Seconds
-  console.log(hours, mins, secondsLeft);
+  // // Output: Hours, Minutes, Seconds
+  // console.log(hours, mins, secondsLeft);
 
-  total.innerHTML = hours + ':' + mins + ':' + secondsLeft;
+  // total.innerHTML = hours + ':' + mins + ':' + secondsLeft;
 
   return (
     <React.Fragment>
-      {/* <!-- Introduction --> */}
-      <div className="js30-intro section white">
+      {/* Introduction */}
+      <Section className="js30-intro" background="white">
         <Row>
           <Column small={12}>
-            {/* <!-- Back CTA --> */}
-            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
-                    title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
-            </p>
+            {/* Back CTA */}
+            <p className="back-cta"><small><strong><a href="/portfolio/development/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
 
-            {/* <!-- Title --> */}
+            {/* Title */}
             <h1>Adding Up Times with Reduce</h1>
-
-            {/* <!-- Accordion --> */}
-            <ul className="accordion" data-accordion data-allow-all-closed="true">
-              <li className="accordion-item" data-accordion-item="">
-                {/* <!-- Title --> */}
-                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
-                  aria-selected="false">
-                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
-                </a>
-                {/* <!-- Content --> */}
-                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
-                  aria-hidden="true" id="project-synopsis" style="display: none;">
-                  <p>In this lesson I am taking an array of elements with a data attribute of [data-time]. With that array I
-                    calculate the 'total' amount of time in 'hours', 'minutes' and&nbsp;'secondsLeft'.</p>
-                  <p>First to get the total 'seconds', .map() over each node to get the 'dataset.time'. Then .map() over
-                    each&nbsp;'timeCode'.</p>
-                  <p>.split(':') the string into a sub array of 'mins' and 'secs' (const&nbsp;[mins,&nbsp;secs]&nbsp;=
-                    timeCode.split(':').map(parseFloat)). Then return the total amount of 'seconds' for that item by counting
-                    all minutes and seconds as 'seconds' ((mins&nbsp;*&nbsp;60) +&nbsp;secs).</p>
-                  <p>Next .reduce() the array to get the total number of 'seconds' by adding up each items' 'seconds'
-                    (.reduce((total,&nbsp;vidSeconds)&nbsp;=> total&nbsp;+&nbsp;vidSeconds). Then calculate 'hours', 'mins'
-                    and&nbsp;'secondsLeft'.</p>
-                  <p>let secondsLeft =&nbsp;seconds;<br />
-                    const hours&nbsp;= Math.floor(seconds /&nbsp;3600);<br />
-                    secondsLeft&nbsp;= secondsLeft %&nbsp;3600;<br />
-                    const mins&nbsp;= Math.floor(secondsLeft /&nbsp;60);<br />
-                    secondsLeft&nbsp;= secondsLef %&nbsp;60;</p>
-                  <p>Finally output the values to the 'innerHTML' of&nbsp;'total'.</p>
-
-                  {/* <!-- CodePen --> */}
-                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
-                    data-slug-hash="qzKgjV"
-                    style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-                    data-pen-title="JavaScript30 - 18 - Adding Up Times With Reduce">
-                    <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/qzKgjV/">
-                        JavaScript30 - 18 - Adding Up Times With Reduce</a> by Corey Noble (<a
-                        href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
-                      on <a href="https://codepen.io">CodePen</a>.</span>
-                  </p>
-                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                </div>
-              </li>
-            </ul>
           </Column>
         </Row>
-      </div>
+      </Section>
 
-      {/* <!-- JavaScript30 | 18 | Adding Up Times with Reduce --> */}
-      <div id="javascript30-18" className="section">
+      {/* JavaScript30 | 18 | Adding Up Times with Reduce */}
+      <Section id="javascript30-18">
         <Row>
           <Column small={12}>
             <h2 className="total">Total&nbsp;Time: <span className="total-time"></span></h2>
@@ -283,7 +240,7 @@ const addingUpTimesWithReduce = props => {
             </ul>
           </Column>
         </Row>
-      </div>
+      </Section>
     </React.Fragment>
   );
 };

@@ -7,7 +7,7 @@
   background-attachment: fixed;
   background-size: cover;
 
-  .keys {
+  .Keys {
     display: flex;
     flex-wrap: wrap;
     min-height: 30vh;
@@ -15,7 +15,7 @@
     justify-content: center;
   }
 
-  .key {
+  .Key {
     border: .4rem solid black;
     border-radius: .5rem;
     margin: 1rem;
@@ -28,7 +28,7 @@
     background: $white;
   }
 
-  .playing {
+  .Playing {
     transform: scale(1.1);
     border-color: $blue;
     box-shadow: 0 0 1rem $black;
@@ -47,7 +47,7 @@
     transition: all .07s ease;
   }
 
-  .sound {
+  .Sound {
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;

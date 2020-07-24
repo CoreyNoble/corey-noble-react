@@ -2,178 +2,115 @@ import React from 'react';
 
 import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
-import './LocalStorage.module.scss';
+import Section from '../../../containers/Section/Section';
+
+import classes from './LocalStorage.module.scss';
 
 const localStorage = props => {
-  const addItems = document.querySelector('.add-items'); // <form>
-  const itemsList = document.querySelector('.plates'); // <ul>
-  // 'items' will try to grab an Array of JSON data parsed from an object in localStorage with a key of 'items'. If it does not find the data, fall back to an empty array.
-  const items = JSON.parse(localStorage.getItem('items')) || [];
+  // const addItems = document.querySelector('.add-items'); // <form>
+  // const itemsList = document.querySelector('.plates'); // <ul>
+  // // 'items' will try to grab an Array of JSON data parsed from an object in localStorage with a key of 'items'. If it does not find the data, fall back to an empty array.
+  // const items = JSON.parse(localStorage.getItem('items')) || [];
 
-  // Adds an item to the list.
-  function addItem(e) {
-    // passes in the event that fired on 'submit'.
-    // stops the page from reloading, because we are doing everything client-site. By default, form submit will either re-load the page or submit to an external source.
-    e.preventDefault();
+  // // Adds an item to the list.
+  // function addItem(e) {
+  //   // passes in the event that fired on 'submit'.
+  //   // stops the page from reloading, because we are doing everything client-site. By default, form submit will either re-load the page or submit to an external source.
+  //   e.preventDefault();
 
-    // Text inside of the input
-    const text = this.querySelector('[name=item]').value;
-    // Create the item object
-    const item = {
-      text, // es6 short hand of 'text: text,'
-      done: false // not checked
-    };
+  //   // Text inside of the input
+  //   const text = this.querySelector('[name=item]').value;
+  //   // Create the item object
+  //   const item = {
+  //     text, // es6 short hand of 'text: text,'
+  //     done: false // not checked
+  //   };
 
-    // Push the item object into the items array.
-    items.push(item);
+  //   // Push the item object into the items array.
+  //   items.push(item);
 
-    // Populate the list.
-    populateList(items, itemsList);
+  //   // Populate the list.
+  //   populateList(items, itemsList);
 
-    // Set the localStorage 'items' key as JSON data using 'items' variable.
-    // JSON.stringify: when you pass in your items, it's going to convert your objects and arrays into a JSON string equivalent.
-    localStorage.setItem('items', JSON.stringify(items));
+  //   // Set the localStorage 'items' key as JSON data using 'items' variable.
+  //   // JSON.stringify: when you pass in your items, it's going to convert your objects and arrays into a JSON string equivalent.
+  //   localStorage.setItem('items', JSON.stringify(items));
 
-    // localStorage API can also use these methods:
-    // localStorage.getItem, localStorage.setItem, localStorage.removeItem (? deleteItem)
+  //   // localStorage API can also use these methods:
+  //   // localStorage.getItem, localStorage.setItem, localStorage.removeItem (? deleteItem)
 
-    // Clear the input
-    this.reset();
-  }
+  //   // Clear the input
+  //   this.reset();
+  // }
 
-  // Populates the HTML list.
-  // plates[] starts of as an empty object to ensure it can use .map() even if you forget to pass in something.
-  // platesList, place to put the HTML.
-  // These names are unique so any object or list can be passed into this function, which makes it re-usable.
-  function populateList(plates = [], platesList) {
-    // .map() will take in an array of raw data (plates), and return an array of some other data (platesList).
-    // plate: object
-    // i: index of the array item
-    platesList.innerHTML = plates
-      .map((plate, i) => {
-        // Adds an <li> for each item in the array as it loops through
-        // plate.done: if plate.done (checked), if not ('')
-        return `
-          <li>
-              <input type="checkbox" data-index=${i} id="item${i}" ${
-          plate.done ? 'checked' : ''
-        } />
-              <label for="item${i}">${plate.text}</label>
-          </li>
-          `;
-      })
-      .join(''); // .join('') takes the array that .map() makes, and turns it into one string.
-  }
+  // // Populates the HTML list.
+  // // plates[] starts of as an empty object to ensure it can use .map() even if you forget to pass in something.
+  // // platesList, place to put the HTML.
+  // // These names are unique so any object or list can be passed into this function, which makes it re-usable.
+  // function populateList(plates = [], platesList) {
+  //   // .map() will take in an array of raw data (plates), and return an array of some other data (platesList).
+  //   // plate: object
+  //   // i: index of the array item
+  //   platesList.innerHTML = plates
+  //     .map((plate, i) => {
+  //       // Adds an <li> for each item in the array as it loops through
+  //       // plate.done: if plate.done (checked), if not ('')
+  //       return `
+  //         <li>
+  //             <input type="checkbox" data-index=${i} id="item${i}" ${
+  //         plate.done ? 'checked' : ''
+  //       } />
+  //             <label for="item${i}">${plate.text}</label>
+  //         </li>
+  //         `;
+  //     })
+  //     .join(''); // .join('') takes the array that .map() makes, and turns it into one string.
+  // }
 
-  function toggleDone(e) {
-    // passes in the event that fired when <ul> clicked.
-    // exit if it's not an input
-    if (!e.target.matches('input')) return;
-    // Get the element
-    const el = e.target;
-    // Get the index of the element
-    const index = el.dataset.index;
-    // Toggle the done state (Opposite of what it was)
-    items[index].done = !items[index].done;
-    // Save a JSON string from the 'items' array in into localStorage under the key 'items'.
-    localStorage.setItem('items', JSON.stringify(items));
-    // Populate the list
-    populateList(items, itemsList);
-  }
+  // function toggleDone(e) {
+  //   // passes in the event that fired when <ul> clicked.
+  //   // exit if it's not an input
+  //   if (!e.target.matches('input')) return;
+  //   // Get the element
+  //   const el = e.target;
+  //   // Get the index of the element
+  //   const index = el.dataset.index;
+  //   // Toggle the done state (Opposite of what it was)
+  //   items[index].done = !items[index].done;
+  //   // Save a JSON string from the 'items' array in into localStorage under the key 'items'.
+  //   localStorage.setItem('items', JSON.stringify(items));
+  //   // Populate the list
+  //   populateList(items, itemsList);
+  // }
 
-  // Form Submit, addItem(e).
-  addItems.addEventListener('submit', addItem);
-  // Item Click on <ul>, toggleDone(e).
-  itemsList.addEventListener('click', toggleDone);
+  // // Form Submit, addItem(e).
+  // addItems.addEventListener('submit', addItem);
+  // // Item Click on <ul>, toggleDone(e).
+  // itemsList.addEventListener('click', toggleDone);
 
-  // Initial population of list when loaded.
-  populateList(items, itemsList);
+  // // Initial population of list when loaded.
+  // populateList(items, itemsList);
 
   return (
     <React.Fragment>
-      {/* <!-- Introduction --> */}
-      <div className="js30-intro section white">
+      {/* Introduction */}
+      <Section className="js30-intro" background="white">
         <Row>
           <Column small={12}>
-            {/* <!-- Back CTA --> */}
-            <p className="back-cta"><small><strong><a href="{{root}}portfolio/development/javascript30.html"
-                    title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
-            </p>
+            {/* Back CTA */}
+            <p className="back-cta"><small><strong><a href="/portfolio/development/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
 
-            {/* <!-- Title --> */}
+            {/* Title */}
             <h1>LocalStorage</h1>
-
-            {/* <!-- Accordion --> */}
-            <ul className="accordion" data-accordion data-allow-all-closed="true">
-              <li className="accordion-item" data-accordion-item="">
-                {/* <!-- Title --> */}
-                <a href="#" className="accordion-title" aria-controls="project-synopsis" role="tab"  aria-expanded="false"
-                  aria-selected="false">
-                  <h2 className="h5">Project Synopsis and&nbsp;Code</h2>
-                </a>
-                {/* <!-- Content --> */}
-                <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="Project Synopsis and Code"
-                  aria-hidden="true" id="project-synopsis" style="display: none;">
-                  <p>In this lesson I am saving the state of all of the user inputs into&nbsp;LocalStorage.</p>
-                  <p>First I grab the &lt;form&gt; and &lt;ul&gt; on the page, as well as the 'items' in localStorage
-                    formatted as JSON if it exists. Otherwise I initialize an empty array
-                    (JSON.parse(loalStorage.getItem('items')) ||&nbsp;[]).</p>
-                  <p>I <strong>listen</strong> for the following&nbsp;events:</p>
-                  <ul>
-                    <li>
-                      <strong>&lt;form&gt;</strong>
-                      <ul>
-                        <li>'submit', addItem(e)</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong>&lt;ul&gt;</strong>
-                      <ul>
-                        <li>'click', toggleDone(e)</li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <p>After the JS is loaded, I run populateList(items,&nbsp;itemsList).</p>
-                  <p><strong>populateList(plates&nbsp;=&nbsp;[],&nbsp;platesList)</strong>&nbsp;- Takes in /&nbsp;initializes
-                    a new array 'plates[]', as well as take in another list 'platesList'. These parameter names are different
-                    than the ones I passed in, to ensure it is a re-usable function. Set the 'innerHTML' of 'platesList' to a
-                    new .map() from 'plates'. For each item, build up a new &lt;li&gt;&nbsp;element.</p>
-                  <p>In <strong>addItem(e)</strong>&nbsp;- Prevent the event default to ensure the page doesn't refresh
-                    (e.preventDefault()).</p>
-                  <p>Get the [name=item] 'text' value from 'this' element. Create a new 'item' element, pass in 'text' and a
-                    default state of 'done: false'. Push the 'item' into the 'items'&nbsp;array.</p>
-                  <p>Next run populateList(), then save the 'items' into 'localStorage' (localStorage.setItem('items',
-                    JSON.stringify(items))) and reset the input (this.reset()).</p>
-                  <p>In <strong>toggleDone(e)</strong>&nbsp;- Check if the target of the event is not an &lt;input&gt;
-                    (!e.target.matches('input')), If so, exit the function. Otherwise, get the element and the index of that
-                    element (e.target,&nbsp;e.target.dataset.index).</p>
-                  <p>Flip the '.done' polarity for that index in 'items' (items[index].done&nbsp;= !items[index].done).
-                    Finally save the items into localStorage as JSON (localStorage.setItem('items', JSON.stringify(items)))
-                    and re-populate the list (populateList(items,&nbsp;itemsList).</p>
-
-                  {/* <!-- CodePen --> */}
-                  <p className="codepen" data-height="330" data-theme-id="dark" data-default-tab="js" data-user="CoreyNoble"
-                    data-slug-hash="xozMdL"
-                    style="height: 330px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
-                    data-pen-title="JavaScript30 - 15 - LocalStorage">
-                    <span>See the Pen <a href="https://codepen.io/CoreyNoble/pen/xozMdL/">
-                        JavaScript30 - 15 - LocalStorage</a> by Corey Noble (<a
-                        href="https://codepen.io/CoreyNoble">@CoreyNoble</a>)
-                      on <a href="https://codepen.io">CodePen</a>.</span>
-                  </p>
-                  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                </div>
-              </li>
-            </ul>
           </Column>
         </Row>
-      </div>
+      </Section>
 
-      {/* <!-- JavaScript30 | 15 | LocalStorage --> */}
-      <div id="javascript30-15" className="section dark-blue">
+      {/* JavaScript30 | 15 | LocalStorage */}
+      <Section id="javascript30-15" background="dark-blue">
         <Row>
           <Column small={12}>
-            {/* <!-- Fish SVG Cred: https://thenounproject.com/search/?q=fish&i=589236 --> */}
+            {/* Fish SVG Cred: https://thenounproject.com/search/?q=fish&i=589236 */}
 
             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="https://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
               viewBox="0 0 512 512" enable-background="new 0 0 512 512" xmlSpace="preserve">
@@ -206,7 +143,7 @@ const localStorage = props => {
             </div>
           </Column>
         </Row>
-      </div>
+      </Section>
     </React.Fragment>
   );
 };
