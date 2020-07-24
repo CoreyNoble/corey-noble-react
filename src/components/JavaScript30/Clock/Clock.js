@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
@@ -6,36 +6,38 @@ import Section from '../../../containers/Section/Section';
 
 import classes from './Clock.module.scss';
 
-const clock = props => {
-  // // Get Second, Minute, Hour hands
-  // const secondHand = document.querySelector('.second-hand');
-  // const minuteHand = document.querySelector('.minute-hand');
-  // const hourHand = document.querySelector('.hour-hand');
+const Clock = props => {
+  useEffect(() => {
+    // Every second, run setDate()
+    setInterval(setDate, 1000);
+  });
 
-  // function setDate() {
-  //   // Current time
-  //   const now = new Date();
-  //   // Seconds in current time
-  //   const seconds = now.getSeconds();
-  //   // Seconds degree of rotation +90 to account for 12 o'clock rotation offset
-  //   const secondsDegrees = (seconds / 60) * 360 + 90;
-  //   // Minutes in current time
-  //   const minutes = now.getMinutes();
-  //   // Minutes degree of rotation
-  //   const minutesDegrees = (minutes / 60) * 360 + 90;
-  //   // Hours in current time
-  //   const hours = now.getHours();
-  //   // Hours degree of rotation
-  //   const hoursDegrees = (hours / 12) * 360 + 90;
+  // Get Second, Minute, Hour hands
+  const secondHand = useRef();
+  const minuteHand = useRef();
+  const hourHand = useRef();
 
-  //   // rotate each hand (Seconds, Minutes, Hours)
-  //   secondHand.style.transform = `rotate(${secondsDegrees}deg)`; // Injecting a variable
-  //   minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
-  //   hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
-  // }
+  const setDate = () => {
+    // Current time
+    const now = new Date();
+    // Seconds in current time
+    const seconds = now.getSeconds();
+    // Seconds degree of rotation +90 to account for 12 o'clock rotation offset
+    const secondsDegrees = (seconds / 60) * 360 + 90;
+    // Minutes in current time
+    const minutes = now.getMinutes();
+    // Minutes degree of rotation
+    const minutesDegrees = (minutes / 60) * 360 + 90;
+    // Hours in current time
+    const hours = now.getHours();
+    // Hours degree of rotation
+    const hoursDegrees = (hours / 12) * 360 + 90;
 
-  // // Every second, run setDate()
-  // setInterval(setDate, 1000);
+    // rotate each hand (Seconds, Minutes, Hours)
+    secondHand.current.style.transform = `rotate(${secondsDegrees}deg)`; // Injecting a variable
+    minuteHand.current.style.transform = `rotate(${minutesDegrees}deg)`;
+    hourHand.current.style.transform = `rotate(${hoursDegrees}deg)`;
+  };
   
   return (
     <React.Fragment>
@@ -53,14 +55,23 @@ const clock = props => {
       </Section>
 
       {/* JavaScript30 | 2 | Clock */}
-      <Section classProp={classes.Clock}>
+      <Section classProp={classes.ClockSection}>
         <Row>
           <Column small={12}>
-            <div className="clock">
-              <div className="clock-face">
-                <div className="hand hour-hand"></div>
-                <div className="hand minute-hand"></div>
-                <div className="hand second-hand"></div>
+            <div className={classes.Clock}>
+              <div className={classes.ClockFace}>
+                <div 
+                  className={`${classes.Hand} ${classes.HourHand}`}
+                  ref={hourHand}
+                ></div>
+                <div 
+                  className={`${classes.Hand} ${classes.MinuteHand}`}
+                  ref={minuteHand}
+                ></div>
+                <div 
+                  className={`${classes.Hand} ${classes.SecondHand}`}
+                  ref={secondHand}
+                ></div>
               </div>
             </div>
           </Column>
@@ -70,4 +81,4 @@ const clock = props => {
   );
 };
 
-export default clock;
+export default Clock;
