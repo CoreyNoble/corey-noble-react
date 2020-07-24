@@ -33,6 +33,11 @@ const AboutIntro = React.lazy(() => import('./components/AboutIntro/AboutIntro')
 const AboutContent = React.lazy(() => import('./components/AboutContent/AboutContent'));
 
 const BlogEntries = React.lazy(() => import('./components/BlogEntries/BlogEntries'));
+const BlogEntryIntroduction = React.lazy(() => import('./components/BlogEntries/BlogEntryIntroduction/BlogEntryIntroduction'));
+const BlogEntryWebProductionSpecialist = React.lazy(() => import('./components/BlogEntries/BlogEntryWebProductionSpecialist/BlogEntryWebProductionSpecialist'));
+const BlogEntryMyAspirations = React.lazy(() => import('./components/BlogEntries/BlogEntryMyAspirations/BlogEntryMyAspirations'));
+const BlogEntryWCAG = React.lazy(() => import('./components/BlogEntries/BlogEntryWCAG/BlogEntryWCAG'));
+const BlogEntrySEO = React.lazy(() => import('./components/BlogEntries/BlogEntrySEO/BlogEntrySEO'));
 
 const ContactBanner = React.lazy(() => import('./components/ContactBanner/ContactBanner'));
 const ContactForm = React.lazy(() => import('./components/ContactForm/ContactForm'));
@@ -465,7 +470,7 @@ function Blog() {
           path={`${match.path}/search-engine-optimisation`} 
           render={() => (
             <Suspense fallback={<div>Loading...</div>}>
-              <h3>Search Engine Optimisation (SEO)</h3>
+              <BlogEntrySEO />
             </Suspense>
           )} 
         />
@@ -474,7 +479,7 @@ function Blog() {
           path={`${match.path}/web-content-accessibility-guidelines`} 
           render={() => (
             <Suspense fallback={<div>Loading...</div>}>
-              <h3>Web Content Accessibility Guidelines (WCAG)</h3>
+              <BlogEntryWCAG />
             </Suspense>
           )} 
         />
@@ -483,7 +488,7 @@ function Blog() {
           path={`${match.path}/aspirations`} 
           render={() => (
             <Suspense fallback={<div>Loading...</div>}>
-              <h3>My Aspirations</h3>
+              <BlogEntryMyAspirations />
             </Suspense>
           )} 
         />
@@ -492,7 +497,7 @@ function Blog() {
           path={`${match.path}/web-production-specialist`} 
           render={() => (
             <Suspense fallback={<div>Loading...</div>}>
-              <h3>My Previous Role as a Web Production Specialist at Thrillworks Inc.</h3>
+              <BlogEntryWebProductionSpecialist />
             </Suspense>
           )} 
         />
@@ -501,7 +506,7 @@ function Blog() {
           path={`${match.path}/blog-introduction`} 
           render={() => (
             <Suspense fallback={<div>Loading...</div>}>
-              <h3>Blog Introduction</h3>
+              <BlogEntryIntroduction />
             </Suspense>
           )} 
         />
