@@ -19,7 +19,7 @@ const blogEntryWebProductionSpecialist = props => {
           <Row>
             <Column small={12}>
             {/* Back CTA */}
-            <p><small><a href="{{root}}blog.html" title="Return to the blog landing page">Back to Blog</a></small></p>
+            <p><small><a href="/blog" title="Return to the blog landing page">Back to Blog</a></small></p>
 
             {/* Body */}
             <h2 class="h3" data-aos="fade-up" data-aos-delay="100">What is Web Production Specialist?</h2>
@@ -118,7 +118,7 @@ const blogEntryWebProductionSpecialist = props => {
 
             <p data-aos="fade-up" data-aos-delay="100">
               <small>
-                <a href="{{root}}blog.html" title="Return to the blog landing page">Back to Blog</a>
+                <a href="/blog" title="Return to the blog landing page">Back to Blog</a>
               </small>
             </p>
             </Column>

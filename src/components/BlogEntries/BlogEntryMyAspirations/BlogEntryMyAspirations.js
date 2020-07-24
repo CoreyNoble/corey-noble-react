@@ -18,7 +18,7 @@ const blogEntryMyAspirations = props => {
       <Section background="white">
         <Row>
           <Column small={12}>
-            <p><small><a href="{{root}}blog.html" title="Return to the blog landing page">Back to Blog</a></small></p>
+            <p><small><a href="/blog" title="Return to the blog landing page">Back to Blog</a></small></p>
 
             <h2 class="h3" data-aos="fade-up" data-aos-delay="100">Who I aspire to become</h2>
             <p data-aos="fade-up" data-aos-delay="100">In life, I aspire to become an expert at my craft. I aspire to be healthy and I aspire to maintain a strong connection to those who matter most.</p>
@@ -52,7 +52,7 @@ const blogEntryMyAspirations = props => {
             <h2 class="h3" data-aos="fade-up" data-aos-delay="100">Where do I see myself in 25 years?</h2>
             <p data-aos="fade-up"  data-aos-delay="100">An expert at my craft, as well as maintaining a balanced Work/Health/Family lifestyle.</p>
 
-            <p><small><a href="{{root}}blog.html" title="Return to the blog landing page">Back to Blog</a></small></p>
+            <p><small><a href="/blog" title="Return to the blog landing page">Back to Blog</a></small></p>
           </Column>
         </Row>
       </Section>

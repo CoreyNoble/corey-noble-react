@@ -18,7 +18,7 @@ const blogEntryIntroduction = props => {
           <Section background="white">
           <Row>
             <Column small={12}>
-              <p><small><a href="{{root}}blog.html" title="Return to the blog landing page">Back to Blog</a></small></p>
+              <p><small><a href="/blog" title="Return to the blog landing page">Back to Blog</a></small></p>
 
               <h2 data-aos="fade-up" data-aos-delay="100">Welcome to my blog</h2>
               <p data-aos="fade-up" data-aos-delay="100">This is a space for me to talk about the work I do, communicate ideas that I have, discuss topics that are on my mind, and share the processes I use to create beautiful websites and graphics.</p>
