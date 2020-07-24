@@ -33,7 +33,7 @@ const portfolioProjects = props => {
               the motusbank website from the ground-up. This project was custom built using SCSS and the Zurb Foundation for
               Sites framework on the front&#8209;end. Architected in ASP.NET on the back&#8209;end and implemented into the
               Kentico CMS platform. I assisted in all aspects of development for this&nbsp;website.</p>
-            <Link className={`${classes.CTA} ${classes.ProjectCTA}`} to="https://www.motusbank.ca/" target="_blank" rel="noopener noreferrer"
+            <Link className={`${classes.CTA} ${classes.ProjectCTA1}`} to="https://www.motusbank.ca/" target="_blank" rel="noopener noreferrer"
               title="motusbank. View the website.">View the website</Link>
           </Column>
           <Column end small={12} large={7}>
@@ -56,7 +56,7 @@ const portfolioProjects = props => {
               involved in creating this page that helps users identify new changes in their mobile app. This website is built
               using raw CSS and vanilla JavaScript on the front&#8209;end. The back&#8209;end is ASP.NET, integrated with the
               Sitefinity CMS&nbsp;platform.</p>
-            <Link className={`${classes.CTA} ${classes.ProjectCTA}`} to="https://www.pcfinancial.ca/en/campaign/new-digital-experience" target="_blank"
+            <Link className={`${classes.CTA} ${classes.ProjectCTA1}`} to="https://www.pcfinancial.ca/en/campaign/new-digital-experience" target="_blank"
               rel="noopener noreferrer" title="PC Financial, New Digital Experience. View the project.">View the project</Link>
           </Column>
           <Column 
@@ -97,7 +97,7 @@ const portfolioProjects = props => {
                 to="https://www.udemy.com/react-the-complete-guide-incl-redux/" target="_blank" rel="noopener noreferrer"
                 title="View the React - The Complete Guide (incl Hooks, React Router, Redux) course on Udemy.">React - The
                 Complete Guide (incl Hooks, React Router, Redux)</Link> by Maximillian Schwarzmüller of&nbsp;Academind.</p>
-            <Link className={`${classes.CTA} ${classes.ProjectCTA}`} to="https://burger-builder-corey-noble.netlify.com/" target="_blank"
+            <Link className={`${classes.CTA} ${classes.ProjectCTA2}`} to="https://burger-builder-corey-noble.netlify.com/" target="_blank"
               rel="noopener noreferrer" title="React Burger Builder. View the project.">View the project</Link>
             <Link className={`${classes.CTA} ${classes.CodeCTA}`} to="https://github.com/CoreyNoble/react-complete-guide" target="_blank"
               rel="noopener noreferrer" title="React Burger Builder. View the code.">Code repository</Link>
@@ -126,7 +126,7 @@ const portfolioProjects = props => {
             <p>30 JavaScript (ES6) projects built and improved upon after following the <Link to="https://javascript30.com/"
                 target="_blank" rel="noopener noreferrer" title="View the JavaSctipt30 course by Wes Bos.">JavaScript30
                 course</Link> created by Wes&nbsp;Bos.</p>
-            <Link className={`${classes.CTA} ${classes.ProjectCTA}`} to={`${process.env.PUBLIC_URL}/portfolio/javascript30`}
+            <Link className={`${classes.CTA} ${classes.ProjectCTA2}`} to={`${process.env.PUBLIC_URL}/portfolio/javascript30`}
               title="JavaScript 30. View the projects and the code.">View the projects and code</Link>
           </Column>
           <Column 
@@ -153,7 +153,7 @@ const portfolioProjects = props => {
               detailed <Link to="https://www.youtube.com/watch?v=H2aW5V46khA" target="_blank" rel="noopener noreferrer"
                 title="Follow the lesson by Meth Meth Method that helped me create Tetris using JavaScript">lesson by
                 Meth&nbsp;Meth&nbsp;Method</Link>.</p>
-            <Link className={`${classes.CTA} ${classes.ProjectCTA}`} to={`${process.env.PUBLIC_URL}/portfolio/javascript-tetris`}
+            <Link className={`${classes.CTA} ${classes.ProjectCTA2}`} to={`${process.env.PUBLIC_URL}/portfolio/javascript-tetris`}
               title="JavaScript Tetris. View the project and the code.">View the project and code</Link>
           </Column>
           <Column 

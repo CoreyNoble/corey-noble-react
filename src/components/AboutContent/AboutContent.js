@@ -20,19 +20,14 @@ const aboutContent = props => {
         <Column className={classes.AboutIntro} small={12} data-aos="fade-up" data-aos-delay="100">
           <h2>My Story</h2>
           <ShowMoreLess isLargeExcerpt="true">
-            <p>My name is <strong>Corey&nbsp;Noble</strong>. I am a <strong>Web&nbsp;Application&nbsp;Developer</strong>
-              currently employed by <a className="evertz-text" href="https://evertz.com/"
-                title="Visit the Evertz Microsystems Website" target="_blank"
-                rel="noopener noreferrer"><strong>Evertz&nbsp;Microsystems&nbsp;Ltd.</strong></a>, A global leader in
-              broadcast solutions with headquarters based in the beautiful city of
-              Burlington,&nbsp;ON&nbsp;&#8209;&nbsp;Canada.</p>
+            <p>My name is <strong>Corey&nbsp;Noble</strong>. I am a <strong>Web&nbsp;Application&nbsp;Developer</strong> currently employed by <a className="evertz-text" href="https://evertz.com/" title="Visit the Evertz Microsystems Website" target="_blank" rel="noopener noreferrer"><strong>Evertz&nbsp;Microsystems&nbsp;Ltd.</strong></a>, A global leader in broadcast solutions with headquarters based in the beautiful city of Burlington,&nbsp;ON&nbsp;&#8209;&nbsp;Canada.</p>
             <p>A breif history about&nbsp;me:</p>
             <p>I began working in digital media in high school. I loved the variety that the digital space provided, so I took as many media classes as I could. At the time I wanted to create environments in videogames. This lead me to take a two year Multi Media Design and Production pre-requisite program at Fanshawe College, with the ultimate goal of taking a 3D course to become a Video Game Developer. It was in this program that I was introduced to website development. I fell in love with the complex and creative role that web development provides. I enjoyed learning about the many parts of digital media that contributed to a completed web project. To me, graduating from this course was the beginning of my career as a Web&nbsp;Developer.</p>
             <p>After I graduated from Multi Media Design and Production, I followed through with my original goal and entered the proceeding 3D Animation and Character Design program. The 3D program was immensely difficult, but amazing. I was mentored by a veteran in the industry. Due to the shorter than average timespan of this 3D course (1 year opposed to the average 3 years), our teacher pushed us to the very edge of our potential in a very condensed&nbsp;timeline. Many people that work with me are amazed at the amount of dedication, concentration and the general attitude I have towards my profession. I consider the 3D program to be the reason for this. If I had any bad habits before the 3D course, they were broken by the time I&nbsp;graduated.</p>
             <p>While I loved both of my fields of study, post-graduation I chose Web Development as my preferred career path.</p>
             <p>First I started a freelance web development company called Right&nbsp;Choice Websites with a college friend, which gave me some of the skills and confidence I needed to pursue a career in the&nbsp;industry.</p>
             <p>Next I landed a job at <a className="thrillworks-text" href="https://thrillworks.com" title="Visit the Thrillworks Website" target="_blank" rel="noopener noreferrer"><strong>Thrillworks&nbsp;Inc.</strong></a> as a <strong>Web&nbsp;Production&nbsp;Specialist</strong>. At Thrillworks I was able to rapidly expand my knowledge of web technologies and software development best practices. After 3+&nbsp;years at Thrillworks I was promoted to <strong>Web&nbsp;Developer</strong> which was a position I held for an additional 2+&nbsp;years before I was ready to broaden my horizons once&nbsp;more.</p>
-            <p>I currently work for <strong>Evertz&nbsp;Microsystems&nbsp;Ltd.</strong> as a <strong>Web&nbsp;Application&nbsp;Developer</strong>. Throughout my career so far I have had the great privelage to work with very talented groups of people, on amazing and challenging projects that I am very proud to have had a part in&nbsp;creating.</p>
+            <p>I currently work for <a className="evertz-text" href="https://evertz.com/" title="Visit the Evertz Microsystems Website" target="_blank" rel="noopener noreferrer"><strong>Evertz&nbsp;Microsystems&nbsp;Ltd.</strong></a> as a <strong>Web&nbsp;Application&nbsp;Developer</strong>. Throughout my career so far I have had the great privelage to work with very talented groups of people, on amazing and challenging projects that I am very proud to have had a part in&nbsp;creating.</p>
             <p>I feel blessed to have found my passion so early in life. I love that working in this industry means I get to continually learn, grow and take on a new challenge every&nbsp;day.</p>
           </ShowMoreLess>
         </Column>
@@ -52,7 +47,7 @@ const aboutContent = props => {
         </Column>
 
         <Column className={classes.AboutExperience} small={12} medium={9} large={10}>
-          <h3 className={classes.JobTitle} data-aos="fade-up" data-aos-delay="100">Developer</h3>
+          <h3 className={classes.JobTitle} data-aos="fade-up" data-aos-delay="100">Web Application Developer</h3>
           <h4 className='h5' data-aos="fade-up" data-aos-delay="100">December&nbsp;2019 -&nbsp;Present</h4>
           <h5 className={classes.CompanyName} data-aos="fade-up" data-aos-delay="100"><em>Evertz Microsystems Ltd.</em></h5>
 
@@ -75,7 +70,7 @@ const aboutContent = props => {
         </Column>
 
         <Column className={classes.AboutExperience} small={12} medium={9} large={10}>
-          <h3 className={classes.JobTitle} data-aos="fade-up" data-aos-delay="100">Developer</h3>
+          <h3 className={classes.JobTitle} data-aos="fade-up" data-aos-delay="100">Web Developer</h3>
           <h4 className="h5" data-aos="fade-up" data-aos-delay="100"><strong>2&nbsp;years, 4&nbsp;months</strong>
             &nbsp;|&nbsp; August&nbsp;2017 -&nbsp;December&nbsp;2019</h4>
           <h5 className={classes.CompanyName} data-aos="fade-up" data-aos-delay="100"><em>Thrillworks&nbsp;Inc.</em></h5>
@@ -123,10 +118,10 @@ const aboutContent = props => {
           <h5 className={classes.CompanyName} data-aos="fade-up" data-aos-delay="100"><em>Thrillworks Inc.</em></h5>
 
           <ShowMoreLess>
-            <p>As a Web Production Specialist I was able to work with a wide variety of web technologies. My Web
+            <p data-aos="fade-up" data-aos-delay="100">As a Web Production Specialist I was able to work with a wide variety of web technologies. My Web
               Production Specialist
               position at Thrillworks has given me&nbsp;experience with:</p>
-            <ul>
+            <ul data-aos="fade-up" data-aos-delay="100">
               <li>
                 <strong>Agile Methodology</strong> – Professional training on Agile Methodology. Creating and managing
                 team Kanban boards, daily scrums and frequent retrospective&nbsp;meetings. Evaluating the scope of
@@ -198,11 +193,11 @@ const aboutContent = props => {
           <h5 className={classes.CompanyName} data-aos="fade-up" data-aos-delay="100"><em>Right Choice Websites</em></h5>
 
           <ShowMoreLess>
-            <p>A former colleague and I created a website development company called Right Choice Websites. We built
+            <p data-aos="fade-up" data-aos-delay="100">A former colleague and I created a website development company called Right Choice Websites. We built
               responsive websites using WordPress. My daily activities ranged greatly, Including: Explaining business
               packages and the development process to clients, managing project work, website development, branding,
               graphic design and documentation.</p>
-            <ul>
+            <ul data-aos="fade-up" data-aos-delay="100">
               <li>
                 <strong>WordPress</strong> – Developing websites using custom themes.</li>
               <li>
@@ -237,11 +232,11 @@ const aboutContent = props => {
           <h5 className={`${classes.CompanyName} no-padding`} data-aos="fade-up" data-aos-delay="100"><em>Slightly Social</em></h5>
 
           <ShowMoreLess>
-            <p>I was the lead developer and 3D artist for a few Android and iOS games. I was provided a codebase for
+            <p data-aos="fade-up" data-aos-delay="100">I was the lead developer and 3D artist for a few Android and iOS games. I was provided a codebase for
               each game and was responsible for creating all of the in-game art and implementing it using the Unity game
               engine. I added features to the codebase, and collaborated with the UI and Sound developers to create a
               complete&nbsp;package.</p>
-            <ul>
+            <ul data-aos="fade-up" data-aos-delay="100">
               <li><strong>Project Management</strong> – Each game we created had a very short development cycle. Each
                 project had to be carefully managed to ensure&nbsp;success.</li>
               <li><strong>GIT</strong> - Version control.</li>
@@ -275,10 +270,10 @@ const aboutContent = props => {
           </p>
 
           <ShowMoreLess>
-            <p>In 3D Animation and Character design I honed the skills that are used in all aspects of Game Development
+            <p data-aos="fade-up" data-aos-delay="100">In 3D Animation and Character design I honed the skills that are used in all aspects of Game Development
               and Computer Graphics. However, I believe the most valuable skills I learned from this program are time
               management, project management and team collaboration&nbsp;skills.</p>
-            <ul>
+            <ul data-aos="fade-up" data-aos-delay="100">
               <li>
                 <strong>Time Management</strong> – Our assignments were always under very strict timelines, so time
                 management was the key to
@@ -328,11 +323,11 @@ const aboutContent = props => {
           </p>
 
           <ShowMoreLess>
-            <p>In Multi Media Design and Production I gained a broad set of media related skills. Most of the time was
+            <p data-aos="fade-up" data-aos-delay="100">In Multi Media Design and Production I gained a broad set of media related skills. Most of the time was
               spent learning how to utilize the Adobe Master Suite to build various types of media related, mock-client
               projects. The primary focus of this program was to incorporate new technologies into websites built from
               scratch. The skills we learned&nbsp;include:</p>
-            <ul>
+            <ul data-aos="fade-up" data-aos-delay="100">
               <li>
                 <strong>HTML, CSS, JavaScript, PHP, XML</strong> – Website&nbsp;Development</li>
               <li>

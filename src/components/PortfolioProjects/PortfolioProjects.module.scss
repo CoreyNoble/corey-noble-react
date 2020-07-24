@@ -14,24 +14,45 @@
     text-decoration: underline;
   }
 
-  &.ProjectCTA {
-    background: $blue;
+  &.ProjectCTA1 {
+    background: $black;
+    color: $white;
     border-color: $grey;
-    margin-right: .25em;
+    margin-right: .5em;
+
+    &:hover {
+      background: darken($black, 10%);
+      border-color: $white;
+      color: $white;
+    }
+  }
+
+  &.ProjectCTA2 {
+    background: $blue;
+    color: $background;
+    border-color: $background;
+    margin-right: .5em;
 
     &:hover {
       background: darken($blue, 10%);
-      border-color: $black;
+      border-color: $white;
+      color: $background;
     }
   }
 
   &.CodeCTA {
     background: $white;
-    border-color: $grey;
+    border-color: $background;
+    color: $background;
+
+    @media screen and (max-width: 356px) {
+      margin-top: 1em;
+    }
 
     &:hover {
       background: darken($white, 10%);
-      border-color: $black;
+      border-color: $white;
+      color: $background;
     }
   }
 }

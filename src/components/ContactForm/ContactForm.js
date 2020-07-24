@@ -37,11 +37,11 @@ const contactForm = props => {
               <label for="inquiry" className="h5">Inquiry</label>
               <textarea className={classes.Last} name="inquiry" rows="5" cols="35" maxlength="3000" required></textarea>
 
-              <Column className={`${classes.ContactCTAs} no-padding`} small={12} medium={8}>
+              <Column className={`${classes.ContactCTAs} ${classes.NoPadding}`} small={12} medium={8}>
                 <div className="g-recaptcha" data-sitekey="6Lcj8wYUAAAAAG9fl2DtDnsqTjfyNFwhL38TwGao"></div>
               </Column>
 
-              <Column className={`${classes.ContactCTAs} no-padding`} small={12} medium={4}>
+              <Column className={`${classes.ContactCTAs} ${classes.NoPadding}`} small={12} medium={4}>
                 <input type="submit" className={`${classes.Button} ${classes.SubmitCTA}`} value="Submit" />
               </Column>
             </div>

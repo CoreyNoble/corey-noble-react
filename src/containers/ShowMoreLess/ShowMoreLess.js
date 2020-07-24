@@ -87,6 +87,7 @@ const ShowMoreLess = props => {
       <a 
         role="button" 
         className={classes.ShowMore}
+        data-aos="fade-up" data-aos-delay="100"
         onClick={toggleShowMore}
         ref={showMoreCTA}
       >

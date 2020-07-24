@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Row, Column } from 'react-foundation-components/lib/grid-flex';
+import { Row, Column } from 'react-foundation-components/lib/grid';
 
 import classes from './ScrollableSection.module.scss';
 
@@ -36,7 +36,7 @@ const scrollableSection = props => {
       <React.Fragment>
         <h3 className={`${classes.Heading} h5 black text-center`}>The programs and technologies I use most&nbsp;often:</h3>
 
-        <Row smallUp={2} mediumUp={4}>
+        <Row mediumUp={4} smallUp={2} >
           <Column className={classes.Icon}>
             <img src={ReactLogo} alt="" role="presentation" />
             <p>React</p>
@@ -137,7 +137,7 @@ const scrollableSection = props => {
             <img src={ChromeLogo} alt="" role="presentation" />
             <p>Chrome</p>
           </Column>
-          <Column className={classes.Icon}>
+          <Column end className={classes.Icon}>
             <img src={SafariLogo} alt="" role="presentation" />
             <p>Safari</p>
           </Column>
