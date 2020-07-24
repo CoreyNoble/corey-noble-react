@@ -56,7 +56,7 @@ const followAlongLinkHighlighter = props => {
         <Row>
           <Column small={12}>
             {/* Back CTA */}
-            <p className="back-cta"><small><strong><a href="/portfolio/development/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+            <p className="back-cta"><small><strong><a href="/portfolio/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
 
             {/* Title */}
             <h1>Follow Along Link Highlighter</h1>
@@ -65,7 +65,7 @@ const followAlongLinkHighlighter = props => {
       </Section>
 
       {/* JavaScript30 | 22 | Follow Along Link Highlighter */}
-      <Section id="javascript30-22">
+      <Section classProp={classes.FollowAlongLinkHighlighter}>
         <Row className="nav">
           <Column small={6} large={3}>
             <a href="">Home</a>

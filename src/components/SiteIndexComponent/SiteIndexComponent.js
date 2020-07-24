@@ -34,7 +34,7 @@ const siteIndex = props => {
                       title="PC Financial, New Digital Experience. View the project."><em>PC&nbsp;Financial</em></Link></li>
                   <li className="h4"><Link to="https://burger-builder.corey-noble.com" target="_blank" rel="noopener noreferrer"
                       title="React Burger Builder. View the project.">React Burger Builder</Link></li>
-                  <li className="h4"><Link to={`${process.env.PUBLIC_URL}/portfolio/development/javascript30`}
+                  <li className="h4"><Link to={`${process.env.PUBLIC_URL}/portfolio/javascript30`}
                       title="JavaScript 30. View the projects and the code.">JavaScript 30</Link></li>
                   <li className="h4"><Link to={`${process.env.PUBLIC_URL}/portfolio/development/javascript-tetris`}
                       title="JavaScript Tetris. View the project and the code.">JavaScript Tetris</Link></li>

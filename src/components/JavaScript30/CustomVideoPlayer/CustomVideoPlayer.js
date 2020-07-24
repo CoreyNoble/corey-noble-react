@@ -104,7 +104,7 @@ const customVideoPlayer = props => {
         <Row>
           <Column small={12}>
             {/* Back CTA */}
-            <p className="back-cta"><small><strong><a href="/portfolio/development/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+            <p className="back-cta"><small><strong><a href="/portfolio/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
 
             {/* Title */}
             <h1>Custom Video Player</h1>
@@ -113,7 +113,7 @@ const customVideoPlayer = props => {
       </Section>
 
       {/* JavaScript30 | 11 | Custom Video Player */}
-      <Section id="javascript30-11">
+      <Section classProp={classes.CustomVideoPlayer}>
         <Row>
           <Column small={12}>
             <div className="player">

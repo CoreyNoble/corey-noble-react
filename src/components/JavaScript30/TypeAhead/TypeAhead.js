@@ -87,7 +87,7 @@ const typeAhead = props => {
         <Row>
           <Column small={12}>
             {/* Back CTA */}
-            <p className="back-cta"><small><strong><a href="/portfolio/development/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+            <p className="back-cta"><small><strong><a href="/portfolio/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
 
             {/* Title */}
             <h1>Type Ahead</h1>
@@ -96,7 +96,7 @@ const typeAhead = props => {
       </Section>
 
       {/* JavaScript30 | 6 | Type Ahead */}
-      <Section id="javascript30-6">
+      <Section classProp={classes.TypeAhead}>
         <Row>
           <Column small={12}>
             <form className="search-form">

@@ -178,7 +178,7 @@ const javaScriptReferencesVsCopying = props => {
         <Row>
           <Column small={12}>
             {/* Back CTA */}
-            <p className="back-cta"><small><strong><a href="/portfolio/development/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+            <p className="back-cta"><small><strong><a href="/portfolio/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
 
             {/* Title */}
             <h1>JavaScript References VS Copying</h1>

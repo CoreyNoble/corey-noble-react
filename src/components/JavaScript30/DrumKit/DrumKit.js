@@ -45,7 +45,7 @@ const drumKit = props => {
         <Row>
           <Column small={12}>
             {/* Back CTA */}
-            <p className="back-cta"><small><strong><a href="/portfolio/development/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
+            <p className="back-cta"><small><strong><a href="/portfolio/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small>
             </p>
 
             {/* Title */}
@@ -55,7 +55,7 @@ const drumKit = props => {
       </Section>
 
       {/* JavaScript30 | 1 | Drum Kit */}
-      <Section id="javascript30-1">
+      <Section classProp={classes.DrumKit}>
         <Row>
           <Column small={12}>
             <div className="keys">

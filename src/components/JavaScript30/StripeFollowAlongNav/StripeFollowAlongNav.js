@@ -95,7 +95,7 @@ const stripeFollowAlongNav = props => {
         <Row>
           <Column small={12}>
             {/* Back CTA */}
-            <p className="back-cta"><small><strong><a href="/portfolio/development/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+            <p className="back-cta"><small><strong><a href="/portfolio/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
 
             {/* Title */}
             <h1>Stripe Follow Along Nav</h1>
@@ -104,7 +104,7 @@ const stripeFollowAlongNav = props => {
       </Section>
 
       {/* JavaScript30 | 26 | Stripe Follow Along Nav */}
-      <Section id="javascript30-26">
+      <Section classProp={classes.StripeFollowAlongNav}>
         <Row>
           <Column small={12}>
             <div className="top">
@@ -121,7 +121,7 @@ const stripeFollowAlongNav = props => {
                     <a href="https://www.pcfinancial.ca/en/campaign/new-digital-experience"
                       title="A page I built for PC Financial." target="_blank"
                       rel="noopener noreferrer"><em>PC&nbsp;Financial</em></a>
-                    <a href="/portfolio/development/javascript30"
+                    <a href="/portfolio/javascript30"
                       title="30 es6 JavaScript projects">JavaScript30</a>
                     <a href="/portfolio/development/javascript-tetris.html"
                       title="Tetris, Developed with JavaScript.">JavaScript Tetris</a>

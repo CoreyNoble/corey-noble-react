@@ -98,7 +98,7 @@ const localStorage = props => {
         <Row>
           <Column small={12}>
             {/* Back CTA */}
-            <p className="back-cta"><small><strong><a href="/portfolio/development/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+            <p className="back-cta"><small><strong><a href="/portfolio/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
 
             {/* Title */}
             <h1>LocalStorage</h1>
@@ -107,7 +107,7 @@ const localStorage = props => {
       </Section>
 
       {/* JavaScript30 | 15 | LocalStorage */}
-      <Section id="javascript30-15" background="dark-blue">
+      <Section classProp={classes.LocalStorage} background="dark-blue">
         <Row>
           <Column small={12}>
             {/* Fish SVG Cred: https://thenounproject.com/search/?q=fish&i=589236 */}

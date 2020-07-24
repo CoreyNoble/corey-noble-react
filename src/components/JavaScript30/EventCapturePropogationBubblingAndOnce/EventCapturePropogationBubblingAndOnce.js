@@ -62,7 +62,7 @@ const eventCapturePropogationBubblingAndOnce = props => {
         <Row>
           <Column small={12}>
             {/* Back CTA */}
-            <p className="back-cta"><small><strong><a href="/portfolio/development/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
+            <p className="back-cta"><small><strong><a href="/portfolio/javascript30" title="Return to the JavaScript30 landing page.">&lt;&nbsp;Back to JavaScript&nbsp;30</a></strong></small></p>
 
             {/* Title */}
             <h1>Event Capture, Propagation, Bubbling and Once</h1>
@@ -71,7 +71,7 @@ const eventCapturePropogationBubblingAndOnce = props => {
       </Section>
 
       {/* JavaScript30 | 25 | Event Capture, Propagation, Bubbling and Once */}
-      <Section id="javascript30-25">
+      <Section classProp={classes.EventCapturePropogationBubblingAndOnce}>
         <Row>
           <Column small={12}>
             <h2 className="h3">One</h2>
