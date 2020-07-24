@@ -6,6 +6,8 @@ import Section from '../../../containers/Section/Section';
 
 import classes from './VideoSpeedController.module.scss';
 
+import VideoFile from "../../../assets/video/javascript30/11-custom-video-player/11-custom-video-player-example.mp4";
+
 const videoSpeedController = props => {
   // // Parent <div>
   // const speed = document.querySelector('.speed');
@@ -65,7 +67,7 @@ const videoSpeedController = props => {
           <Column small={12}>
             <div className="wrapper">
               <video className="flex"
-                src="{{root}}assets/video/javascript30/11-custom-video-player/11-custom-video-player-example.mp4" loop
+                src={VideoFile} loop
                 controls></video>
               <div className="speed">
                 <div className="speed-bar">1×</div>

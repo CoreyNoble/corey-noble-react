@@ -4,6 +4,8 @@ import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
 import Section from '../../../containers/Section/Section';
 
+import WCAGChecklist from '../../../assets/pdf/WCAG2Checklist.pdf';
+
 const blogEntryWCAG = props => {
   return (
     <React.Fragment>
@@ -82,7 +84,7 @@ const blogEntryWCAG = props => {
               <hr data-aos="fade-up" data-aos-delay="100" />
 
               <p data-aos="fade-up" data-aos-delay="100">
-                <a href="{{root}}assets/pdf/WCAG2Checklist.pdf" title="WCAG 2.0 Checklist" target="_blank" rel="noopener noreferrer">
+                <a href={WCAGChecklist} title="WCAG 2.0 Checklist" target="_blank" rel="noopener noreferrer">
                   <strong>Requirement Checklist (.pdf checklist)</strong>
                 </a>
               </p>

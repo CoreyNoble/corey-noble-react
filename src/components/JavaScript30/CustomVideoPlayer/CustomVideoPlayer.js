@@ -6,6 +6,8 @@ import Section from '../../../containers/Section/Section';
 
 import classes from './CustomVideoPlayer.module.scss';
 
+import VideoFile from "../../../assets/video/javascript30/11-custom-video-player/11-custom-video-player-example.mp4";
+
 const customVideoPlayer = props => {
   // /* Elements */
   // const player = document.querySelector('.player'); // parent <div>
@@ -118,7 +120,7 @@ const customVideoPlayer = props => {
           <Column small={12}>
             <div className="player">
               <video className="player__video viewer"
-                src="{{root}}assets/video/javascript30/11-custom-video-player/11-custom-video-player-example.mp4"></video>
+                src={VideoFile}></video>
 
               <div className="player__controls">
                 <div className="progress">

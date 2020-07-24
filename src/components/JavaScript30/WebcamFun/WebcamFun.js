@@ -6,6 +6,8 @@ import Section from '../../../containers/Section/Section';
 
 import classes from './WebcamFun.module.scss';
 
+import AudioSnap from '../../../assets/sounds/javascript30/19-webcam-fun/snap.mp3';
+
 const webcamFun = props => {
   // const video = document.querySelector('#player'); // <video>
   // const canvas = document.querySelector('#photo'); // <canvas>
@@ -320,7 +322,7 @@ const webcamFun = props => {
         </Row>
       </Section>
 
-      <audio className="snap" src="{{root}}assets/sounds/javascript30/19-webcam-fun/snap.mp3" hidden></audio>
+      <audio className="snap" src={AudioSnap} hidden></audio>
     </React.Fragment>
   );
 };

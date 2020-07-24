@@ -4,6 +4,8 @@ import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
 import Section from '../../../containers/Section/Section';
 
+import SEOPDF from '../../../assets/pdf/Moz-The-Beginners-Guide-To-SEO.pdf';
+
 const blogEntrySEO = props => {
   return (
     <React.Fragment>
@@ -47,7 +49,7 @@ const blogEntrySEO = props => {
               <p data-aos="fade-up" data-aos-delay="100">It is important to research your toughest competition. If you know how they cater their content towards the public, you can adjust yours to have more contextual meaning and relevance than theirs. Just as importantly, you can better cater to the demographic of person viewing your content, more so than your competition&nbsp;does.</p>
               <p data-aos="fade-up" data-aos-delay="100">The following document is a great beginners guide to what SEO is, why a website needs it and how search engines come into play. The document was created by industry experts and is a great starting point for anyone who wants to know&nbsp;SEO.</p>
               <p data-aos="fade-up" data-aos-delay="100">
-                <a href="{{root}}assets/pdf/Moz-The-Beginners-Guide-To-SEO.pdf" target="_blank" rel="noopener noreferrer" title="The Beginners Guide to SEO (By Mozilla)">The Beginners Guide to SEO |&nbsp;Mozilla</a>
+                <a href={SEOPDF} target="_blank" rel="noopener noreferrer" title="The Beginners Guide to SEO (By Mozilla)">The Beginners Guide to SEO |&nbsp;Mozilla</a>
               </p>
 
               <p data-aos="fade-up" data-aos-delay="100">&nbsp;</p>
