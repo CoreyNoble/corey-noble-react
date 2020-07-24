@@ -15,7 +15,7 @@
     color: var(--base);
   }
 
-  .controls {
+  .Controls {
     padding: 1.5em 1em;
     margin: 1em auto;
     border: 3px solid var(--base);
@@ -30,8 +30,8 @@
       width: 100%;
     }
 
-    #spacing,
-    #blur {
+    .Spacing,
+    .Blur {
       margin-top: .6em;
       margin-bottom: 1.5em;
 
@@ -40,7 +40,7 @@
       }
     }
 
-    #base {
+    .Base {
       margin-bottom: 0;
     }
   }

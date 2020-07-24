@@ -97,7 +97,7 @@
 
   .hole:after {
     display: block;
-    background: url('/assets/img/javascript30/30-whack-a-mole/dirt.svg') bottom
+    background: url('../../../assets/img/javascript30/30-whack-a-mole/dirt.svg') bottom
       center no-repeat;
     background-size: contain;
     content: '';
@@ -114,7 +114,7 @@
   }
 
   .mole {
-    background: url('/assets/img/javascript30/30-whack-a-mole/mole.svg') bottom
+    background: url('../../../assets/img/javascript30/30-whack-a-mole/mole.svg') bottom
       center no-repeat;
     background-size: 40%;
     position: absolute;

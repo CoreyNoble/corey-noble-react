@@ -4,6 +4,8 @@ import { Row, Column } from 'react-foundation-components/lib/grid-flex';
 
 import Section from '../../../containers/Section/Section';
 
+import geometryBackground from '../../../assets/img/aesthetic-geometry.svg'
+
 import classes from './UpdateCSSVariables.module.scss';
 
 const updateCSSVariables = props => {
@@ -42,25 +44,25 @@ const updateCSSVariables = props => {
       {/* JavaScript30 | 3 | Update CSS Variables */}
       <Section background="black">
         <Row>
-          <Column id="javascript30-3" small={12}>
+          <Column className={classes.UpdateCSSVariables} small={12}>
             <h2>Update CSS Variables with&nbsp;<span className="hl">JavaScript</span></h2>
 
-            <Row className="black controls">
+            <Row className={classes.Controls}>
               <Column small={12} large={4}>
                 <label className="h4" for="spacing">Spacing:</label>
-                <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px" />
+                <input className={classes.Spacing} type="range" name="spacing" min="10" max="200" value="10" data-sizing="px" />
               </Column>
               <Column small={12} large={4}>
                 <label className="h4" for="blur">Blur:</label>
-                <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px" />
+                <input className={classes.Blur} type="range" name="blur" min="0" max="25" value="0" data-sizing="px" />
               </Column>
               <Column end small={12} large={4}>
                 <label className="h4" for="base">Base Color:</label>
-                <input id="base" type="color" name="base" value="#6dbfbf" />
+                <input className={classes.Base} type="color" name="base" value="#6dbfbf" />
               </Column>
             </Row>
 
-            <img src="{{root}}assets/img/aesthetic-geometry.svg" alt="" role="presentation" />
+            <img src={geometryBackground} alt="" role="presentation" />
           </Column>
         </Row>
       </Section>
