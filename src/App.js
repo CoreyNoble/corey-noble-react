@@ -510,7 +510,13 @@ function Blog() {
           path={match.path} 
           render={() => (
             <Suspense fallback={<div>Loading...</div>}>
-              <BlogEntries />
+              <Section background="blue">
+                <h1 class="header-no-parallax">Welcome to My Blog</h1>
+                <p class="h5 margin-top-1">The purpose of this blog is to create a space to share my knowledge about web development. Below I will showcase some of my work, share the processes I use, and to discuss the topics that are on my&nbsp;mind.</p>
+              </Section>
+              <Section background="white">
+                <BlogEntries />
+              </Section>
             </Suspense>
           )} 
         />

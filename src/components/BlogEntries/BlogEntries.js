@@ -34,7 +34,7 @@ class blogEntries extends Component {
       { title: `Blog Introduction`,
         paragraph: `An introduction to my blog. A bit about me, and my intentions for this&nbsp;space.`,
         url: `/blog-introduction`,
-        class: ``,
+        class: `${classes.NoBottomSpace}`,
         key: `blog-introduction`,
       },
     ]
@@ -46,11 +46,12 @@ class blogEntries extends Component {
         {this.state.blogEntries.map(entry => {
           return (
             <Column 
-              className={`${classes.BlogEntry} ${entry.class}`} 
+              className={`${classes.BlogEntry}`} 
               small={12}
               key={entry.key} 
+              data-aos="fade-right" data-aos-delay="100"
             >
-              <a href={`%PUBLIC_URL%${entry.url}`}>
+              <a href={`%PUBLIC_URL%${entry.url}`} className={entry.class}>
                 <h3 className="h4">{entry.title}</h3>
                 <p dangerouslySetInnerHTML={{__html: entry.paragraph}}></p>
               </a>
