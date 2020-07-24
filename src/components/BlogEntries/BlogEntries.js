@@ -4,41 +4,38 @@ import { Column } from 'react-foundation-components/lib/grid-flex';
 
 import classes from './BlogEntries.module.scss';
 
-class blogEntries extends Component {
+class BlogEntries extends Component {
   state = {
     blogEntries: [
       { title: `Search Engine Optimisation (SEO)`,
         paragraph: `Discussing the importance of search engine ranking and how to optimise a website to rank higher in a search&nbsp;index.`,
-        url: `/search-engine-optimisation`,
+        url: `search-engine-optimisation`,
         class: ``,
-        key: `blog-search-engine-optimisation`,
       },
       { title: `Web Content Accessibility Guidelines (WCAG)`,
         paragraph: `Outlining the accessibility requirements that websites need to adhere&nbsp;to.`,
-        url: `/web-content-accessibility-guidelines`,
+        url: `web-content-accessibility-guidelines`,
         class: ``,
-        key: `blog-web-content-accessibility-guidelines`,
       },
       { title: `My Aspirations`,
         paragraph: `Who I aspire to become. My&nbsp;goals.`,
-        url: `/aspirations`,
+        url: `aspirations`,
         class: ``,
-        key: `blog-my-aspirations`,
       },
       { title: `My Previous Role as a Web Production Specialist at Thrillworks Inc.`,
         paragraph: `Detailing my role as a Web Production Specialist at Thrillworks&nbsp;Inc.`,
-        url: `/web-production-specialist`,
+        url: `web-production-specialist`,
         class: ``,
-        key: `blog-web-production-specialist`,
       },
       { title: `Blog Introduction`,
         paragraph: `An introduction to my blog. A bit about me, and my intentions for this&nbsp;space.`,
-        url: `/blog-introduction`,
+        url: `blog-introduction`,
         class: `${classes.NoBottomSpace}`,
-        key: `blog-introduction`,
       },
     ]
   };
+
+  
 
   render() {
     return (
@@ -48,10 +45,10 @@ class blogEntries extends Component {
             <Column 
               className={`${classes.BlogEntry}`} 
               small={12}
-              key={entry.key} 
+              key={entry.url} 
               data-aos="fade-right" data-aos-delay="100"
             >
-              <a href={`%PUBLIC_URL%${entry.url}`} className={entry.class}>
+              <a href={`${window.location.href}/${entry.url}`} className={entry.class}>
                 <h3 className="h4">{entry.title}</h3>
                 <p dangerouslySetInnerHTML={{__html: entry.paragraph}}></p>
               </a>
@@ -63,4 +60,4 @@ class blogEntries extends Component {
   }
 }
 
-export default blogEntries;
+export default BlogEntries;
