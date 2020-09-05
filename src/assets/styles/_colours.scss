@@ -14,21 +14,27 @@
   h6,
   .h6,
   p,
-  a {
+  a,
+  button {
     color: $black;
   }
 
-  a {
+  a,
+  button {
     transition: color .25s ease;
   }
 
   a:hover,
-  a:focus {
+  a:focus,
+  button:hover,
+  button:focus {
     color: darken($black, 33%);
   }
 
   a.evertz-text,
-  a.evertz-text:visited {
+  a.evertz-text:visited,
+  button.evertz-text,
+  button.evertz-text:visited {
     background-color: $background;
     padding: 0 .2rem;
     transition: all .4s ease;
@@ -41,7 +47,8 @@
     }
   }
 
-  a.thrillworks-text {
+  a.thrillworks-text,
+  button.thrillworks-text {
     color: darken($thrillworks, 18%);
 
     &:hover {
@@ -49,7 +56,8 @@
     }
   }
 
-  a.cta {
+  a.cta,
+  button.cta {
     &.project-cta {
       background: $blue;
       border-color: $grey;
@@ -133,20 +141,25 @@
   h6,
   .h6,
   p,
-  a {
+  a,
+  button {
     color: $white;
   }
 
-  a {
+  a,
+  button {
     transition: color .25s ease;
   }
 
   a:hover,
-  a:focus {
+  a:focus,
+  button:hover,
+  button:focus {
     color: darken($white, 33%);
   }
 
-  a.cta {
+  a.cta,
+  button.cta {
     &.project-cta {
       background: $blue;
 
@@ -224,16 +237,20 @@
   h5,
   h6,
   p,
-  a {
+  a,
+  button {
     color: $white;
   }
 
-  a {
+  a,
+  button {
     transition: color .25s ease;
   }
 
   a:hover,
-  a:focus {
+  a:focus,
+  button:hover,
+  button:focus {
     color: darken($black, 33%);
   }
 }
@@ -248,16 +265,20 @@
   h5,
   h6,
   p,
-  a {
+  a,
+  button {
     color: #000;
   }
 
-  a {
+  a,
+  button {
     transition: color .25s ease;
   }
 
   a:hover,
-  a:focus {
+  a:focus,
+  button:hover,
+  button:focus {
     color: darken($white, 33%);
   }
 }
@@ -269,16 +290,20 @@
 .blue {
   background-color: $blue;
 
-  a {
+  a, 
+  button {
     transition: color .25s ease;
   }
 
   a:hover,
-  a:focus {
+  a:focus,
+  button:hover,
+  button:focus {
     color: darken($black, 33%);
   }
 
-  a.cta {
+  a.cta,
+  button.cta {
     &.project-cta {
       background: $black;
       border-color: $dark-blue;
@@ -345,7 +370,8 @@
   color: $dark-blue;
 }
 
-a.evertz-text {
+a.evertz-text,
+button.evertz-text {
   color: $evertz;
 
   &:hover {
@@ -353,7 +379,8 @@ a.evertz-text {
   }
 }
 
-a.thrillworks-text {
+a.thrillworks-text,
+button.thrillworks-text {
   color: $thrillworks;
 
   &:hover {

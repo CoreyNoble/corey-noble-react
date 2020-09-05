@@ -1,9 +1,4 @@
-/* ~~~ Was _fonts.scss */
 // FONTS
-// ARVO
-@import url('https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic');
-// font-family: 'Arvo', serif;
-
 // LATO
 @import url('https://fonts.googleapis.com/css?family=Lato:400,100,300,100italic,300italic,400italic,700,700italic,900,900italic');
 // font-family: 'Lato', sans-serif;
@@ -120,7 +115,8 @@ ul {
   }
 }
 
-a {
+a,
+button {
   color: inherit;
   text-decoration: underline;
 

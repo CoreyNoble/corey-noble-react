@@ -114,7 +114,7 @@ const stripeFollowAlongNav = props => {
 
               <ul className="cool">
                 <li>
-                  <a href="#">My Portfolio</a>
+                  <button>My Portfolio</button>
                   <div className="dropdown">
                     <a href="https://www.motusbank.ca/" title="motusbank, A website I helped architect and build."
                       target="_blank" rel="noopener noreferrer">Motusbank</a>
@@ -137,7 +137,7 @@ const stripeFollowAlongNav = props => {
                   </div>
                 </li>
                 <li>
-                  <a href="#">Contact Info</a>
+                  <button>Contact Info</button>
                   <div className="dropdown">
                     <a href="https://github.com/CoreyNoble" target="_blank" rel="noopener noreferrer"
                       title="View my GitHub projects">GitHub</a>

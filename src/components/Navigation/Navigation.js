@@ -150,7 +150,7 @@ const Navigation = props => {
             </a>
           </li>
         </ul>
-        <a 
+        <button 
           href="#" 
           className={classes.Pull} 
           title="Toggle the navigation menu" 
@@ -159,7 +159,7 @@ const Navigation = props => {
           ref={navMenu}
         >
           <strong><span>&lsaquo;</span> corey-noble /<span>&rsaquo;</span></strong>
-        </a>
+        </button>
       </nav>
     </React.Fragment>
   );

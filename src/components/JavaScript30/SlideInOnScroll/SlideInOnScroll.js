@@ -70,7 +70,7 @@ const slideInOnScroll = props => {
       {/* JavaScript30 | 13 | Slide in on Scroll */}
       <Section background="white">
         <Row>
-          <Column id="javascript30-13" small={12}>
+          <Column className={classes.SlideInOnScroll} small={12}>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis
               a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis
               quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,

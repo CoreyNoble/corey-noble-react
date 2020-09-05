@@ -24,7 +24,7 @@ const ShowMoreLess = props => {
       collapseSection();
     }
 
-    if (linkText == 'show more +') {
+    if (linkText === 'show more +') {
       showMoreCTA.current.textContent = 'Show less -';
       removeClass(`${classes.Hidden}`);
       addClass(`${classes.Visible}`);
@@ -84,15 +84,14 @@ const ShowMoreLess = props => {
         </div>
       </div>
 
-      <a 
-        role="button" 
+      <button 
         className={classes.ShowMore}
         data-aos="fade-up" data-aos-delay="100"
         onClick={toggleShowMore}
         ref={showMoreCTA}
       >
         Show more +
-      </a>
+      </button>
     </React.Fragment>
   );
 };

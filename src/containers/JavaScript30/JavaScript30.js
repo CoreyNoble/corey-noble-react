@@ -260,10 +260,10 @@ class javaScript30 extends Component {
           <Row>
             <Column small={12}>
               <h1>JavaScript 30</h1>
-              <p class="h5">30 JavaScript (ES6) projects built following the <a href="https://javascript30.com/" title="View the JavaSctipt30 course by Wes Bos." target="_blank" rel="noopener noreferrer">JavaScript30 course</a> created by Wes&nbsp;Bos.</p>
+              <p className="h5">30 JavaScript (ES6) projects built following the <a href="https://javascript30.com/" title="View the JavaSctipt30 course by Wes Bos." target="_blank" rel="noopener noreferrer">JavaScript30 course</a> created by Wes&nbsp;Bos.</p>
 
               {/* Back CTA */}
-              <p class="back-cta"><small><strong><a href="/portfolio" title="Return to my Portfolio page.">&lt;&nbsp;Back to my Portfolio</a></strong></small></p>
+              <p className="back-cta"><small><strong><a href="/portfolio" title="Return to my Portfolio page.">&lt;&nbsp;Back to my Portfolio</a></strong></small></p>
             </Column>
           </Row>
         </Section>
@@ -273,7 +273,7 @@ class javaScript30 extends Component {
             {this.state.javaScript30.map(project => {
               return (
                 <Column 
-                  end small={12} medium={6} large={4}
+                  small={12} medium={6} large={4}
                   data-aos="fade-up" data-aos-delay="100"
                   key={project.key}
                 >

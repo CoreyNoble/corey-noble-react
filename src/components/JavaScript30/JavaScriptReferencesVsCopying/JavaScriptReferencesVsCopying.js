@@ -189,7 +189,7 @@ const javaScriptReferencesVsCopying = props => {
       {/* JavaScript30 | 14 | JavaScript References VS Copying */}
       <Section background="blue">
         <Row>
-          <Column id="javascript30-14" small={12}>
+          <Column className={classes.JavaScriptReferencesVsCopying} small={12}>
             <h2 className="h4">This project work is only visible within the JavaScript&nbsp;console.</h2>
             <Row>
               <Column small={12} medium={6} large={3}>

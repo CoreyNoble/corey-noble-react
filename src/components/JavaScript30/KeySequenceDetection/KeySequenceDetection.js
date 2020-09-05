@@ -46,7 +46,7 @@ const keySequenceDetection = props => {
       {/* JavaScript30 | 12 | Key Sequence Detection */}
       <Section background="blue">
         <Row>
-          <Column id="javascript30-12" small={12}>
+          <Column className={classes.KeySequenceDetection} small={12}>
             <h2 className="h3">Enter the Konami&nbsp;Code:</h2>
             <p className="h4">&#8593;&nbsp;&#8593; &#8595;&nbsp;&#8595; &#8592;&nbsp;&#8594; &#8592;&nbsp;&#8594; B,&nbsp;A, Enter
             </p>

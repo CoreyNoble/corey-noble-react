@@ -137,7 +137,7 @@ const scrollableSection = props => {
             <img src={ChromeLogo} alt="" role="presentation" />
             <p>Chrome</p>
           </Column>
-          <Column end className={classes.Icon}>
+          <Column className={classes.Icon}>
             <img src={SafariLogo} alt="" role="presentation" />
             <p>Safari</p>
           </Column>

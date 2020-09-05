@@ -120,7 +120,7 @@ const speechSynthesis = props => {
                 </Column>
               </Row>
 
-              <textarea name="text">Hello! I love JavaScript 👍</textarea>
+              <textarea name="text">Hello! I love JavaScript <span role="img" aria-label="Thumbs Up">👍</span></textarea>
               <button id="stop">Stop!</button>
               <button id="speak">Speak</button>
             </div>

@@ -243,12 +243,12 @@ const webcamFun = props => {
                   <ul className="accordion" data-accordion data-allow-all-closed="true">
                     <li className="accordion-item" data-accordion-item="">
                       {/* Title */}
-                      <a href="#" className="accordion-title" aria-controls="green-screen" role="tab" aria-expanded="false" aria-selected="false">
+                      <button className="accordion-title" aria-controls="green-screen" role="tab" aria-expanded="false" aria-selected="false">
                         <h3 className="h5">Green Screen Colour Knockout</h3>
-                      </a>
+                      </button>
 
                       <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="green-screen"
-                        aria-hidden="true" id="green-screen" style="display: none;">
+                        aria-hidden="true" id="green-screen" style={{display: 'none'}}>
                         {/* Content */}
                         <Row className="rgb">
                           <Column small={12}>
@@ -270,7 +270,7 @@ const webcamFun = props => {
                             <input id="gmax" type="range" min="0" max="255" name="gmax" />
                           </Column>
 
-                          <Column end small={6} medium={4}>
+                          <Column small={6} medium={4}>
                             <label for="bmin">Blue Min:</label>
                             <input id="bmin" type="range" min="0" max="255" name="bmin" />
                             <label for="bmax">Blue Max:</label>
@@ -281,12 +281,12 @@ const webcamFun = props => {
                     </li>
                     <li className="accordion-item" data-accordion-item="">
                       {/* Title */}
-                      <a href="#" className="accordion-title" aria-controls="filters" role="tab" aria-expanded="false" aria-selected="false">
+                      <button className="accordion-title" aria-controls="filters" role="tab" aria-expanded="false" aria-selected="false">
                         <h3 className="h5">Filters</h3>
-                      </a>
+                      </button>
 
                       <div className="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="filters"
-                        aria-hidden="true" id="filters" style="display: none;">
+                        aria-hidden="true" id="filters" style={{display: "none"}}>
                         {/* Content */}
                         <Row>
                           <Column small={12} medium={6}>

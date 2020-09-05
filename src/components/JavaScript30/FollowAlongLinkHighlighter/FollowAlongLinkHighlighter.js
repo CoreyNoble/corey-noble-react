@@ -68,32 +68,26 @@ const followAlongLinkHighlighter = props => {
       <Section classProp={classes.FollowAlongLinkHighlighter}>
         <Row className="nav">
           <Column small={6} large={3}>
-            <a href="">Home</a>
+            <button>Home</button>
           </Column>
           <Column small={6} large={3}>
-            <a href="">Order Status</a>
+            <button>Order Status</button>
           </Column>
           <Column small={6} large={3}>
-            <a href="">Read Our History</a>
+            <button>Read Our History</button>
           </Column>
-          <Column end small={6} large={3}>
-            <a href="">Contact Us</a>
+          <Column small={6} large={3}>
+            <button>Contact Us</button>
           </Column>
         </Row>
         <Row>
           <Column small={12}>
             <div className="wrapper">
-              <p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit. Est <a href="">explicabo</a> unde
-                natus necessitatibus esse obcaecati distinctio, aut itaque, qui&nbsp;vitae!</p>
-              <p>Aspernatur sapiente quae sint <a href="">soluta</a> modi, atque praesentium laborum pariatur earum <a
-                  href="">quaerat</a> cupiditate consequuntur facilis ullam dignissimos, aperiam quam&nbsp;veniam.</p>
-              <p>Cum ipsam quod, incidunt sit ex <a href="">tempore</a> placeat maxime <a href="">corrupti</a> possimus <a
-                  href="">veritatis</a> ipsum fugit recusandae est doloremque? Hic, <a href="">quibusdam</a>,&nbsp;nulla.</p>
-              <p>Esse quibusdam, ad, ducimus cupiditate <a href="">nulla</a>, quae magni odit <a href="">totam</a> ut
-                consequatur eveniet sunt quam provident sapiente dicta neque&nbsp;quod.</p>
-              <p>Aliquam <a href="">dicta</a> sequi culpa fugiat <a href="">consequuntur</a> pariatur optio ad minima, maxime
-                <a href="">odio</a>, distinctio magni impedit tempore enim repellendus <a href="">repudiandae</a>&nbsp;quas!
-              </p>
+              <p>Lorem ipsum dolor sit amet, <button>consectetur</button> adipisicing elit. Est <button>explicabo</button> unde natus necessitatibus esse obcaecati distinctio, aut itaque, qui&nbsp;vitae!</p>
+              <p>Aspernatur sapiente quae sint <button>soluta</button> modi, atque praesentium laborum pariatur earum <button>quaerat</button> cupiditate consequuntur facilis ullam dignissimos, aperiam quam&nbsp;veniam.</p>
+              <p>Cum ipsam quod, incidunt sit ex <button>tempore</button> placeat maxime <button>corrupti</button> possimus <button>veritatis</button> ipsum fugit recusandae est doloremque? Hic, <button>quibusdam</button>,&nbsp;nulla.</p>
+              <p>Esse quibusdam, ad, ducimus cupiditate <button>nulla</button>, quae magni odit <button>totam</button> ut consequatur eveniet sunt quam provident sapiente dicta neque&nbsp;quod.</p>
+              <p>Aliquam <button>dicta</button> sequi culpa fugiat <button>consequuntur</button> pariatur optio ad minima, maxime <button>odio</button>, distinctio magni impedit tempore enim repellendus <button>repudiandae</button>&nbsp;quas! </p>
             </div>
           </Column>
         </Row>

@@ -200,25 +200,25 @@ const arrayCardioDay1 = props => {
       {/* JavaScript30 | 4 | Array Cardio Day 1 */}
       <Section background="blue">
         <Row>
-          <Column id="javascript30-4" small={12}>
+          <Column className={classes.ArrayCardioDay1} small={12}>
             <h2 className="h4">This project work is only visible within the JavaScript&nbsp;console.</h2>
             <Row>
               <Column small={12} medium={6} large={3}>
-                <h3 className="h5">Chrome</h3>
+                <h3 className={`h5 ${classes.h5}`}>Chrome</h3>
                   <p>Windows: Ctrl + Shift +&nbsp;J.</p>
                   <p>Mac: Cmd + Opt +&nbsp;J.</p>
               </Column>
               <Column small={12} medium={6} large={3}>
-                <h3 className="h5">Firefox</h3>
+                <h3 className={`h5 ${classes.h5}`}>Firefox</h3>
                   <p>Windows: Ctrl + Shift +&nbsp;K.</p>
                   <p>Mac: Cmd + Opt +&nbsp;K.</p>
               </Column>
               <Column small={12} medium={6} large={3}>
-                <h3 className="h5">Safari</h3>
+                <h3 className={`h5 ${classes.h5}`}>Safari</h3>
                 <p>Cmd + Opt +&nbsp;C.</p>
               </Column>
               <Column small={12} medium={6} large={3}>
-                <h3 className="h5">Edge&nbsp;/ Internet&nbsp;Explorer</h3>
+                <h3 className={`h5 ${classes.h5}`}>Edge&nbsp;/ Internet&nbsp;Explorer</h3>
                   <p>F12, then click on the “Console”&nbsp;tab.</p>
               </Column>
             </Row>

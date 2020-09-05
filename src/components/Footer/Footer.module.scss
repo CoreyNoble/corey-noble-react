@@ -7,7 +7,8 @@
   margin-bottom: 2em;
   border-bottom: none;
 
-  a {
+  a,
+  button {
     min-width: unset;
     width: unset;
     border-bottom: none;
@@ -78,7 +79,9 @@
     padding: 0;
 
     a:hover,
-    a:focus {
+    a:focus,
+    button:hover,
+    button:focus {
       text-decoration: underline;
     }
   }
@@ -169,7 +172,8 @@
     h4,
     .h4,
     p {
-      a {
+      a,
+      button {
         color: $white;
         transition: color .25s ease;
 
@@ -214,7 +218,8 @@
     }
 
     .SocialIcon {
-      a {
+      a,
+      button {
         img {
           -moz-filter: grayscale(100%);
           -moz-transition: .25s ease-in-out;
@@ -245,7 +250,8 @@
         line-height: 1;
         padding-top: .55em;
 
-        a {
+        a,
+        button {
           font-size: .9em;
           font-weight: bold;
         }
@@ -271,7 +277,8 @@
 
     h4,
     .h4 {
-      a {
+      a,
+      button {
         color: $white;
         float: right;
       }

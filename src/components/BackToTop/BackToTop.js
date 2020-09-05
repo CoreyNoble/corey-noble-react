@@ -64,16 +64,15 @@ const BackToTop = props => {
 
   return (
     <React.Fragment>
-      <a 
-        href="javascript:" 
+      <button 
         className={classes.BackToTop} 
         title="Return to the top of this page" 
-        role="button" aria-label="Back to top button"
+        aria-label="Back to top button"
         onClick={smoothScrollBackToTop}
         ref={backToTopButton}
       >
         <span className="fas fa-arrow-up"></span>
-      </a>
+      </button>
     </React.Fragment>
   );
 }

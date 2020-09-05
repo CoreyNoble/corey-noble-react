@@ -116,7 +116,7 @@ const devToolsDomination = props => {
       {/* JavaScript30 | 9 | Dev Tools Domination */}
       <Section background="blue">
         <Row>
-          <Column id="javascript30-9" small={12}>
+          <Column className={classes.DevToolsDomination} small={12}>
             <h2 className="h4">This project work is only visible within the JavaScript&nbsp;console.</h2>
             <Row>
               <Column small={12} medium={6} large={3}>

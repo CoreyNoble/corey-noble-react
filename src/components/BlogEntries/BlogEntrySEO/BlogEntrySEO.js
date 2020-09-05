@@ -12,7 +12,7 @@ const blogEntrySEO = props => {
       <Section background="blue">
             <Row>
               <Column small={12}>
-                <h1 class="header-no-parallax">Search Engine Optimisation (SEO)</h1>
+                <h1 className="header-no-parallax">Search Engine Optimisation (SEO)</h1>
               </Column>
             </Row>
           </Section>

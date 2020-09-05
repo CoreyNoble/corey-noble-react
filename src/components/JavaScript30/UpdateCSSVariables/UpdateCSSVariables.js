@@ -56,7 +56,7 @@ const updateCSSVariables = props => {
                 <label className="h4" for="blur">Blur:</label>
                 <input className={classes.Blur} type="range" name="blur" min="0" max="25" value="0" data-sizing="px" />
               </Column>
-              <Column end small={12} large={4}>
+              <Column small={12} large={4}>
                 <label className="h4" for="base">Base Color:</label>
                 <input className={classes.Base} type="color" name="base" value="#6dbfbf" />
               </Column>

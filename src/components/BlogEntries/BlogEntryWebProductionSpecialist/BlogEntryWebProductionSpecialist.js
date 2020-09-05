@@ -10,7 +10,7 @@ const blogEntryWebProductionSpecialist = props => {
       <Section background="blue">
             <Row>
               <Column small={12}>
-                <h1 class="header-no-parallax">My Previous Role as a Web Production Specialist at Thrillworks&nbsp;Inc.</h1>
+                <h1 className="header-no-parallax">My Previous Role as a Web Production Specialist at Thrillworks&nbsp;Inc.</h1>
               </Column>
             </Row>
           </Section>
@@ -22,7 +22,7 @@ const blogEntryWebProductionSpecialist = props => {
             <p><small><a href="/blog" title="Return to the blog landing page">Back to Blog</a></small></p>
 
             {/* Body */}
-            <h2 class="h3" data-aos="fade-up" data-aos-delay="100">What is Web Production Specialist?</h2>
+            <h2 className="h3" data-aos="fade-up" data-aos-delay="100">What is Web Production Specialist?</h2>
             <p data-aos="fade-up" data-aos-delay="100">In short, a Web Production Specialist at Thrillworks is a 'Jack of all trades' role with focus on: Content authoring, email campaigns, web production graphics, and front-end web development.</p>
             {/* Finish Intro */}
             <p data-aos="fade-up" data-aos-delay="100">Below are examples of various tasks and methods that were required of my position on a day-to-day basis.</p>
@@ -30,7 +30,7 @@ const blogEntryWebProductionSpecialist = props => {
             <hr data-aos="fade-up" data-aos-delay="100" />
 
             {/* Agile Methodology */}
-            <h2 class="h3" data-aos="fade-up" data-aos-delay="100">Agile Methodology</h2>
+            <h2 className="h3" data-aos="fade-up" data-aos-delay="100">Agile Methodology</h2>
             <p data-aos="fade-up" data-aos-delay="100">Agile methodology is a very different approach to project workflow. It allows work to adapt as the scope changes, enables rapid development, increases overall quality, productivity, team visibility, and profitability.</p>
             <p data-aos="fade-up" data-aos-delay="100">A brief synopsis of&nbsp;Agile:</p>
             <ul data-aos="fade-up" data-aos-delay="100">
@@ -43,7 +43,7 @@ const blogEntryWebProductionSpecialist = props => {
             <hr data-aos="fade-up" data-aos-delay="100" />
 
             {/* Front-End Web Development */}
-            <h2 class="h3" data-aos="fade-up" data-aos-delay="100">Front-End Web Development</h2>
+            <h2 className="h3" data-aos="fade-up" data-aos-delay="100">Front-End Web Development</h2>
             <p data-aos="fade-up" data-aos-delay="100">Front-End Web Development involves creating or modifying websites with HTML, SCSS, JavaScript and PHP. When working on a Front-End project, typically it includes many of the tasks in 'Content Authoring', but can also&nbsp;include:</p>
             <ul data-aos="fade-up" data-aos-delay="100">
               <li>Creating/Pulling a code repository onto my computer, and using source control to manage the&nbsp;project.</li>
@@ -55,7 +55,7 @@ const blogEntryWebProductionSpecialist = props => {
             <hr data-aos="fade-up" data-aos-delay="100" />
 
             {/* Content Authoring */}
-            <h2 class="h3" data-aos="fade-up" data-aos-delay="100">Content Authoring</h2>
+            <h2 className="h3" data-aos="fade-up" data-aos-delay="100">Content Authoring</h2>
             <p data-aos="fade-up" data-aos-delay="100">As a Web Production Specialist I authored web pages, created and manipulated templates, components, content and assets using various content management systems. The technologies I used most often were Adobe&nbsp;Experience&nbsp;Manager, Open Text's RedDot, WordPress, SiteCore and&nbsp;Magento.</p>
             <p data-aos="fade-up" data-aos-delay="100">The tasks I performed would&nbsp;include:</p>
             <ul data-aos="fade-up" data-aos-delay="100">
@@ -72,7 +72,7 @@ const blogEntryWebProductionSpecialist = props => {
             <hr data-aos="fade-up" data-aos-delay="100" />
 
             {/* Email Campaigns */}
-            <h2 class="h3" data-aos="fade-up" data-aos-delay="100">Email Campaigns</h2>
+            <h2 className="h3" data-aos="fade-up" data-aos-delay="100">Email Campaigns</h2>
             <p data-aos="fade-up" data-aos-delay="100">Using technologies like Foundation for Sites, Exact Target and MailChimp, I built, tested and deployed .html and .txt email&nbsp;campaigns.</p>
             <p data-aos="fade-up" data-aos-delay="100">Typical Process:</p>
             <ol>
@@ -94,7 +94,7 @@ const blogEntryWebProductionSpecialist = props => {
             <hr data-aos="fade-up" data-aos-delay="100" />
 
             {/* Web Production Graphics */}
-            <h2 class="h3" data-aos="fade-up" data-aos-delay="100">Web Production Graphics</h2>
+            <h2 className="h3" data-aos="fade-up" data-aos-delay="100">Web Production Graphics</h2>
             <p data-aos="fade-up" data-aos-delay="100">Using photo-editing software, primarily Adobe Photoshop; Manipulate designs and output images to work with the needs of a project. This can&nbsp;include:</p>
             <ul data-aos="fade-up" data-aos-delay="100">
               <li>Slicing and saving out optimized images in various file types and&nbsp;dimensions.</li>
@@ -106,13 +106,13 @@ const blogEntryWebProductionSpecialist = props => {
             <hr data-aos="fade-up" data-aos-delay="100" />      
 
             {/* Ticket Tracking */}
-            <h2 class="h3" data-aos="fade-up" data-aos-delay="100">Ticket Tracking</h2>
+            <h2 className="h3" data-aos="fade-up" data-aos-delay="100">Ticket Tracking</h2>
             <p data-aos="fade-up" data-aos-delay="100">Once a deliverable has been sent for review, any issues that have been spotted are turned into tasks using software like JIRA. We use this ticket process to ensure all issues are tracked, marked for their importance, and eventually resolved. This gives everyone oversight on the project, its status and the amount of work left to&nbsp;do.</p>
 
             <hr data-aos="fade-up" data-aos-delay="100" />
 
             {/* Training Documentation */}
-            <h2 class="h3" data-aos="fade-up" data-aos-delay="100">Training Documentation</h2>
+            <h2 className="h3" data-aos="fade-up" data-aos-delay="100">Training Documentation</h2>
             <p data-aos="fade-up" data-aos-delay="100">If a new process is developed, or if a client/internal staff require training on a process, we create detailed training documentation. This includes a step-by-step document with both a visual and textual representation of the process. In the document we include as many relevant resources and examples as&nbsp;possible.</p>
             <p data-aos="fade-up" data-aos-delay="100">Internal documentation at Thrillworks is created as a Wiki. Documents to clients are provided in the format that they are requested in, typically designed&nbsp;PDFs.</p>
 

@@ -3,9 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  useRouteMatch,
-  useParams
+  useRouteMatch
 } from "react-router-dom";
 
 import './app.scss';
@@ -516,8 +514,8 @@ function Blog() {
           render={() => (
             <Suspense fallback={<div>Loading...</div>}>
               <Section background="blue">
-                <h1 class="header-no-parallax">Welcome to My Blog</h1>
-                <p class="h5 margin-top-1">The purpose of this blog is to create a space to share my knowledge about web development. Below I will showcase some of my work, share the processes I use, and to discuss the topics that are on my&nbsp;mind.</p>
+                <h1 className="header-no-parallax">Welcome to My Blog</h1>
+                <p className="h5 margin-top-1">The purpose of this blog is to create a space to share my knowledge about web development. Below I will showcase some of my work, share the processes I use, and to discuss the topics that are on my&nbsp;mind.</p>
               </Section>
               <Section background="white">
                 <BlogEntries />

@@ -48,7 +48,7 @@ const flexPanelGallery = props => {
       {/* JavaScript30 | 5 | Flex Panel Gallery */}
       <Section background="dark-blue">
         <Row>
-          <Column id="javascript30-5" small={12}>
+          <Column className={classes.FlexPanelGallery} small={12}>
             <div className="panels">
               <div className="panel panel1">
                 <p>Hey</p>

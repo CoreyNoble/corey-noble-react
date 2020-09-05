@@ -12,7 +12,7 @@ const blogEntryWCAG = props => {
       <Section background="blue">
             <Row>
               <Column small={12}>
-                <h1 class="header-no-parallax">Web Content Accessibility Guidelines (WCAG)</h1>
+                <h1 className="header-no-parallax">Web Content Accessibility Guidelines (WCAG)</h1>
               </Column>
             </Row>
           </Section>
@@ -24,7 +24,7 @@ const blogEntryWCAG = props => {
               <p><small><a href="/blog" title="Return to the blog landing page">Back to Blog</a></small></p>
 
               {/* Body */}
-              <h2 class="h3" data-aos="fade-up" data-aos-delay="100">
+              <h2 className="h3" data-aos="fade-up" data-aos-delay="100">
                 <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/Overview.html" title="WCAG Guidelines" target="_blank" rel="noopener noreferrer">
                   <strong>Understanding WCAG 2.0</strong>
                 </a>

@@ -39,7 +39,8 @@
     display: flex;
     justify-content: center;
 
-    > a {
+    > a,
+    > button {
       flex: 1 0;
       color: yellow;
       text-decoration: none;
@@ -106,7 +107,8 @@
     transform: translateY(-50%) rotate(45deg);
   }
 
-  .dropdown a {
+  .dropdown a,
+  .dropdown button {
     display: block;
     background-color: rgba(0, 0, 0, .2);
     padding: .5em 1em;

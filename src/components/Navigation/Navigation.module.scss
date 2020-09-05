@@ -55,7 +55,7 @@
     transition: transform 400ms ease;
   }
 
-  &a {
+  &a, &button {
     background: $black;
   }
 
@@ -95,7 +95,8 @@
         }
       }
 
-      a {
+      a,
+      button {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
@@ -117,7 +118,8 @@
       }
 
       &:last-child {
-        a {
+        a,
+        button {
           border-right: 0;
         }
       }
@@ -128,7 +130,8 @@
         background: $background;
       }
 
-      a {
+      a,
+      button {
         @media screen and (max-width: 940px) {
           text-align: center;
           text-indent: 0;
@@ -165,7 +168,8 @@
         float: unset;
       }
 
-      a {
+      a,
+      button {
         min-width: unset;
         width: unset;
         border-bottom: none;
@@ -221,7 +225,8 @@
     }
   }
 
-  a {
+  a,
+  button {
     color: $white;
     display: inline-block;
     min-width: 105px;

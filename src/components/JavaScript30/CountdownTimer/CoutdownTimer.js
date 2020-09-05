@@ -142,7 +142,7 @@ const coutdownTimer = props => {
                   <Column className="timer__control" small={6} large={2}>
                     <button data-time="3600" className="timer__button">Lunch Break</button>
                   </Column>
-                  <Column className="timer__control" end small={6} large={2}>
+                  <Column className="timer__control" small={6} large={2}>
                     <div className="contact-form">
                       <form name="customForm" id="custom">
                         <input type="text" name="minutes" placeholder="Enter Minutes" />

@@ -27,24 +27,17 @@
   span {
     color: $white;
     font-size: 1.15em;
-    left: .44em;
     margin: 0;
     position: relative;
-    top: .25em;
-    transition: top .2s ease;
+    transition: padding .2s ease;
 
     @media screen and (min-width: 40em) {
       font-size: 1.5em;
-      left: .47em;
-      top: .4em;
     }
 
     &:hover {
-      top: 2px;
-
-      @media screen and (min-width: 40em) {
-        top: 7px;
-      }
+      padding-bottom: 0.2em;
+      cursor: pointer;
     }
   }
 

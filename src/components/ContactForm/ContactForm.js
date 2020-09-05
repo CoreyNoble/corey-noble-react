@@ -23,19 +23,19 @@ const contactForm = props => {
           <form action="./mailsend.php" method="post">
             <div className="row">
               <label for="firstName" className="h5">First Name</label>
-              <input name="firstName" type="text" maxlength="50" required />
+              <input name="firstName" type="text" maxLength="50" required />
 
               <label for="lastName" className="h5">Last Name</label>
-              <input name="lastName" type="text" maxlength="50" required />
+              <input name="lastName" type="text" maxLength="50" required />
 
               <label for="email" className="h5">Email Address</label>
-              <input name="email" type="text" maxlength="80" required />
+              <input name="email" type="text" maxLength="80" required />
 
               <label for="company" className="h5">Company</label>
-              <input name="company" type="text" maxlength="80" required />
+              <input name="company" type="text" maxLength="80" required />
 
               <label for="inquiry" className="h5">Inquiry</label>
-              <textarea className={classes.Last} name="inquiry" rows="5" cols="35" maxlength="3000" required></textarea>
+              <textarea className={classes.Last} name="inquiry" rows="5" cols="35" maxLength="3000" required></textarea>
 
               <Column className={`${classes.ContactCTAs} ${classes.NoPadding}`} small={12} medium={8}>
                 <div className="g-recaptcha" data-sitekey="6Lcj8wYUAAAAAG9fl2DtDnsqTjfyNFwhL38TwGao"></div>

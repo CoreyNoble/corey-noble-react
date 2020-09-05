@@ -68,7 +68,7 @@ const mouseMoveShadow = props => {
         <Row>
           <Column small={12}>
             <div className="hero">
-              <h2 contenteditable>🔥</h2>
+              <h2 contenteditable><span role="img" aria-label="Fire Emoji">🔥</span></h2>
             </div>
           </Column>
         </Row>

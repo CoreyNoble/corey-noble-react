@@ -36,7 +36,7 @@ const portfolioProjects = props => {
             <Link className={`${classes.CTA} ${classes.ProjectCTA1}`} to="https://www.motusbank.ca/" target="_blank" rel="noopener noreferrer"
               title="motusbank. View the website.">View the website</Link>
           </Column>
-          <Column end small={12} large={7}>
+          <Column small={12} large={7}>
             <Link to="https://www.motusbank.ca/" target="_blank" rel="noopener noreferrer"
               title="motusbank. View the website.">
               <div className={`${classes.ShowcaseExample} no-bottom-space margin-top-0-mobile-margin-top-2`}>
@@ -61,7 +61,7 @@ const portfolioProjects = props => {
           </Column>
           <Column 
             largeOrder={1} smallOrder={2}
-            end small={12} large={7}
+            small={12} large={7}
             data-aos="fade-up" data-aos-delay="100"
           >
             <Link to="https://www.pcfinancial.ca/en/campaign/new-digital-experience" target="_blank" rel="noopener noreferrer"
@@ -104,7 +104,7 @@ const portfolioProjects = props => {
           </Column>
           <Column 
             className="aos-init aos-animate" 
-            end small={12} large={7}
+            small={12} large={7}
             data-aos="fade-up" data-aos-delay="100"
           >
             <Link to="https://burger-builder-corey-noble.netlify.com/" target="_blank" rel="noopener noreferrer"
@@ -132,7 +132,7 @@ const portfolioProjects = props => {
           <Column 
             className="aos-init aos-animate" 
             largeOrder={1} smallOrder={2}
-            end small={12} large={7}
+            small={12} large={7}
             data-aos="fade-up" data-aos-delay="100"
           >
             <Link to={`${process.env.PUBLIC_URL}/portfolio/javascript30`} title="JavaScript 30. View the projects and the code.">
@@ -157,7 +157,7 @@ const portfolioProjects = props => {
               title="JavaScript Tetris. View the project and the code.">View the project and code</Link>
           </Column>
           <Column 
-            end small={12} large={7}
+            small={12} large={7}
             data-aos="fade-up" data-aos-delay="100"
           >
             <Link to={`${process.env.PUBLIC_URL}/portfolio/javascript-tetris`}

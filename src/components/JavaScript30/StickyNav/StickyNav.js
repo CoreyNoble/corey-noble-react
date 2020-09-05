@@ -50,17 +50,17 @@ const stickyNav = props => {
         </Row>
       </Section>
 
-      <div id="javascript30-24">
+      <div className={classes.StickyNav}>
         <div id="sticky-nav">
           <ul>
-            <li className="logo"><a href="#">LOGO</a></li>
+            <li className="logo"><button>LOGO</button></li>
 
             <ShowForScreenSize screenSize="large">
-              <li><a href="#">Home</a></li>
+              <li><button>Home</button></li>
             </ShowForScreenSize>
 
-            <li><a href="#">About</a></li>
-            <li><a href="#">Locations</a></li>
+            <li><button>About</button></li>
+            <li><button>Locations</button></li>
           </ul>
         </div>
 

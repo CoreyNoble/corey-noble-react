@@ -21,7 +21,7 @@ const portfolioPiece = props => {
       </Column>
       
       <Column 
-        end small={12} large={7} largeOrder={2} smallOrder={1}
+        small={12} large={7} largeOrder={2} smallOrder={1}
         data-aos="fade-up" data-aos-delay="100"
       >
         <a href="https://www.pcfinancial.ca/en/campaign/new-digital-experience" target="_blank" rel="noopener noreferrer"
