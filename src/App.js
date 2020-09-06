@@ -6,6 +6,8 @@ import {
   useRouteMatch
 } from "react-router-dom";
 
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+
 import './app.scss';
 
 import AOS from 'aos';
@@ -559,6 +561,7 @@ class App extends Component {
   render() {
     return (
       <Router>
+        <ScrollToTop />
         <div className="App">
           <Navigation />
           <BackToTop />
